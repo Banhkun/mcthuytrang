@@ -6,6 +6,246 @@
   "videos": {
     "files": [
       {
+        "id": "1CKCyXuTfY8NHge9xub7pzoxA7g0VTTKD",
+        "name": "Event - Hội Nghị - DANONE - Kiwi Food.mp4",
+        "createdTime": "2026-06-04T16:44:39.798Z",
+        "videoMediaMetadata": {
+          "width": 1920,
+          "height": 1080,
+          "durationMillis": "71649"
+        }
+      },
+      {
+        "id": "1JOxf6GN3gDqfLaNP00luYBlnzS1kwF3w",
+        "name": "Event - Hội Nghị - DANONE -Hoạt náo.mp4",
+        "createdTime": "2026-06-04T16:24:01.007Z",
+        "videoMediaMetadata": {
+          "width": 1920,
+          "height": 1080,
+          "durationMillis": "183433"
+        }
+      },
+      {
+        "id": "1pnsuZ1m91f3LBUJkHNhzf3Bf1_OFWj07",
+        "name": "MC Review x Mooekiss.mp4",
+        "createdTime": "2026-06-03T17:12:05.996Z",
+        "videoMediaMetadata": {
+          "width": 1080,
+          "height": 1920,
+          "durationMillis": "16733"
+        }
+      },
+      {
+        "id": "1jo6jzmk5_qhL0K3lqwEJNMIi7p4T0jCs",
+        "name": "MC Review x Son Mooekiss.mp4",
+        "createdTime": "2026-06-03T16:58:20.393Z",
+        "videoMediaMetadata": {
+          "width": 576,
+          "height": 1024,
+          "durationMillis": "36481"
+        }
+      },
+      {
+        "id": "1RaWcDAzbVC-BmgVvpuHLsZJOELbMC_gb",
+        "name": "MC Review x Son Mooekiss.mp4",
+        "createdTime": "2026-06-03T16:58:01.573Z",
+        "videoMediaMetadata": {
+          "width": 720,
+          "height": 960,
+          "durationMillis": "15199"
+        }
+      },
+      {
+        "id": "1KSC7srEP2UsFvVkbuqgPbT4Ub6YzvMua",
+        "name": "MC Review x Son Mooekiss.mp4",
+        "createdTime": "2026-06-03T16:47:37.857Z",
+        "videoMediaMetadata": {
+          "width": 720,
+          "height": 1280,
+          "durationMillis": "25666"
+        }
+      },
+      {
+        "id": "1V2mzcAj6FK__l-7ftHLX4K0mvr94LwaQ",
+        "name": "Livestream x Cushion.mp4",
+        "createdTime": "2026-06-03T16:44:42.846Z",
+        "videoMediaMetadata": {
+          "width": 888,
+          "height": 1920,
+          "durationMillis": "331533"
+        }
+      },
+      {
+        "id": "1P350Xz7Dq6HJ1yVTRhbGSnXRXUxBqGWO",
+        "name": "MC Review Keyshe - funny.mp4",
+        "createdTime": "2026-06-03T15:45:51.781Z",
+        "videoMediaMetadata": {
+          "width": 720,
+          "height": 1280,
+          "durationMillis": "12066"
+        }
+      },
+      {
+        "id": "1hDUY7y05xs_Z7OXPc2OK_Bfnh1VeNGH7",
+        "name": "Event - Khai trương Circle K chi nhánh Lê Văn Lương Quận 7.mp4",
+        "createdTime": "2026-06-03T15:28:28.956Z",
+        "videoMediaMetadata": {
+          "width": 1920,
+          "height": 1080,
+          "durationMillis": "49733"
+        }
+      },
+      {
+        "id": "1whDZnv18nOHSR0JrMvdYCxvXVjKI_gKW",
+        "name": "Hoạt náo × Meiji.mp4",
+        "createdTime": "2026-06-03T10:43:54.611Z",
+        "videoMediaMetadata": {
+          "width": 1920,
+          "height": 1080,
+          "durationMillis": "192566"
+        }
+      },
+      {
+        "id": "1SjbERyIB71vIMEF_iQsfg2jEUcP2d-YN",
+        "name": "Event - Vòng chung kết cuộc thi văn nghệ (Part 3).mp4",
+        "createdTime": "2026-06-02T19:33:51.041Z",
+        "videoMediaMetadata": {
+          "width": 1920,
+          "height": 1080,
+          "durationMillis": "153166"
+        }
+      },
+      {
+        "id": "1DB6wg7WuRHj8XAZyHa6Zo6B3K1xnnkrq",
+        "name": "Event - Vòng chung kết cuộc thi văn nghệ (Part 2).mp4",
+        "createdTime": "2026-06-02T19:07:30.482Z",
+        "videoMediaMetadata": {
+          "width": 1920,
+          "height": 1080,
+          "durationMillis": "52700"
+        }
+      },
+      {
+        "id": "1EwSv5JdflPkofHAnP1lYZA99Ee_M8NAr",
+        "name": "Event - Lễ trao bằng chứng chỉ quốc tế của Đại học Cambridge (Part 1).mp4",
+        "createdTime": "2026-06-02T19:00:47.208Z",
+        "videoMediaMetadata": {
+          "width": 1280,
+          "height": 720,
+          "durationMillis": "49600"
+        }
+      },
+      {
+        "id": "1YGPmFhNoA3qB-XuJMXtkWvAizEL0JShy",
+        "name": "Event - Khai trương Hacom Gò Vấp.mp4",
+        "createdTime": "2026-06-02T18:18:45.228Z",
+        "videoMediaMetadata": {
+          "width": 1080,
+          "height": 1920,
+          "durationMillis": "49833"
+        }
+      },
+      {
+        "id": "1rkPqI7GI-J-ReQMvdHOiUyoWOKA6OVFk",
+        "name": "Event - Lễ vinh danh TagEdu x HKICO.mp4",
+        "createdTime": "2026-06-02T04:04:01.176Z",
+        "videoMediaMetadata": {
+          "width": 1920,
+          "height": 1080,
+          "durationMillis": "126500"
+        }
+      },
+      {
+        "id": "1NLKUrkybtFX6ZR8hgYyQh_-5cCZedIyn",
+        "name": "Event - Talkshow về bệnh hen ở trẻ em × HTV9.mp4",
+        "createdTime": "2026-06-02T02:53:10.339Z",
+        "videoMediaMetadata": {
+          "width": 1920,
+          "height": 1080,
+          "durationMillis": "277100"
+        }
+      },
+      {
+        "id": "1CY-IvHo7cYs1aNY2ialvgXznI8FBduoZ",
+        "name": "MC Review × Dầu gội Thảo dược Bạch Phục Linh.mp4",
+        "createdTime": "2026-06-01T18:09:12.185Z",
+        "videoMediaMetadata": {
+          "width": 1080,
+          "height": 1908,
+          "durationMillis": "100233"
+        }
+      },
+      {
+        "id": "1BNRb2AXPLQ1Z8JPGUcyfRMvM2WWdRD_S",
+        "name": "Wedding - Vu Quy (Kim Ngân & Minh Tiến).mp4",
+        "createdTime": "2026-06-01T17:32:24.531Z",
+        "videoMediaMetadata": {
+          "width": 1920,
+          "height": 1080,
+          "durationMillis": "247599"
+        }
+      },
+      {
+        "id": "1lYXE4fmi2uAPglTNEhwmhdMDp26Zt_gy",
+        "name": "Livestream - Sinh nhật Tiktok Siêu Sale 6.6.mp4",
+        "createdTime": "2026-06-01T10:10:05.071Z",
+        "videoMediaMetadata": {
+          "width": 640,
+          "height": 1280,
+          "durationMillis": "54566"
+        }
+      },
+      {
+        "id": "1Aig4lZWVskiaCsqYNpdJUE5XdvVoCbcT",
+        "name": "Livestream - Keyshe.mp4",
+        "createdTime": "2026-06-01T10:03:23.283Z",
+        "videoMediaMetadata": {
+          "width": 1080,
+          "height": 1920,
+          "durationMillis": "46233"
+        }
+      },
+      {
+        "id": "1ud5vouh7FKS-OlOiyOdhLX9W337AsaEq",
+        "name": "Activation x Locknlock.mp4",
+        "createdTime": "2026-06-01T09:48:08.240Z",
+        "videoMediaMetadata": {
+          "width": 1920,
+          "height": 1080,
+          "durationMillis": "32933"
+        }
+      },
+      {
+        "id": "1pUmCKA5zweIMW0BW5RROEvkMaenmJrgH",
+        "name": "Trainer - Bài thực hành lớp MC nhí (Diễn kịch).mp4",
+        "createdTime": "2026-06-01T09:32:04.554Z",
+        "videoMediaMetadata": {
+          "width": 1280,
+          "height": 720,
+          "durationMillis": "142566"
+        }
+      },
+      {
+        "id": "1brpnmbGv_Un4RDHTekYkbeEJLb5UB5F5",
+        "name": "Trainer - Bài thực hành MC nhí (Dẫn song ngữ).mp4",
+        "createdTime": "2026-06-01T09:25:01.495Z",
+        "videoMediaMetadata": {
+          "width": 1280,
+          "height": 720,
+          "durationMillis": "39733"
+        }
+      },
+      {
+        "id": "1NvlZuDyn8qGlKypCZ-y1Stwo_gqGraWI",
+        "name": "Trainer - MC nhí (Buổi đầu).mp4",
+        "createdTime": "2026-06-01T09:22:27.476Z",
+        "videoMediaMetadata": {
+          "width": 1920,
+          "height": 1080,
+          "durationMillis": "52266"
+        }
+      },
+      {
         "id": "18CFUgpHB0fL71vDJfh1FI0vi9abxIlGk",
         "name": "Khách đi đường vào chốt sale khi nghe giọng MC Thùy Trang quảng cáo.mp4",
         "createdTime": "2026-06-01T07:42:04.752Z",
@@ -17,7 +257,7 @@
       },
       {
         "id": "1pjyP31_ccFjnenmiQan3tY0uQIBFmIUF",
-        "name": "Kem que đá bào mát lạnh số 1 Nhật Bản.mp4",
+        "name": "Hoạt náo x Kem que đá bào mát lạnh số 1 Nhật Bản.mp4",
         "createdTime": "2026-06-01T07:28:05.316Z",
         "videoMediaMetadata": {
           "width": 720,
@@ -27,7 +267,7 @@
       },
       {
         "id": "1xUSEyVzKjmDRgevUIbzxN_dViksyMauL",
-        "name": "MC Thùy Trang x Gari Gari Kun.mp4",
+        "name": "Hoạt náo x Gari Gari Kun.mp4",
         "createdTime": "2026-06-01T06:46:54.163Z",
         "videoMediaMetadata": {
           "width": 1080,
@@ -57,7 +297,7 @@
       },
       {
         "id": "17Q71T0kUkazCVCh_RTrcPdOHLf3_jkgZ",
-        "name": "HUAWEI × TECH WITH LOVE.mp4",
+        "name": "Mini Event - HUAWEI × TECH WITH LOVE.mp4",
         "createdTime": "2026-05-30T16:39:39.277Z",
         "videoMediaMetadata": {
           "width": 1080,
@@ -67,7 +307,7 @@
       },
       {
         "id": "17XMkSopk4Q6IhQMBPIBWooEbmTGLpKjM",
-        "name": "DOVE × VALENTINE (Q&A).mp4",
+        "name": "Mini Event - DOVE × VALENTINE (Q&A).mp4",
         "createdTime": "2026-05-30T16:04:10.088Z",
         "videoMediaMetadata": {
           "width": 1920,
@@ -77,7 +317,7 @@
       },
       {
         "id": "1E2M7fCq2nrdDAoYyrQ0zxxDODLA0-5r0",
-        "name": "Cinetour × Nhà Gia Tiên.mp4",
+        "name": "Ra mắt phim - Cinetour × Nhà Gia Tiên.mp4",
         "createdTime": "2026-05-30T15:20:52.203Z",
         "videoMediaMetadata": {
           "width": 1080,
@@ -87,7 +327,7 @@
       },
       {
         "id": "1KnkgzwXu-onbGUtTby8NjdCZz4dkKc5F",
-        "name": "MC Thùy Trang x POPEYES - RA MẮT SIÊU PHẨM GÀ MALA MALIME.mp4",
+        "name": "Chiến dịch quảng bá x POPEYES - RA MẮT SIÊU PHẨM GÀ MALA MALIME.mp4",
         "createdTime": "2026-05-30T07:53:28.415Z",
         "videoMediaMetadata": {
           "width": 1280,
@@ -107,7 +347,7 @@
       },
       {
         "id": "1C4GNmy2bGc5rQuS8E3KAskOZuKNf9LyS",
-        "name": "Nisshin Seifun Welna × Vietnam Kun.mp4",
+        "name": "Giới thiệu KOL x Nisshin Seifun Welna × Vietnam Kun.mp4",
         "createdTime": "2026-05-30T07:31:40.835Z",
         "videoMediaMetadata": {
           "width": 1080,
@@ -187,7 +427,7 @@
       },
       {
         "id": "1BHLa77cWec7vImBQlmWq4bDcN9UHSO3T",
-        "name": "CITIGYM CHƠI GAME GIÁNG SINH.mp4",
+        "name": "Hoạt náo × CITIGYM CHƠI GAME GIÁNG SINH.mp4",
         "createdTime": "2026-05-30T03:43:02.693Z",
         "videoMediaMetadata": {
           "width": 720,
@@ -197,7 +437,7 @@
       },
       {
         "id": "1MIsb9CHr0yvp2KQ2eEOfxm3MuyIvHMjI",
-        "name": "Bia Sài Gòn × Chill đậm chất hè.mp4",
+        "name": "Activation - Bia Sài Gòn × Chill đậm chất hè.mp4",
         "createdTime": "2026-05-30T02:46:19.747Z",
         "videoMediaMetadata": {
           "width": 1920,
@@ -207,7 +447,7 @@
       },
       {
         "id": "19cug5AEbowKkzZojPeqm-IX9KiYWnzlk",
-        "name": "Kỷ niệm 8 năm thành lập CIGIGYM.mp4",
+        "name": "Hoạt náo × Kỷ niệm 8 năm thành lập CIGIGYM.mp4",
         "createdTime": "2026-05-30T02:31:03.338Z",
         "videoMediaMetadata": {
           "width": 1080,
@@ -217,7 +457,7 @@
       },
       {
         "id": "1y-Izci8ARKa5y7e9HpM3c4Ucm4EaWmjA",
-        "name": "HOẠT NÁO GIÁNG SINH × CITIGYM.mp4",
+        "name": "Hoạt náo x  CITIGYM x Giáng Sinh.mp4",
         "createdTime": "2026-05-30T02:02:01.564Z",
         "videoMediaMetadata": {
           "width": 720,
@@ -257,7 +497,7 @@
       },
       {
         "id": "1EXe2aQ746hOlW_jLBplnETy_YL55Pnoe",
-        "name": "MC Thùy Trang × Budweiser - Bia chính thức FIFA WORLD CUP 2026.mp4",
+        "name": "MC Hype × Budweiser - Bia chính thức FIFA WORLD CUP 2026.mp4",
         "createdTime": "2026-05-30T01:45:24.563Z",
         "videoMediaMetadata": {
           "width": 1920,
@@ -297,7 +537,7 @@
       },
       {
         "id": "13mecUiFyi-yi6ACWh0IfnTakNFrRzt2s",
-        "name": "Trung Thu × Tropic Garden",
+        "name": "CHỊ HẰNG Trung Thu × Tropic Garden",
         "createdTime": "2025-11-26T16:59:04.610Z",
         "videoMediaMetadata": {
           "width": 720,
@@ -326,7 +566,7 @@
         }
       }
     ],
-    "count": 32
+    "count": 56
   },
-  "lastUpdated": "2026-06-01T08:37:19.094Z"
+  "lastUpdated": "2026-06-08T08:12:30.063Z"
 }
