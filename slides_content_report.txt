@@ -1,0 +1,120 @@
+﻿==================================================
+SLIDE: slide1
+==================================================
+TEXT:
+OFFICIAL PROFILE | MC Song Ngá»¯ - Sá»± Kiá»‡n - Active | Voice Talent - Livestreamer | ThÃ¹y Trang
+
+IMAGES: image2.png, image1.jpeg, image3.png
+
+==================================================
+SLIDE: slide2
+==================================================
+TEXT:
+GIá»šI THIá»†U | About ThÃ¹y Trang
+
+IMAGES: image5.png, image4.jpeg, image6.png
+
+==================================================
+SLIDE: slide3
+==================================================
+TEXT:
+PERSONAL | PERSONAL | PERSONAL | INFORMATION | About me | 29/06/2002 | 45kg | English | Contact | 162 cm | PERSONAL HIGHLIGHT | MC ThÃ¹y Trang
+
+IMAGES: image8.png, image7.jpeg, image10.svg, image9.png
+
+==================================================
+SLIDE: slide4
+==================================================
+TEXT:
+PERSONAL HIGHLIGHT | ABOUT THÃ™Y TRANG | MC ThÃ¹y Trang | PERSONAL | Hoc váº¥n | Äáº¡i há»c SÆ° Pháº¡mâ€“ Cá»­ nhÃ¢n chuyÃªn ngÃ nh Quá»‘c Táº¿ Há»c | Cambridge Assessment English- FCE (B2) | Tá»‘t nghiá»‡p khÃ³a Professional MC - MC Academy | Ká»¹ nÄƒng | Quan há»‡ quá»‘c táº¿ | ThÃ´ng tháº¡o biÃªn phiÃªn dá»‹ch vÃ  thÃ´ng dá»‹ch tiáº¿ng anh | Tá»• chá»©c sá»± kiá»‡n, hoáº¡t nÃ¡o | HIGHTLIGHT | Host Livestream | .
+
+IMAGES: image12.png, image11.jpeg, image14.png, image13.png
+
+==================================================
+SLIDE: slide5
+==================================================
+TEXT:
+LÄ¨NH VUC | MC Fields | . | ,
+
+IMAGES: image5.png, image15.jpeg, image6.png
+
+==================================================
+SLIDE: slide6
+==================================================
+TEXT:
+MC | Bilingual MC | SONG | ThÃ´ng dá»‹ch | Thuyáº¿t trÃ¬nh song ngá»¯ | Am hiá»ƒu lÄ©nh vá»±c | â€œGiÃ¡o dá»¥c, thÆ°Æ¡ng máº¡i, du lá»‹châ€ | BiÃªn soáº¡n | ká»‹ch báº£n | Song ngá»¯ | NGá»® | MC SONG NGá»® | LÄ¨NH Vá»°C MC | MC THÃ™YTRANG
+
+IMAGES: image17.png, image16.jpeg
+
+==================================================
+SLIDE: slide7
+==================================================
+TEXT:
+TALK SHOW | MC TALKSHOW | LÄ¨NH Vá»°C MC | MC THÃ™Y TRANG
+
+IMAGES: image24.png, image19.png, image23.png, image18.jpeg, image22.png, image21.png, image20.png, image25.png
+
+==================================================
+SLIDE: slide8
+==================================================
+TEXT:
+MC | WEDDINGS | MC WEDÄINGS | LÄ¨NH Vá»°C MC | MC THÃ™YTRANG
+
+IMAGES: image27.png, image26.jpeg, image28.png
+
+==================================================
+SLIDE: slide9
+==================================================
+TEXT:
+MC | ACTIVE | ThÃ´ng tháº¡o ká»¹ nÄƒng hoáº¡t nÃ¡o | MC ACTIVE | LÄ¨NH Vá»°C MC | BiÃªn táº­p ná»™i dung | Äa dáº¡ng phong cÃ¡ch | MC THÃ™Y TRANG
+
+IMAGES: image30.png, image29.jpeg
+
+==================================================
+SLIDE: slide10
+==================================================
+TEXT:
+MC YEP | LÄ¨NH Vá»°C MC | MC THÃ™Y TRANG | MC | YEP
+
+IMAGES: image37.png, image32.jpeg, image36.png, image41.png, image31.jpeg, image35.jpeg, image40.svg, image34.jpeg, image39.png, image33.jpeg, image38.jpeg
+
+==================================================
+SLIDE: slide11
+==================================================
+TEXT:
+VOICE | TALENT | TVC Quáº£ng cÃ¡o, | Podcast chá»¯a lÃ nh | Livestream bÃ¡n hÃ ng | VOICE TALENT | LÄ¨NH Vá»°C MC | MC THÃ™Y TRANG | Live | Streamer
+
+IMAGES: image43.svg, image42.jpeg, image45.svg, image44.png
+
+==================================================
+SLIDE: slide12
+==================================================
+TEXT:
+POD- | PODCAST | LÄ¨NH Vá»°C MC | MC THÃ™Y TRANG | CAST
+
+IMAGES: image46.png, image42.jpeg, image47.svg
+
+==================================================
+SLIDE: slide13
+==================================================
+TEXT:
+MY CLIENTS | ÄÆ¡n vá»‹ Ä‘Ã£ há»£p tÃ¡c | MY CLIENTS | MC THÃ™Y TRANG
+
+IMAGES: image54.png, image59.png, image49.png, image53.png, image58.jpeg, image48.jpeg, image52.png, image57.png, image51.jpeg, image56.png, image50.png, image55.png
+
+==================================================
+SLIDE: slide14
+==================================================
+TEXT:
+66 | Ráº¥t mong Ä‘Æ°á»£c | há»£p tÃ¡c | cÃ¹ng | QuÃ½ Ä‘á»‘i tÃ¡c | THANK | YOU | My Profile | ThÃ¹y Trang | A des cÅ©ng cÅ©ng Ã¡=)) nhma Ä‘á»ƒ Ã½ font chá»¯ xÃ­u, nÃ³ Ä‘ang bá»‹ nhiá»u font
+
+IMAGES: image61.svg, image60.jpeg, image62.png
+
+==================================================
+SLIDE: slide15
+==================================================
+TEXT:
+66 | Ráº¥t mong Ä‘Æ°á»£c | há»£p tÃ¡c | cÃ¹ng | QuÃ½ Ä‘á»‘i tÃ¡c | THANK | YOU | My Profile | ThÃ¹y Trang
+
+IMAGES: image61.svg, image60.jpeg, image63.png
+

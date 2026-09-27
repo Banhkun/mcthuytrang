@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Profile MC Thùy Trang | Expanded Gallery Layout</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;1,600&family=Dancing+Script:wght@700&display=swap"
+        rel="stylesheet">
+
+    <style>
+        /* === EXACT PDF COLOR PALETTE === */
+        :root {
+            --bg-white: #ffffff;
+            --bg-cream: #fbf8f1;
+            --light-blue: #dcf2fa;
+            --mid-blue: #8baebd;
+            --navy-blue: #152c5b;
+            --accent-red: #b92a3e;
+            --text-dark: #111111;
+            --text-gray: #555555;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            -webkit-print-color-adjust: exact !important;
+            print-color-adjust: exact !important;
+        }
+
+        body {
+            background-color: #555;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            padding: 20px;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        /* === A4 LANDSCAPE PRINT SETUP === */
+        @page {
+            size: A4 landscape;
+            margin: 0;
+        }
+
+        .page {
+            width: 297mm;
+            height: 210mm;
+            background-image: var(--algo-art), linear-gradient(135deg, #ffffff 0%, #f4f9fc 45%, #fbf8f1 100%);
+            background-size: cover, cover;
+            background-position: center, center;
+            background-repeat: no-repeat, no-repeat;
+            position: relative;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+            page-break-after: always;
+            break-after: page;
+        }
+
+        .page[style*="--bg-cream"] {
+            background-image: var(--algo-art), linear-gradient(135deg, #fbf8f1 0%, #f7efe0 50%, #f1e6d5 100%) !important;
+            background-size: cover, cover !important;
+            background-position: center, center !important;
+            background-repeat: no-repeat, no-repeat !important;
+        }
+
+
+
+        @media print {
+            body {
+                background-color: var(--bg-white);
+                padding: 0;
+                gap: 0;
+            }
+
+            .page {
+                box-shadow: none;
+                margin: 0;
+                border: none;
+            }
+        }
+
+        /* === TYPOGRAPHY === */
+        h1.title-huge {
+            font-size: 65pt;
+            font-weight: 800;
+            color: var(--navy-blue);
+            line-height: 1;
+            text-transform: uppercase;
+        }
+
+        h2.section-title {
+            font-size: 32pt;
+            font-weight: 800;
+            color: var(--navy-blue);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            z-index: 20;
+            position: relative;
+        }
+
+        .subtitle {
+            font-size: 13pt;
+            color: var(--mid-blue);
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 5px;
+            z-index: 20;
+            position: relative;
+        }
+
+        .script-text {
+            font-family: 'Dancing Script', cursive;
+            font-size: 45pt;
+            color: var(--navy-blue);
+        }
+
+        p {
+            font-size: 11pt;
+            color: var(--text-dark);
+            line-height: 1.6;
+            z-index: 20;
+            position: relative;
+        }
+
+        /* === IMAGE SHAPES & CUTOUTS (DEPTH) === */
+        .bg-circle-light-blue {
+            position: absolute;
+            background-color: var(--light-blue);
+            border-radius: 50%;
+            z-index: 1;
+        }
+
+        .bg-circle-cream {
+            position: absolute;
+            background-color: var(--bg-cream);
+            border-radius: 50%;
+            z-index: 1;
+        }
+
+        .img-cutout {
+            position: absolute;
+            bottom: 0;
+            z-index: 15;
+            /* Sits completely in front */
+            object-fit: contain;
+            object-position: bottom;
+            filter: drop-shadow(-10px 15px 20px rgba(21, 44, 91, 0.3));
+        }
+
+        .img-cover {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .header {
+            position: absolute;
+            top: 15mm;
+            left: 20mm;
+            z-index: 20;
+        }
+
+        .header.right {
+            left: auto;
+            right: 20mm;
+            text-align: right;
+        }
+
+        .glass-box {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(10px);
+            padding: 20px;
+            border-radius: 15px;
+            border: 1px solid rgba(255, 255, 255, 0.9);
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+            z-index: 20;
+        }
+
+        /* === MULTI-IMAGE GALLERY GRID === */
+        .gallery-container {
+            position: absolute;
+            top: 40mm;
+            left: 20mm;
+            right: 20mm;
+            bottom: 15mm;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            gap: 24px;
+            grid-auto-flow: dense;
+            z-index: 5;
+        }
+
+        .gallery-container>div {
+            position: relative;
+            overflow: hidden;
+            border-radius: 2px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.05);
+            background: #fafafa;
+            transition: transform 0.5s cubic-bezier(0.2, 0.8, 0.2, 1), box-shadow 0.5s ease;
+        }
+
+        .gallery-container>div:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 45px rgba(0, 0, 0, 0.1);
+            z-index: 2;
+        }
+
+        .gal-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            filter: grayscale(20%) contrast(105%);
+            transition: filter 0.6s ease, transform 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+        }
+
+        .gallery-container>div:hover .gal-img {
+            filter: grayscale(0%) contrast(100%);
+            transform: scale(1.05);
+        }
+
+        .span-2x2 {
+            grid-column: span 2;
+            grid-row: span 2;
+        }
+
+        .span-1x2 {
+            grid-column: span 1;
+            grid-row: span 2;
+        }
+
+        .span-2x1 {
+            grid-column: span 2;
+            grid-row: span 1;
+        }
+
+        .span-1x1 {
+            grid-column: span 1;
+            grid-row: span 1;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="page" id="p1">
+        <div class="bg-circle-light-blue" style="width: 180mm; height: 180mm; top: 15mm; left: -20mm;"></div>
+        <img class="img-cutout" style="left: 10mm; height: 95%;"
+            src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=800&q=80"
+            alt="MC Thuy Trang Cover">
+
+        <div class="glass-box" style="position: absolute; top: 40mm; right: 20mm; width: 130mm;">
+            <h1 class="title-huge">THUY<br>TRANG</h1>
+            <div class="subtitle" style="margin-top: 10px;">OFFICIAL PROFILE</div>
+            <div
+                style="background: var(--mid-blue); color: #fff; padding: 5px 15px; font-weight: 600; display: inline-block; margin-top: 15px; font-size: 11pt; border-radius: 20px;">
+                MC Song Ngữ Sự Kiện - Active</div><br>
+            <div
+                style="background: var(--mid-blue); color: #fff; padding: 5px 15px; font-weight: 600; display: inline-block; margin-top: 10px; font-size: 11pt; border-radius: 20px;">
+                Voice Talent - Livestreamer</div>
+        </div>
+    </div>
+
+    <div class="page" style="background-color: var(--bg-cream);">
+        <div
+            style="position: absolute; top: 20mm; left: 20mm; width: 120mm; height: 120mm; background: #fff; border-radius: 50%; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.05);">
+            <img class="img-cover"
+                src="https://images.unsplash.com/photo-1478737270239-2f02b77fc618?auto=format&fit=crop&w=800&q=80"
+                alt="Mic Graphic"
+                style="opacity: 0.8; mix-blend-mode: multiply; filter: sepia(1) hue-rotate(-50deg) saturate(2);">
+        </div>
+
+        <div style="position: absolute; top: 30mm; right: 20mm; width: 120mm;">
+            <div class="subtitle">GIỚI THIỆU</div>
+            <h2 class="section-title">About Thùy Trang</h2>
+
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-top: 30px;">
+                <div
+                    style="display: flex; align-items: center; gap: 10px; font-weight: 600; color: var(--navy-blue); font-size: 13pt;">
+                    ♡ 29/06/2002</div>
+                <div
+                    style="display: flex; align-items: center; gap: 10px; font-weight: 600; color: var(--navy-blue); font-size: 13pt;">
+                    ↕ 162 cm</div>
+                <div
+                    style="display: flex; align-items: center; gap: 10px; font-weight: 600; color: var(--navy-blue); font-size: 13pt;">
+                    ⚖ 45kg</div>
+                <div
+                    style="display: flex; align-items: center; gap: 10px; font-weight: 600; color: var(--navy-blue); font-size: 13pt;">
+                    🌐 English</div>
+            </div>
+
+            <div style="margin-top: 40px;">
+                <h3 style="color: var(--navy-blue); margin-bottom: 10px;">Contact</h3>
+                <p style="font-weight: 600;">MC Thùy Trang</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="page">
+        <div
+            style="position: absolute; top: 30mm; left: 30mm; width: 150mm; height: 150mm; border-radius: 50%; box-shadow: -20px 0 0 0 var(--mid-blue); z-index: 1;">
+        </div>
+        <img class="img-cutout" style="left: 35mm; height: 90%;"
+            src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=800&q=80"
+            alt="MC Education">
+
+        <div class="glass-box" style="position: absolute; top: 30mm; right: 20mm; width: 120mm;">
+            <div class="subtitle">PERSONAL HIGHLIGHT</div>
+            <h2 class="section-title">Học Vấn & Kỹ Năng</h2>
+
+            <h3 style="color: var(--navy-blue); margin-top: 20px; font-size: 12pt;">Học vấn HIGHLIGHT</h3>
+            <ul style="list-style: none; margin-top: 10px; margin-bottom: 25px;">
+                <li style="position: relative; padding-left: 20px; margin-bottom: 10px; font-weight: 500;">
+                    <span
+                        style="position: absolute; left: 0; color: var(--navy-blue); font-size: 18pt; line-height: 12pt;">•</span>
+                    Đại học Sư Phạm - Cử nhân chuyên ngành Quốc Tế Học
+                </li>
+                <li style="position: relative; padding-left: 20px; margin-bottom: 10px; font-weight: 500;">
+                    <span
+                        style="position: absolute; left: 0; color: var(--navy-blue); font-size: 18pt; line-height: 12pt;">•</span>
+                    Cambridge Assessment English - FCE (B2)
+                </li>
+                <li style="position: relative; padding-left: 20px; margin-bottom: 10px; font-weight: 500;">
+                    <span
+                        style="position: absolute; left: 0; color: var(--navy-blue); font-size: 18pt; line-height: 12pt;">•</span>
+                    Tốt nghiệp khóa Professional MC - MC Academy
+                </li>
+            </ul>
+
+            <h3 style="color: var(--navy-blue); font-size: 12pt;">Kỹ năng</h3>
+            <ul style="list-style: none; margin-top: 10px;">
+                <li style="position: relative; padding-left: 20px; margin-bottom: 10px; font-weight: 500;">
+                    <span
+                        style="position: absolute; left: 0; color: var(--navy-blue); font-size: 18pt; line-height: 12pt;">•</span>
+                    Thông thạo biên phiên dịch và thông dịch tiếng anh
+                </li>
+                <li style="position: relative; padding-left: 20px; margin-bottom: 10px; font-weight: 500;">
+                    <span
+                        style="position: absolute; left: 0; color: var(--navy-blue); font-size: 18pt; line-height: 12pt;">•</span>
+                    Tổ chức sự kiện, hoạt náo
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="page">
+        <div class="header">
+            <div class="subtitle">LĨNH VỰC MC</div>
+            <h2 class="section-title">Talk Show</h2>
+        </div>
+
+        <div
+            style="position: absolute; top: 15mm; right: 20mm; width: 140mm; height: 180mm; border-radius: 15px; overflow: hidden; z-index: 1;">
+            <img class="img-cover"
+                src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=800&q=80"
+                alt="Talkshow BG">
+        </div>
+        <div
+            style="position: absolute; top: 120mm; left: 20mm; width: 100mm; height: 70mm; border-radius: 15px; overflow: hidden; border: 5px solid #fff; z-index: 2;">
+            <img class="img-cover"
+                src="https://images.unsplash.com/photo-1586281380349-632531db7ed4?auto=format&fit=crop&w=800&q=80"
+                alt="Audience">
+        </div>
+
+        <img class="img-cutout" style="left: 50mm; height: 90%; z-index: 10;"
+            src="https://images.unsplash.com/photo-1509967419530-da38b4704bc6?auto=format&fit=crop&w=800&q=80"
+            alt="MC Talkshow Front">
+
+        <div class="glass-box" style="position: absolute; top: 40mm; left: 20mm; width: 90mm; z-index: 12;">
+            <p>Đồng hành cùng <strong>P5 Plus</strong> và <strong>NextGen</strong>. Khai thác câu chuyện sắc bén và dẫn
+                dắt luồng giao tiếp mượt mà.</p>
+        </div>
+    </div>
+
+    <div class="page" style="background: var(--bg-cream);">
+        <div class="header right">
+            <div class="subtitle">MOMENTS</div>
+            <h2 class="section-title">Talk Show Gallery</h2>
+        </div>
+
+        <div class="gallery-container">
+            <div class="span-2x2"><img class="gal-img"
+                    src="https://images.unsplash.com/photo-1470229722913-7c090be5c5b5?auto=format&fit=crop&w=800&q=80"
+                    alt="Event"></div>
+            <div class="span-2x1"><img class="gal-img"
+                    src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&w=800&q=80"
+                    alt="Event"></div>
+            <div class="span-1x2"><img class="gal-img"
+                    src="https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=800&q=80"
+                    alt="Event"></div>
+            <div class="span-1x1"><img class="gal-img"
+                    src="https://images.unsplash.com/photo-1515187029135-18ee286d815b?auto=format&fit=crop&w=800&q=80"
+                    alt="Event"></div>
+            <div class="span-2x1"><img class="gal-img"
+                    src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&w=800&q=80"
+                    alt="Event"></div>
+            <div class="span-1x1"><img class="gal-img"
+                    src="https://images.unsplash.com/photo-1522158637959-30385a09e0da?auto=format&fit=crop&w=800&q=80"
+                    alt="Event"></div>
+        </div>
+    </div>
+
+    <div class="page">
+        <div class="header">
+            <div class="subtitle">LĨNH VỰC MC</div>
+            <h2 class="section-title">MC Weddings</h2>
+        </div>
+
+        <div
+            style="position: absolute; top: 40mm; left: 20mm; width: 140mm; height: 140mm; border-radius: 50%; overflow: hidden; z-index: 1;">
+            <img class="img-cover"
+                src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&fit=crop&w=1200&q=80"
+                alt="Wedding BG">
+        </div>
+        <div
+            style="position: absolute; top: 20mm; right: 20mm; width: 100mm; height: 180mm; border-radius: 20px; overflow: hidden; z-index: 2;">
+            <img class="img-cover"
+                src="https://images.unsplash.com/photo-1469371670807-013ccf25f16a?auto=format&fit=crop&w=800&q=80"
+                alt="Romance BG">
+        </div>
+
+        <img class="img-cutout" style="left: 90mm; height: 95%; z-index: 10;"
+            src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=800&q=80"
+            alt="MC Wedding Front">
+    </div>
+
+    <div class="page" style="background: var(--bg-cream);">
+        <div class="header right">
+            <div class="subtitle">MOMENTS</div>
+            <h2 class="section-title">Wedding Gallery</h2>
+        </div>
+
+        <div class="gallery-container">
+            <div class="span-2x2"><img class="gal-img"
+                    src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=800&q=80"
+                    alt="Wedding"></div>
+            <div class="span-2x1"><img class="gal-img"
+                    src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&fit=crop&w=800&q=80"
+                    alt="Wedding"></div>
+            <div class="span-1x2"><img class="gal-img"
+                    src="https://images.unsplash.com/photo-1469371670807-013ccf25f16a?auto=format&fit=crop&w=800&q=80"
+                    alt="Wedding"></div>
+            <div class="span-1x1"><img class="gal-img"
+                    src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=800&q=80"
+                    alt="Wedding"></div>
+            <div class="span-2x1"><img class="gal-img"
+                    src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&fit=crop&w=800&q=80"
+                    alt="Wedding"></div>
+            <div class="span-1x1"><img class="gal-img"
+                    src="https://images.unsplash.com/photo-1469371670807-013ccf25f16a?auto=format&fit=crop&w=800&q=80"
+                    alt="Wedding"></div>
+        </div>
+    </div>
+
+    <div class="page">
+        <div class="header right">
+            <div class="subtitle">LĨNH VỰC MC</div>
+            <h2 class="section-title">MC Active</h2>
+        </div>
+
+        <div
+            style="position: absolute; top: 10mm; left: 10mm; width: 160mm; height: 190mm; border-radius: 20px; overflow: hidden; z-index: 1;">
+            <img class="img-cover"
+                src="https://images.unsplash.com/photo-1501281668745-f7f57925c3b4?auto=format&fit=crop&w=800&q=80"
+                alt="Crowd BG">
+        </div>
+
+        <img class="img-cutout" style="right: 40mm; height: 85%; z-index: 10;"
+            src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=800&q=80"
+            alt="MC Active Front">
+
+        <div class="glass-box" style="position: absolute; top: 60mm; right: 20mm; width: 80mm; z-index: 12;">
+            <p style="font-weight: 600; color: var(--navy-blue);">• Kỹ năng hoạt náo</p>
+            <p style="font-weight: 600; color: var(--navy-blue); margin-top: 10px;">• Đa dạng phong cách</p>
+            <p style="margin-top: 15px;">Đồng hành cùng <strong>Grab Unlimited</strong>.</p>
+        </div>
+    </div>
+
+    <div class="page" style="background: var(--bg-cream);">
+        <div class="header">
+            <div class="subtitle">MOMENTS</div>
+            <h2 class="section-title">Active Gallery</h2>
+        </div>
+
+        <div class="gallery-container">
+            <div class="span-2x2"><img class="gal-img"
+                    src="https://images.unsplash.com/photo-1540039155732-6a71064cb613?auto=format&fit=crop&w=800&q=80"
+                    alt="Active"></div>
+            <div class="span-2x1"><img class="gal-img"
+                    src="https://images.unsplash.com/photo-1522158637959-30385a09e0da?auto=format&fit=crop&w=800&q=80"
+                    alt="Active"></div>
+            <div class="span-1x2"><img class="gal-img"
+                    src="https://images.unsplash.com/photo-1429962714451-bb934ecdc4ec?auto=format&fit=crop&w=800&q=80"
+                    alt="Active"></div>
+            <div class="span-1x1"><img class="gal-img"
+                    src="https://images.unsplash.com/photo-1501281668745-f7f57925c3b4?auto=format&fit=crop&w=800&q=80"
+                    alt="Active"></div>
+            <div class="span-2x1"><img class="gal-img"
+                    src="https://images.unsplash.com/photo-1540039155732-6a71064cb613?auto=format&fit=crop&w=800&q=80"
+                    alt="Active"></div>
+            <div class="span-1x1"><img class="gal-img"
+                    src="https://images.unsplash.com/photo-1522158637959-30385a09e0da?auto=format&fit=crop&w=800&q=80"
+                    alt="Active"></div>
+        </div>
+    </div>
+
+    <div class="page">
+        <div class="header">
+            <div class="subtitle">LĨNH VỰC MC</div>
+            <h2 class="section-title">MC YEP</h2>
+        </div>
+
+        <div
+            style="position: absolute; top: 15mm; right: 15mm; width: 160mm; height: 180mm; background: var(--navy-blue); border-radius: 15px; overflow: hidden; z-index: 1;">
+            <img class="img-cover"
+                src="https://images.unsplash.com/photo-1470229722913-7c090be5c5b5?auto=format&fit=crop&w=800&q=80"
+                alt="YEP BG" style="opacity: 0.8;">
+        </div>
+
+        <img class="img-cutout" style="left: 30mm; height: 95%; z-index: 10;"
+            src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=800&q=80"
+            alt="YEP Front">
+
+        <div class="script-text"
+            style="position: absolute; bottom: 30mm; right: 30mm; font-size: 80pt; color: #fff; z-index: 5; text-shadow: 0 5px 15px rgba(0,0,0,0.5);">
+            Year End<br>Party</div>
+    </div>
+
+    <div class="page" style="background: var(--bg-cream);">
+        <div class="header right">
+            <div class="subtitle">MOMENTS</div>
+            <h2 class="section-title">YEP Gallery</h2>
+        </div>
+
+        <div class="gallery-container">
+            <div class="span-2x2"><img class="gal-img"
+                    src="https://images.unsplash.com/photo-1470229722913-7c090be5c5b5?auto=format&fit=crop&w=800&q=80"
+                    alt="YEP"></div>
+            <div class="span-2x1"><img class="gal-img"
+                    src="https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=800&q=80"
+                    alt="YEP"></div>
+            <div class="span-1x2"><img class="gal-img"
+                    src="https://images.unsplash.com/photo-1501281668745-f7f57925c3b4?auto=format&fit=crop&w=800&q=80"
+                    alt="YEP"></div>
+            <div class="span-1x1"><img class="gal-img"
+                    src="https://images.unsplash.com/photo-1470229722913-7c090be5c5b5?auto=format&fit=crop&w=800&q=80"
+                    alt="YEP"></div>
+            <div class="span-2x1"><img class="gal-img"
+                    src="https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=800&q=80"
+                    alt="YEP"></div>
+            <div class="span-1x1"><img class="gal-img"
+                    src="https://images.unsplash.com/photo-1501281668745-f7f57925c3b4?auto=format&fit=crop&w=800&q=80"
+                    alt="YEP"></div>
+        </div>
+    </div>
+
+    <div class="page">
+        <div class="header right">
+            <div class="subtitle">LĨNH VỰC MC</div>
+            <h2 class="section-title">Voice Talent</h2>
+        </div>
+
+        <div
+            style="position: absolute; top: 40mm; left: 20mm; width: 130mm; height: 140mm; clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%); z-index: 2;">
+            <img class="img-cover"
+                src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?auto=format&fit=crop&w=800&q=80"
+                alt="Voice Talent">
+        </div>
+
+        <div class="glass-box" style="position: absolute; top: 80mm; right: 20mm; width: 120mm; text-align: right;">
+            <h3 style="color: var(--accent-red); font-size: 24pt; margin-bottom: 20px;">MC Song Ngữ</h3>
+            <p style="font-weight: 600; font-size: 12pt; margin-bottom: 10px;">Giáo dục, thương mại, du lịch</p>
+            <h3 style="color: var(--accent-red); font-size: 24pt; margin-bottom: 20px; margin-top: 20px;">Live Streamer
+            </h3>
+            <p style="font-weight: 600; font-size: 12pt;">TVC Quảng cáo, Podcast chữa lành</p>
+        </div>
+    </div>
+
+    <div class="page" style="background: var(--bg-cream);">
+        <div class="header">
+            <h2 class="section-title">My Clients</h2>
+            <div class="subtitle" style="font-size: 10pt; color: var(--text-dark);">Đơn vị đã hợp tác</div>
+        </div>
+
+        <div
+            style="position: absolute; top: 50mm; left: 20mm; width: 160mm; display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; z-index: 10;">
+            <div
+                style="background: #fff; border: 1px solid #ddd; height: 25mm; display: flex; align-items: center; justify-content: center; font-weight: 700; border-radius: 8px; color: var(--navy-blue); font-size: 10pt;">
+                GRAB</div>
+            <div
+                style="background: #fff; border: 1px solid #ddd; height: 25mm; display: flex; align-items: center; justify-content: center; font-weight: 700; border-radius: 8px; color: var(--navy-blue); font-size: 10pt;">
+                ENSURE</div>
+            <div
+                style="background: #fff; border: 1px solid #ddd; height: 25mm; display: flex; align-items: center; justify-content: center; font-weight: 700; border-radius: 8px; color: var(--navy-blue); font-size: 10pt;">
+                DOVE</div>
+            <div
+                style="background: #fff; border: 1px solid #ddd; height: 25mm; display: flex; align-items: center; justify-content: center; font-weight: 700; border-radius: 8px; color: var(--navy-blue); font-size: 10pt;">
+                CLOSEUP</div>
+            <div
+                style="background: #fff; border: 1px solid #ddd; height: 25mm; display: flex; align-items: center; justify-content: center; font-weight: 700; border-radius: 8px; color: var(--navy-blue); font-size: 10pt;">
+                GALAXY CINEMA</div>
+            <div
+                style="background: #fff; border: 1px solid #ddd; height: 25mm; display: flex; align-items: center; justify-content: center; font-weight: 700; border-radius: 8px; color: var(--navy-blue); font-size: 10pt;">
+                PAPA LEE'S</div>
+            <div
+                style="background: #fff; border: 1px solid #ddd; height: 25mm; display: flex; align-items: center; justify-content: center; font-weight: 700; border-radius: 8px; color: var(--navy-blue); font-size: 10pt;">
+                ANH MỸ</div>
+            <div
+                style="background: #fff; border: 1px solid #ddd; height: 25mm; display: flex; align-items: center; justify-content: center; font-weight: 700; border-radius: 8px; color: var(--navy-blue); font-size: 10pt;">
+                DAI-ICHI LIFE</div>
+        </div>
+
+        <div
+            style="position: absolute; top: 30mm; right: 20mm; width: 90mm; height: 90mm; border-radius: 50%; overflow: hidden; border: 5px solid var(--light-blue); z-index: 5;">
+            <img class="img-cover"
+                src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=800&q=80"
+                alt="Client Portrait">
+        </div>
+    </div>
+
+    <div class="page">
+        <div
+            style="position: absolute; top: 40mm; left: 40mm; width: 80mm; height: 80mm; background: #fff; border: 4px solid var(--navy-blue); border-radius: 20px; display: flex; align-items: center; justify-content: center; font-weight: 700;">
+            [ QR CODE ]
+        </div>
+
+        <div style="position: absolute; top: 60mm; right: 40mm; width: 120mm; text-align: center; z-index: 10;">
+            <h1 class="title-huge" style="font-size: 40pt; margin-bottom: 10px;">THANK YOU</h1>
+            <p style="font-size: 16pt; font-weight: 600; color: var(--text-dark);">Rất mong được hợp tác<br>cùng Quý đối
+                tác</p>
+            <div class="script-text" style="margin-top: 20px;">Thùy Trang</div>
+        </div>
+    </div>
+
+</body>
+
+</html>

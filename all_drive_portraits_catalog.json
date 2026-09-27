@@ -1,0 +1,2405 @@
+{
+  "total_candidates": 357,
+  "folder_stats": {
+    "Activation - Bia Sài Gòn - Lễ trao giải": {
+      "total_photos": 1,
+      "high_res_candidates": 1
+    },
+    "Activation - Budweiser - Săn quà World Cup": {
+      "total_photos": 13,
+      "high_res_candidates": 8
+    },
+    "Activation - Citigym - Ngày tim mạch thế giới": {
+      "total_photos": 2,
+      "high_res_candidates": 1
+    },
+    "Activation - Citigym - Trạm quay thưởng Marathon": {
+      "total_photos": 8,
+      "high_res_candidates": 6
+    },
+    "Activation - Dove - Valentine's Day": {
+      "total_photos": 3,
+      "high_res_candidates": 2
+    },
+    "Activation - Downy - Ngày thơm với chị đẹp Ninh Dương Lan Ngọc": {
+      "total_photos": 5,
+      "high_res_candidates": 5
+    },
+    "Activation - Tiktok - Black Friday": {
+      "total_photos": 3,
+      "high_res_candidates": 2
+    },
+    "Event - 3V Group - Cột mốc 10 năm": {
+      "total_photos": 8,
+      "high_res_candidates": 8
+    },
+    "Event - Danone (Aptamil) - Hội nghị khách hàng 2025": {
+      "total_photos": 38,
+      "high_res_candidates": 34
+    },
+    "Event - TAG EDU - Lễ vinh danh học viên xuất sắc": {
+      "total_photos": 5,
+      "high_res_candidates": 2
+    },
+    "Gala Dinner - Tân Phú Therapy": {
+      "total_photos": 14,
+      "high_res_candidates": 5
+    },
+    "Halloween - Tiểu học Tân Quý Tây": {
+      "total_photos": 13,
+      "high_res_candidates": 11
+    },
+    "Hội thảo - Gala Dinner - Cấy ghép implant & Xâm lấn tối thiểu": {
+      "total_photos": 14,
+      "high_res_candidates": 3
+    },
+    "Hội thảo - MOAZ ECO - VietBaby Fair": {
+      "total_photos": 14,
+      "high_res_candidates": 7
+    },
+    "Hội thảo - Wakodo - Ăn dậm kiểu Nhật": {
+      "total_photos": 9,
+      "high_res_candidates": 7
+    },
+    "Khai trương - Circle K - Chi nhánh quận 7": {
+      "total_photos": 5,
+      "high_res_candidates": 5
+    },
+    "Khai trương - Hacom - Chi nhánh Gò Vấp": {
+      "total_photos": 17,
+      "high_res_candidates": 12
+    },
+    "Khai trương - Phở Việt Nam - Chi nhánh quận 1": {
+      "total_photos": 10,
+      "high_res_candidates": 3
+    },
+    "Lauching Event - Cat's lab - Sự kiện ra mắt sản phẩm ": {
+      "total_photos": 6,
+      "high_res_candidates": 3
+    },
+    "Lauching Event - Gari Gari Kun - Chương trình dùng thử & Ra mắt sản phẩm": {
+      "total_photos": 6,
+      "high_res_candidates": 6
+    },
+    "Lauching Event - Grab - Concert Anh Trai Say Hi": {
+      "total_photos": 6,
+      "high_res_candidates": 3
+    },
+    "Lauching Event - Hảo Hảo - Sự kiện ra mắt Hảo Hảo Handy + Kẹo muối": {
+      "total_photos": 6,
+      "high_res_candidates": 4
+    },
+    "Lauching Event - Honor - Sự kiện ra mắt & Trải nghiệm Honor X9c": {
+      "total_photos": 4,
+      "high_res_candidates": 1
+    },
+    "Lauching Event - Huawei - Sự kiện ra mắt Huawei Watch GT5": {
+      "total_photos": 2,
+      "high_res_candidates": 1
+    },
+    "Lauching Event - L'oréal - Sự kiện ra mắt sản phẩm": {
+      "total_photos": 16,
+      "high_res_candidates": 15
+    },
+    "Lauching Event - Lactacyd - Sự kiện ra mắt Lactacyd Cool Sensation": {
+      "total_photos": 4,
+      "high_res_candidates": 3
+    },
+    "Lauching Event - LocknLock - Sự kiện ra mắt máy sấy tạo kiểu": {
+      "total_photos": 5,
+      "high_res_candidates": 3
+    },
+    "Lauching Event - Nisshin Seifun Welna - Lễ hội Việt Nhật": {
+      "total_photos": 2,
+      "high_res_candidates": 1
+    },
+    "Lauching Event - Oishi - Ra mắt Oishi Tater Thins": {
+      "total_photos": 18,
+      "high_res_candidates": 10
+    },
+    "Lễ quốc tế thiếu nhi - Đảo Kim Cương": {
+      "total_photos": 5,
+      "high_res_candidates": 5
+    },
+    "Lễ trao bằng - Trung tâm ngoại ngữ quốc tế Anh Mỹ  (2026)": {
+      "total_photos": 10,
+      "high_res_candidates": 1
+    },
+    "Lễ trao bằng - Trung tâm ngoại ngữ quốc tế Anh Mỹ (2024)": {
+      "total_photos": 16,
+      "high_res_candidates": 1
+    },
+    "Lễ trao bằng - Trung tâm ngoại ngữ quốc tế Anh Mỹ (2025)": {
+      "total_photos": 22,
+      "high_res_candidates": 9
+    },
+    "Livestream - Keyshe - Flash Sale": {
+      "total_photos": 3,
+      "high_res_candidates": 0
+    },
+    "MC review x VJ - Keyshe": {
+      "total_photos": 1,
+      "high_res_candidates": 0
+    },
+    "Party - Sinh nhật ": {
+      "total_photos": 4,
+      "high_res_candidates": 3
+    },
+    "Phim - Thỏ ơi": {
+      "total_photos": 6,
+      "high_res_candidates": 6
+    },
+    "Ra mắt phim - Bí kiếp luyện rồng": {
+      "total_photos": 0,
+      "high_res_candidates": 0
+    },
+    "Ra mắt phim - Conan": {
+      "total_photos": 0,
+      "high_res_candidates": 0
+    },
+    "Ra mắt phim - Cục vàng của ngoại - Cinetour": {
+      "total_photos": 7,
+      "high_res_candidates": 3
+    },
+    "Ra mắt phim - Doraemon - Nobita và cuộc phiêu lưu vào thế giới trong tranh": {
+      "total_photos": 2,
+      "high_res_candidates": 1
+    },
+    "Ra mắt phim - Hoàng Tử Quỷ - Cinetour": {
+      "total_photos": 11,
+      "high_res_candidates": 3
+    },
+    "Ra mắt phim - Khế ước bán dâu - Cinetour": {
+      "total_photos": 3,
+      "high_res_candidates": 0
+    },
+    "Ra mắt phim - Lotte Mart": {
+      "total_photos": 3,
+      "high_res_candidates": 3
+    },
+    "Ra mắt phim - Nhà Gia Tiên - Cinetour": {
+      "total_photos": 5,
+      "high_res_candidates": 4
+    },
+    "Ra mắt phim - Sponge pop": {
+      "total_photos": 0,
+      "high_res_candidates": 0
+    },
+    "Song ngữ - Dazi Signature - Merry Christmas": {
+      "total_photos": 13,
+      "high_res_candidates": 13
+    },
+    "Song ngữ - Khai trương - Kira Art & Coffee": {
+      "total_photos": 37,
+      "high_res_candidates": 17
+    },
+    "Song ngữ - Wedding & Lễ gia tiên - Phượng Hoàng & Harris": {
+      "total_photos": 17,
+      "high_res_candidates": 11
+    },
+    "Talkshow - HTV9 - Gia tăng nhận thức về bệnh hen suyễn": {
+      "total_photos": 21,
+      "high_res_candidates": 15
+    },
+    "Talkshow - Huy Forum x Lê Tiêu Linh - Master your language": {
+      "total_photos": 16,
+      "high_res_candidates": 6
+    },
+    "Trung thu - Kira Art & Coffee": {
+      "total_photos": 9,
+      "high_res_candidates": 7
+    },
+    "Trung thu - Thảo điền Pearl": {
+      "total_photos": 9,
+      "high_res_candidates": 9
+    },
+    "Trung thu - Tropic Garden": {
+      "total_photos": 5,
+      "high_res_candidates": 5
+    },
+    "Wedding - Lễ vu quy - Kim Ngân & Minh Tiến": {
+      "total_photos": 18,
+      "high_res_candidates": 14
+    },
+    "Wedding - Tân hôn - Hoàng Phúc & Diễm Kiều": {
+      "total_photos": 10,
+      "high_res_candidates": 5
+    },
+    "Workshop - Đại học Hồng Bàng": {
+      "total_photos": 6,
+      "high_res_candidates": 6
+    },
+    "YEP -  ZENS (2026)": {
+      "total_photos": 9,
+      "high_res_candidates": 9
+    },
+    "YEP - 2025": {
+      "total_photos": 3,
+      "high_res_candidates": 1
+    },
+    "YEP - Dòng họ Hoàng Đình": {
+      "total_photos": 1,
+      "high_res_candidates": 1
+    },
+    "YEP - Hội đồng hương xóm Lộc Nội": {
+      "total_photos": 4,
+      "high_res_candidates": 4
+    },
+    "YEP - PAPA LEE'S (2024)": {
+      "total_photos": 19,
+      "high_res_candidates": 1
+    },
+    "YEP - PAPA LEE'S (2025)": {
+      "total_photos": 22,
+      "high_res_candidates": 22
+    },
+    "Đào tạo MC - Trung tâm Đồ Rê Mí": {
+      "total_photos": 2,
+      "high_res_candidates": 0
+    }
+  },
+  "catalog": [
+    {
+      "folder": "Activation - Bia Sài Gòn - Lễ trao giải",
+      "filename": "MC Thùy Trang - Bia Sài Gòn - Rút thăm trúng thưởngjpg.jpg",
+      "rel_path": "Activation - Bia Sài Gòn - Lễ trao giải/MC Thùy Trang - Bia Sài Gòn - Rút thăm trúng thưởngjpg.jpg",
+      "size_kb": 618.6
+    },
+    {
+      "folder": "Activation - Budweiser - Săn quà World Cup",
+      "filename": "Activation - Budweiser - Săn quà World Cup_Gallery.jpg",
+      "rel_path": "Activation - Budweiser - Săn quà World Cup/Activation - Budweiser - Săn quà World Cup_Gallery.jpg",
+      "size_kb": 3487.7
+    },
+    {
+      "folder": "Activation - Budweiser - Săn quà World Cup",
+      "filename": "IMG_4919.jpg",
+      "rel_path": "Activation - Budweiser - Săn quà World Cup/IMG_4919.jpg",
+      "size_kb": 1211.3
+    },
+    {
+      "folder": "Activation - Budweiser - Săn quà World Cup",
+      "filename": "IMG_4974.jpg",
+      "rel_path": "Activation - Budweiser - Săn quà World Cup/IMG_4974.jpg",
+      "size_kb": 1300.1
+    },
+    {
+      "folder": "Activation - Budweiser - Săn quà World Cup",
+      "filename": "Mc Thùy Trang-Budweiser (2).jpg",
+      "rel_path": "Activation - Budweiser - Săn quà World Cup/Mc Thùy Trang-Budweiser (2).jpg",
+      "size_kb": 778.7
+    },
+    {
+      "folder": "Activation - Budweiser - Săn quà World Cup",
+      "filename": "Mc Thùy Trang-Budweiser (3).jpg",
+      "rel_path": "Activation - Budweiser - Săn quà World Cup/Mc Thùy Trang-Budweiser (3).jpg",
+      "size_kb": 4981.2
+    },
+    {
+      "folder": "Activation - Budweiser - Săn quà World Cup",
+      "filename": "Mc Thùy Trang-Budweiser (4).jpg",
+      "rel_path": "Activation - Budweiser - Săn quà World Cup/Mc Thùy Trang-Budweiser (4).jpg",
+      "size_kb": 4551.7
+    },
+    {
+      "folder": "Activation - Budweiser - Săn quà World Cup",
+      "filename": "Mc Thùy Trang-Budweiser.jpg",
+      "rel_path": "Activation - Budweiser - Săn quà World Cup/Mc Thùy Trang-Budweiser.jpg",
+      "size_kb": 5630.7
+    },
+    {
+      "folder": "Activation - Budweiser - Săn quà World Cup",
+      "filename": "Messenger_creation_6D6B3114-6F59-4A6A-9C8E-D6CB94A4E4D0.jpg",
+      "rel_path": "Activation - Budweiser - Săn quà World Cup/Messenger_creation_6D6B3114-6F59-4A6A-9C8E-D6CB94A4E4D0.jpg",
+      "size_kb": 1022.9
+    },
+    {
+      "folder": "Activation - Citigym - Ngày tim mạch thế giới",
+      "filename": "556310187_2254068591698760_25553858571170487_n.jpg",
+      "rel_path": "Activation - Citigym - Ngày tim mạch thế giới/556310187_2254068591698760_25553858571170487_n.jpg",
+      "size_kb": 499.9
+    },
+    {
+      "folder": "Activation - Citigym - Trạm quay thưởng Marathon",
+      "filename": "615148486_2343110749461210_418934426439933506_n.jpg",
+      "rel_path": "Activation - Citigym - Trạm quay thưởng Marathon/615148486_2343110749461210_418934426439933506_n.jpg",
+      "size_kb": 457.7
+    },
+    {
+      "folder": "Activation - Citigym - Trạm quay thưởng Marathon",
+      "filename": "615714593_2343110802794538_2272731152781712584_n.jpg",
+      "rel_path": "Activation - Citigym - Trạm quay thưởng Marathon/615714593_2343110802794538_2272731152781712584_n.jpg",
+      "size_kb": 469.7
+    },
+    {
+      "folder": "Activation - Citigym - Trạm quay thưởng Marathon",
+      "filename": "Activation - Citigym - Trạm quay thưởng Marathon_Gallery.jpg",
+      "rel_path": "Activation - Citigym - Trạm quay thưởng Marathon/Activation - Citigym - Trạm quay thưởng Marathon_Gallery.jpg",
+      "size_kb": 658.3
+    },
+    {
+      "folder": "Activation - Citigym - Trạm quay thưởng Marathon",
+      "filename": "DSC00805.JPG",
+      "rel_path": "Activation - Citigym - Trạm quay thưởng Marathon/DSC00805.JPG",
+      "size_kb": 13432.0
+    },
+    {
+      "folder": "Activation - Citigym - Trạm quay thưởng Marathon",
+      "filename": "DSC00902.JPG",
+      "rel_path": "Activation - Citigym - Trạm quay thưởng Marathon/DSC00902.JPG",
+      "size_kb": 11107.8
+    },
+    {
+      "folder": "Activation - Citigym - Trạm quay thưởng Marathon",
+      "filename": "IMG_1768021659147_1768045493117.jpg",
+      "rel_path": "Activation - Citigym - Trạm quay thưởng Marathon/IMG_1768021659147_1768045493117.jpg",
+      "size_kb": 428.2
+    },
+    {
+      "folder": "Activation - Dove - Valentine's Day",
+      "filename": "IMG_1739508337977_1739516248130.jpg",
+      "rel_path": "Activation - Dove - Valentine's Day/IMG_1739508337977_1739516248130.jpg",
+      "size_kb": 791.7
+    },
+    {
+      "folder": "Activation - Dove - Valentine's Day",
+      "filename": "TimePhoto_20250214_121206.jpg",
+      "rel_path": "Activation - Dove - Valentine's Day/TimePhoto_20250214_121206.jpg",
+      "size_kb": 1488.7
+    },
+    {
+      "folder": "Activation - Downy - Ngày thơm với chị đẹp Ninh Dương Lan Ngọc",
+      "filename": "551086490_2247764738995812_3326685357306846442_n.jpg",
+      "rel_path": "Activation - Downy - Ngày thơm với chị đẹp Ninh Dương Lan Ngọc/551086490_2247764738995812_3326685357306846442_n.jpg",
+      "size_kb": 642.7
+    },
+    {
+      "folder": "Activation - Downy - Ngày thơm với chị đẹp Ninh Dương Lan Ngọc",
+      "filename": "552930519_2247764788995807_88773371908642070_n.jpg",
+      "rel_path": "Activation - Downy - Ngày thơm với chị đẹp Ninh Dương Lan Ngọc/552930519_2247764788995807_88773371908642070_n.jpg",
+      "size_kb": 667.4
+    },
+    {
+      "folder": "Activation - Downy - Ngày thơm với chị đẹp Ninh Dương Lan Ngọc",
+      "filename": "553408046_2247764655662487_1249063000634893711_n.jpg",
+      "rel_path": "Activation - Downy - Ngày thơm với chị đẹp Ninh Dương Lan Ngọc/553408046_2247764655662487_1249063000634893711_n.jpg",
+      "size_kb": 528.5
+    },
+    {
+      "folder": "Activation - Downy - Ngày thơm với chị đẹp Ninh Dương Lan Ngọc",
+      "filename": "554379293_2247764535662499_4830759049965897443_n.jpg",
+      "rel_path": "Activation - Downy - Ngày thơm với chị đẹp Ninh Dương Lan Ngọc/554379293_2247764535662499_4830759049965897443_n.jpg",
+      "size_kb": 631.9
+    },
+    {
+      "folder": "Activation - Downy - Ngày thơm với chị đẹp Ninh Dương Lan Ngọc",
+      "filename": "Activation - Downy - Ngày thơm với chị đẹp Ninh Dương Lan Ngọc_Gallery.jpg",
+      "rel_path": "Activation - Downy - Ngày thơm với chị đẹp Ninh Dương Lan Ngọc/Activation - Downy - Ngày thơm với chị đẹp Ninh Dương Lan Ngọc_Gallery.jpg",
+      "size_kb": 486.8
+    },
+    {
+      "folder": "Activation - Tiktok - Black Friday",
+      "filename": "z6178631228516_b7615634ac63ec40a16a01e17ff3b961.jpg",
+      "rel_path": "Activation - Tiktok - Black Friday/z6178631228516_b7615634ac63ec40a16a01e17ff3b961.jpg",
+      "size_kb": 542.3
+    },
+    {
+      "folder": "Activation - Tiktok - Black Friday",
+      "filename": "z6178631231031_17fd641329734759271ad56657e253c3.jpg",
+      "rel_path": "Activation - Tiktok - Black Friday/z6178631231031_17fd641329734759271ad56657e253c3.jpg",
+      "size_kb": 694.2
+    },
+    {
+      "folder": "Event - 3V Group - Cột mốc 10 năm",
+      "filename": "594623662_2312162345889384_5435714321252050425_n.jpg",
+      "rel_path": "Event - 3V Group - Cột mốc 10 năm/594623662_2312162345889384_5435714321252050425_n.jpg",
+      "size_kb": 501.7
+    },
+    {
+      "folder": "Event - 3V Group - Cột mốc 10 năm",
+      "filename": "594629229_2312165552555730_822646480464663399_n.jpg",
+      "rel_path": "Event - 3V Group - Cột mốc 10 năm/594629229_2312165552555730_822646480464663399_n.jpg",
+      "size_kb": 539.2
+    },
+    {
+      "folder": "Event - 3V Group - Cột mốc 10 năm",
+      "filename": "594651526_2312162145889404_5519578492486515069_n.jpg",
+      "rel_path": "Event - 3V Group - Cột mốc 10 năm/594651526_2312162145889404_5519578492486515069_n.jpg",
+      "size_kb": 616.7
+    },
+    {
+      "folder": "Event - 3V Group - Cột mốc 10 năm",
+      "filename": "594671936_2312162239222728_1470774388410473610_n.jpg",
+      "rel_path": "Event - 3V Group - Cột mốc 10 năm/594671936_2312162239222728_1470774388410473610_n.jpg",
+      "size_kb": 422.7
+    },
+    {
+      "folder": "Event - 3V Group - Cột mốc 10 năm",
+      "filename": "594745564_2312165605889058_3186734805224850890_n.jpg",
+      "rel_path": "Event - 3V Group - Cột mốc 10 năm/594745564_2312165605889058_3186734805224850890_n.jpg",
+      "size_kb": 680.2
+    },
+    {
+      "folder": "Event - 3V Group - Cột mốc 10 năm",
+      "filename": "594810046_2312162009222751_3653279857183737607_n.jpg",
+      "rel_path": "Event - 3V Group - Cột mốc 10 năm/594810046_2312162009222751_3653279857183737607_n.jpg",
+      "size_kb": 929.2
+    },
+    {
+      "folder": "Event - 3V Group - Cột mốc 10 năm",
+      "filename": "596111702_2312165459222406_7056838181681201451_n.jpg",
+      "rel_path": "Event - 3V Group - Cột mốc 10 năm/596111702_2312165459222406_7056838181681201451_n.jpg",
+      "size_kb": 547.9
+    },
+    {
+      "folder": "Event - 3V Group - Cột mốc 10 năm",
+      "filename": "Event - 3V Group - Cột mốc 10 năm_Gallery.jpg",
+      "rel_path": "Event - 3V Group - Cột mốc 10 năm/Event - 3V Group - Cột mốc 10 năm_Gallery.jpg",
+      "size_kb": 790.8
+    },
+    {
+      "folder": "Event - Danone (Aptamil) - Hội nghị khách hàng 2025",
+      "filename": "587396223_2301639830274969_4763453554207307465_n.jpg",
+      "rel_path": "Event - Danone (Aptamil) - Hội nghị khách hàng 2025/587396223_2301639830274969_4763453554207307465_n.jpg",
+      "size_kb": 665.2
+    },
+    {
+      "folder": "Event - Danone (Aptamil) - Hội nghị khách hàng 2025",
+      "filename": "587570451_2301638823608403_479650964786615344_n (1).jpg",
+      "rel_path": "Event - Danone (Aptamil) - Hội nghị khách hàng 2025/587570451_2301638823608403_479650964786615344_n (1).jpg",
+      "size_kb": 882.9
+    },
+    {
+      "folder": "Event - Danone (Aptamil) - Hội nghị khách hàng 2025",
+      "filename": "587570451_2301638823608403_479650964786615344_n.jpg",
+      "rel_path": "Event - Danone (Aptamil) - Hội nghị khách hàng 2025/587570451_2301638823608403_479650964786615344_n.jpg",
+      "size_kb": 882.9
+    },
+    {
+      "folder": "Event - Danone (Aptamil) - Hội nghị khách hàng 2025",
+      "filename": "587608047_2301644530274499_3130269121088053705_n.jpg",
+      "rel_path": "Event - Danone (Aptamil) - Hội nghị khách hàng 2025/587608047_2301644530274499_3130269121088053705_n.jpg",
+      "size_kb": 755.7
+    },
+    {
+      "folder": "Event - Danone (Aptamil) - Hội nghị khách hàng 2025",
+      "filename": "587643723_2301641683608117_6925920545441156189_n.jpg",
+      "rel_path": "Event - Danone (Aptamil) - Hội nghị khách hàng 2025/587643723_2301641683608117_6925920545441156189_n.jpg",
+      "size_kb": 714.8
+    },
+    {
+      "folder": "Event - Danone (Aptamil) - Hội nghị khách hàng 2025",
+      "filename": "587658541_2301642060274746_5587621961930285693_n.jpg",
+      "rel_path": "Event - Danone (Aptamil) - Hội nghị khách hàng 2025/587658541_2301642060274746_5587621961930285693_n.jpg",
+      "size_kb": 533.2
+    },
+    {
+      "folder": "Event - Danone (Aptamil) - Hội nghị khách hàng 2025",
+      "filename": "587669919_2301641486941470_6711021276113247592_n.jpg",
+      "rel_path": "Event - Danone (Aptamil) - Hội nghị khách hàng 2025/587669919_2301641486941470_6711021276113247592_n.jpg",
+      "size_kb": 814.1
+    },
+    {
+      "folder": "Event - Danone (Aptamil) - Hội nghị khách hàng 2025",
+      "filename": "587698353_2301640820274870_7414528752483268177_n.jpg",
+      "rel_path": "Event - Danone (Aptamil) - Hội nghị khách hàng 2025/587698353_2301640820274870_7414528752483268177_n.jpg",
+      "size_kb": 759.3
+    },
+    {
+      "folder": "Event - Danone (Aptamil) - Hội nghị khách hàng 2025",
+      "filename": "587703764_2301640023608283_1819650395024366917_n.jpg",
+      "rel_path": "Event - Danone (Aptamil) - Hội nghị khách hàng 2025/587703764_2301640023608283_1819650395024366917_n.jpg",
+      "size_kb": 658.4
+    },
+    {
+      "folder": "Event - Danone (Aptamil) - Hội nghị khách hàng 2025",
+      "filename": "587707289_2301641593608126_5121905562876696868_n.jpg",
+      "rel_path": "Event - Danone (Aptamil) - Hội nghị khách hàng 2025/587707289_2301641593608126_5121905562876696868_n.jpg",
+      "size_kb": 590.1
+    },
+    {
+      "folder": "Event - Danone (Aptamil) - Hội nghị khách hàng 2025",
+      "filename": "587720427_2301640383608247_6495126299976510834_n.jpg",
+      "rel_path": "Event - Danone (Aptamil) - Hội nghị khách hàng 2025/587720427_2301640383608247_6495126299976510834_n.jpg",
+      "size_kb": 516.4
+    },
+    {
+      "folder": "Event - Danone (Aptamil) - Hội nghị khách hàng 2025",
+      "filename": "587773571_2301641776941441_920510556256073_n.jpg",
+      "rel_path": "Event - Danone (Aptamil) - Hội nghị khách hàng 2025/587773571_2301641776941441_920510556256073_n.jpg",
+      "size_kb": 677.3
+    },
+    {
+      "folder": "Event - Danone (Aptamil) - Hội nghị khách hàng 2025",
+      "filename": "587789208_2301641406941478_2838473116783765543_n.jpg",
+      "rel_path": "Event - Danone (Aptamil) - Hội nghị khách hàng 2025/587789208_2301641406941478_2838473116783765543_n.jpg",
+      "size_kb": 604.8
+    },
+    {
+      "folder": "Event - Danone (Aptamil) - Hội nghị khách hàng 2025",
+      "filename": "587798249_2301641290274823_8764529979327053846_n.jpg",
+      "rel_path": "Event - Danone (Aptamil) - Hội nghị khách hàng 2025/587798249_2301641290274823_8764529979327053846_n.jpg",
+      "size_kb": 784.7
+    },
+    {
+      "folder": "Event - Danone (Aptamil) - Hội nghị khách hàng 2025",
+      "filename": "587824405_2301644826941136_3230472481094912005_n.jpg",
+      "rel_path": "Event - Danone (Aptamil) - Hội nghị khách hàng 2025/587824405_2301644826941136_3230472481094912005_n.jpg",
+      "size_kb": 860.1
+    },
+    {
+      "folder": "Event - Danone (Aptamil) - Hội nghị khách hàng 2025",
+      "filename": "587826690_2301641863608099_6303783009604155415_n.jpg",
+      "rel_path": "Event - Danone (Aptamil) - Hội nghị khách hàng 2025/587826690_2301641863608099_6303783009604155415_n.jpg",
+      "size_kb": 597.3
+    },
+    {
+      "folder": "Event - Danone (Aptamil) - Hội nghị khách hàng 2025",
+      "filename": "587834882_2301641326941486_2977863354527222254_n.jpg",
+      "rel_path": "Event - Danone (Aptamil) - Hội nghị khách hàng 2025/587834882_2301641326941486_2977863354527222254_n.jpg",
+      "size_kb": 753.9
+    },
+    {
+      "folder": "Event - Danone (Aptamil) - Hội nghị khách hàng 2025",
+      "filename": "587861935_2301640696941549_3608331065422603619_n.jpg",
+      "rel_path": "Event - Danone (Aptamil) - Hội nghị khách hàng 2025/587861935_2301640696941549_3608331065422603619_n.jpg",
+      "size_kb": 645.0
+    },
+    {
+      "folder": "Event - Danone (Aptamil) - Hội nghị khách hàng 2025",
+      "filename": "587872405_2301641906941428_7209020703800118068_n.jpg",
+      "rel_path": "Event - Danone (Aptamil) - Hội nghị khách hàng 2025/587872405_2301641906941428_7209020703800118068_n.jpg",
+      "size_kb": 536.5
+    },
+    {
+      "folder": "Event - Danone (Aptamil) - Hội nghị khách hàng 2025",
+      "filename": "587920744_2301644733607812_1463258895516759653_n.jpg",
+      "rel_path": "Event - Danone (Aptamil) - Hội nghị khách hàng 2025/587920744_2301644733607812_1463258895516759653_n.jpg",
+      "size_kb": 840.3
+    },
+    {
+      "folder": "Event - Danone (Aptamil) - Hội nghị khách hàng 2025",
+      "filename": "587935108_2301639753608310_8389753704983750542_n.jpg",
+      "rel_path": "Event - Danone (Aptamil) - Hội nghị khách hàng 2025/587935108_2301639753608310_8389753704983750542_n.jpg",
+      "size_kb": 1216.8
+    },
+    {
+      "folder": "Event - Danone (Aptamil) - Hội nghị khách hàng 2025",
+      "filename": "587962698_2301643000274652_39325088737612747_n.jpg",
+      "rel_path": "Event - Danone (Aptamil) - Hội nghị khách hàng 2025/587962698_2301643000274652_39325088737612747_n.jpg",
+      "size_kb": 507.4
+    },
+    {
+      "folder": "Event - Danone (Aptamil) - Hội nghị khách hàng 2025",
+      "filename": "587963963_2301641240274828_2732341625698591140_n.jpg",
+      "rel_path": "Event - Danone (Aptamil) - Hội nghị khách hàng 2025/587963963_2301641240274828_2732341625698591140_n.jpg",
+      "size_kb": 676.3
+    },
+    {
+      "folder": "Event - Danone (Aptamil) - Hội nghị khách hàng 2025",
+      "filename": "587971153_2301641450274807_1672611789128146828_n.jpg",
+      "rel_path": "Event - Danone (Aptamil) - Hội nghị khách hàng 2025/587971153_2301641450274807_1672611789128146828_n.jpg",
+      "size_kb": 662.4
+    },
+    {
+      "folder": "Event - Danone (Aptamil) - Hội nghị khách hàng 2025",
+      "filename": "588015704_2301640330274919_984613472818280903_n.jpg",
+      "rel_path": "Event - Danone (Aptamil) - Hội nghị khách hàng 2025/588015704_2301640330274919_984613472818280903_n.jpg",
+      "size_kb": 721.3
+    },
+    {
+      "folder": "Event - Danone (Aptamil) - Hội nghị khách hàng 2025",
+      "filename": "588045395_2301636893608596_8406823872612050476_n (1).jpg",
+      "rel_path": "Event - Danone (Aptamil) - Hội nghị khách hàng 2025/588045395_2301636893608596_8406823872612050476_n (1).jpg",
+      "size_kb": 606.1
+    },
+    {
+      "folder": "Event - Danone (Aptamil) - Hội nghị khách hàng 2025",
+      "filename": "588045395_2301636893608596_8406823872612050476_n.jpg",
+      "rel_path": "Event - Danone (Aptamil) - Hội nghị khách hàng 2025/588045395_2301636893608596_8406823872612050476_n.jpg",
+      "size_kb": 606.1
+    },
+    {
+      "folder": "Event - Danone (Aptamil) - Hội nghị khách hàng 2025",
+      "filename": "588193088_2301641543608131_8818495520558113311_n.jpg",
+      "rel_path": "Event - Danone (Aptamil) - Hội nghị khách hàng 2025/588193088_2301641543608131_8818495520558113311_n.jpg",
+      "size_kb": 806.0
+    },
+    {
+      "folder": "Event - Danone (Aptamil) - Hội nghị khách hàng 2025",
+      "filename": "588235574_2301637373608548_8487700618259201311_n.jpg",
+      "rel_path": "Event - Danone (Aptamil) - Hội nghị khách hàng 2025/588235574_2301637373608548_8487700618259201311_n.jpg",
+      "size_kb": 877.9
+    },
+    {
+      "folder": "Event - Danone (Aptamil) - Hội nghị khách hàng 2025",
+      "filename": "588375600_2301641646941454_4843910447529044118_n.jpg",
+      "rel_path": "Event - Danone (Aptamil) - Hội nghị khách hàng 2025/588375600_2301641646941454_4843910447529044118_n.jpg",
+      "size_kb": 905.2
+    },
+    {
+      "folder": "Event - Danone (Aptamil) - Hội nghị khách hàng 2025",
+      "filename": "588384039_2301639970274955_5809556268934985599_n.jpg",
+      "rel_path": "Event - Danone (Aptamil) - Hội nghị khách hàng 2025/588384039_2301639970274955_5809556268934985599_n.jpg",
+      "size_kb": 732.2
+    },
+    {
+      "folder": "Event - Danone (Aptamil) - Hội nghị khách hàng 2025",
+      "filename": "588397251_2301643180274634_5751560215993122271_n.jpg",
+      "rel_path": "Event - Danone (Aptamil) - Hội nghị khách hàng 2025/588397251_2301643180274634_5751560215993122271_n.jpg",
+      "size_kb": 624.4
+    },
+    {
+      "folder": "Event - Danone (Aptamil) - Hội nghị khách hàng 2025",
+      "filename": "588466766_2301644600274492_7574435540024386905_n.jpg",
+      "rel_path": "Event - Danone (Aptamil) - Hội nghị khách hàng 2025/588466766_2301644600274492_7574435540024386905_n.jpg",
+      "size_kb": 754.2
+    },
+    {
+      "folder": "Event - Danone (Aptamil) - Hội nghị khách hàng 2025",
+      "filename": "Event - Danone (Aptamil) - Hội nghị khách hàng 2025_Gallery.jpg",
+      "rel_path": "Event - Danone (Aptamil) - Hội nghị khách hàng 2025/Event - Danone (Aptamil) - Hội nghị khách hàng 2025_Gallery.jpg",
+      "size_kb": 5962.3
+    },
+    {
+      "folder": "Event - TAG EDU - Lễ vinh danh học viên xuất sắc",
+      "filename": "Event - TAG EDU - Lễ vinh danh học viên xuất sắc_Gallery.jpg",
+      "rel_path": "Event - TAG EDU - Lễ vinh danh học viên xuất sắc/Event - TAG EDU - Lễ vinh danh học viên xuất sắc_Gallery.jpg",
+      "size_kb": 430.7
+    },
+    {
+      "folder": "Event - TAG EDU - Lễ vinh danh học viên xuất sắc",
+      "filename": "_1110275.jpg",
+      "rel_path": "Event - TAG EDU - Lễ vinh danh học viên xuất sắc/_1110275.jpg",
+      "size_kb": 8248.5
+    },
+    {
+      "folder": "Gala Dinner - Tân Phú Therapy",
+      "filename": "Gala Dinner - Tân Phú Therapy_Gallery.jpg",
+      "rel_path": "Gala Dinner - Tân Phú Therapy/Gala Dinner - Tân Phú Therapy_Gallery.jpg",
+      "size_kb": 1133.3
+    },
+    {
+      "folder": "Gala Dinner - Tân Phú Therapy",
+      "filename": "IMG_1756881655941_1756881696064.jpg",
+      "rel_path": "Gala Dinner - Tân Phú Therapy/IMG_1756881655941_1756881696064.jpg",
+      "size_kb": 455.4
+    },
+    {
+      "folder": "Gala Dinner - Tân Phú Therapy",
+      "filename": "z7014435865182_52c1134791b11ec4cb612053ed8671c2.jpg",
+      "rel_path": "Gala Dinner - Tân Phú Therapy/z7014435865182_52c1134791b11ec4cb612053ed8671c2.jpg",
+      "size_kb": 681.1
+    },
+    {
+      "folder": "Gala Dinner - Tân Phú Therapy",
+      "filename": "z7014435868018_861f3ee25e80ea595e259ce442e865da.jpg",
+      "rel_path": "Gala Dinner - Tân Phú Therapy/z7014435868018_861f3ee25e80ea595e259ce442e865da.jpg",
+      "size_kb": 676.6
+    },
+    {
+      "folder": "Gala Dinner - Tân Phú Therapy",
+      "filename": "z7014435871621_d296ed01f815f4f801ea1f4c466a8a8b.jpg",
+      "rel_path": "Gala Dinner - Tân Phú Therapy/z7014435871621_d296ed01f815f4f801ea1f4c466a8a8b.jpg",
+      "size_kb": 587.6
+    },
+    {
+      "folder": "Halloween - Tiểu học Tân Quý Tây",
+      "filename": "20251030_142315.jpg",
+      "rel_path": "Halloween - Tiểu học Tân Quý Tây/20251030_142315.jpg",
+      "size_kb": 1994.8
+    },
+    {
+      "folder": "Halloween - Tiểu học Tân Quý Tây",
+      "filename": "20251030_142741.jpg",
+      "rel_path": "Halloween - Tiểu học Tân Quý Tây/20251030_142741.jpg",
+      "size_kb": 3157.8
+    },
+    {
+      "folder": "Halloween - Tiểu học Tân Quý Tây",
+      "filename": "Halloween - Tiểu học Tân Quý Tây_Gallery.jpg",
+      "rel_path": "Halloween - Tiểu học Tân Quý Tây/Halloween - Tiểu học Tân Quý Tây_Gallery.jpg",
+      "size_kb": 1685.6
+    },
+    {
+      "folder": "Halloween - Tiểu học Tân Quý Tây",
+      "filename": "IMG_1762786604024_1762786670267.jpg",
+      "rel_path": "Halloween - Tiểu học Tân Quý Tây/IMG_1762786604024_1762786670267.jpg",
+      "size_kb": 596.8
+    },
+    {
+      "folder": "Halloween - Tiểu học Tân Quý Tây",
+      "filename": "IMG_1762786607048_1762786670968.jpg",
+      "rel_path": "Halloween - Tiểu học Tân Quý Tây/IMG_1762786607048_1762786670968.jpg",
+      "size_kb": 650.2
+    },
+    {
+      "folder": "Halloween - Tiểu học Tân Quý Tây",
+      "filename": "IMG_1762786618820_1762786672878.jpg",
+      "rel_path": "Halloween - Tiểu học Tân Quý Tây/IMG_1762786618820_1762786672878.jpg",
+      "size_kb": 670.6
+    },
+    {
+      "folder": "Halloween - Tiểu học Tân Quý Tây",
+      "filename": "IMG_1762786640916_1762786676893.jpg",
+      "rel_path": "Halloween - Tiểu học Tân Quý Tây/IMG_1762786640916_1762786676893.jpg",
+      "size_kb": 612.9
+    },
+    {
+      "folder": "Halloween - Tiểu học Tân Quý Tây",
+      "filename": "IMG_1762786647690_1762786677943.jpg",
+      "rel_path": "Halloween - Tiểu học Tân Quý Tây/IMG_1762786647690_1762786677943.jpg",
+      "size_kb": 626.0
+    },
+    {
+      "folder": "Halloween - Tiểu học Tân Quý Tây",
+      "filename": "IMG_1762786650810_1762786678866.jpg",
+      "rel_path": "Halloween - Tiểu học Tân Quý Tây/IMG_1762786650810_1762786678866.jpg",
+      "size_kb": 877.4
+    },
+    {
+      "folder": "Halloween - Tiểu học Tân Quý Tây",
+      "filename": "MEITU_20251111_131447722.jpg",
+      "rel_path": "Halloween - Tiểu học Tân Quý Tây/MEITU_20251111_131447722.jpg",
+      "size_kb": 490.6
+    },
+    {
+      "folder": "Halloween - Tiểu học Tân Quý Tây",
+      "filename": "MEITU_20251111_131732644.jpg",
+      "rel_path": "Halloween - Tiểu học Tân Quý Tây/MEITU_20251111_131732644.jpg",
+      "size_kb": 2537.6
+    },
+    {
+      "folder": "Hội thảo - Gala Dinner - Cấy ghép implant & Xâm lấn tối thiểu",
+      "filename": "553474239_2248358452269774_5642460373954439064_n.jpg",
+      "rel_path": "Hội thảo - Gala Dinner - Cấy ghép implant & Xâm lấn tối thiểu/553474239_2248358452269774_5642460373954439064_n.jpg",
+      "size_kb": 521.9
+    },
+    {
+      "folder": "Hội thảo - Gala Dinner - Cấy ghép implant & Xâm lấn tối thiểu",
+      "filename": "554986259_2248358362269783_5243863806275399294_n.jpg",
+      "rel_path": "Hội thảo - Gala Dinner - Cấy ghép implant & Xâm lấn tối thiểu/554986259_2248358362269783_5243863806275399294_n.jpg",
+      "size_kb": 824.7
+    },
+    {
+      "folder": "Hội thảo - Gala Dinner - Cấy ghép implant & Xâm lấn tối thiểu",
+      "filename": "Hội thảo - Gala Dinner - Cấy ghép implant & Xâm lấn tối thiểu_Gallery.jpg",
+      "rel_path": "Hội thảo - Gala Dinner - Cấy ghép implant & Xâm lấn tối thiểu/Hội thảo - Gala Dinner - Cấy ghép implant & Xâm lấn tối thiểu_Gallery.jpg",
+      "size_kb": 1507.9
+    },
+    {
+      "folder": "Hội thảo - MOAZ ECO - VietBaby Fair",
+      "filename": "Hội thảo - MOAZ ECO - VietBaby Fair_Gallery.jpg",
+      "rel_path": "Hội thảo - MOAZ ECO - VietBaby Fair/Hội thảo - MOAZ ECO - VietBaby Fair_Gallery.jpg",
+      "size_kb": 1681.1
+    },
+    {
+      "folder": "Hội thảo - MOAZ ECO - VietBaby Fair",
+      "filename": "IMG_1749130977506_1749131019319.jpg",
+      "rel_path": "Hội thảo - MOAZ ECO - VietBaby Fair/IMG_1749130977506_1749131019319.jpg",
+      "size_kb": 592.6
+    },
+    {
+      "folder": "Hội thảo - MOAZ ECO - VietBaby Fair",
+      "filename": "IMG_1749130977520_1749131020194.jpg",
+      "rel_path": "Hội thảo - MOAZ ECO - VietBaby Fair/IMG_1749130977520_1749131020194.jpg",
+      "size_kb": 471.2
+    },
+    {
+      "folder": "Hội thảo - MOAZ ECO - VietBaby Fair",
+      "filename": "IMG_1749130977532_1749131021328.jpg",
+      "rel_path": "Hội thảo - MOAZ ECO - VietBaby Fair/IMG_1749130977532_1749131021328.jpg",
+      "size_kb": 414.0
+    },
+    {
+      "folder": "Hội thảo - MOAZ ECO - VietBaby Fair",
+      "filename": "IMG_1749130977542_1749131022057.jpg",
+      "rel_path": "Hội thảo - MOAZ ECO - VietBaby Fair/IMG_1749130977542_1749131022057.jpg",
+      "size_kb": 520.8
+    },
+    {
+      "folder": "Hội thảo - MOAZ ECO - VietBaby Fair",
+      "filename": "z7014435875386_ab91ad863a540f1b99bc96ce0a3265e7.jpg",
+      "rel_path": "Hội thảo - MOAZ ECO - VietBaby Fair/z7014435875386_ab91ad863a540f1b99bc96ce0a3265e7.jpg",
+      "size_kb": 496.5
+    },
+    {
+      "folder": "Hội thảo - MOAZ ECO - VietBaby Fair",
+      "filename": "z7014435879735_8048437ec44c21d744c1dec8f9fceed1.jpg",
+      "rel_path": "Hội thảo - MOAZ ECO - VietBaby Fair/z7014435879735_8048437ec44c21d744c1dec8f9fceed1.jpg",
+      "size_kb": 445.4
+    },
+    {
+      "folder": "Hội thảo - Wakodo - Ăn dậm kiểu Nhật",
+      "filename": "Hội thảo - Wakodo - Ăn dậm kiểu Nhật_Gallery.jpg",
+      "rel_path": "Hội thảo - Wakodo - Ăn dậm kiểu Nhật/Hội thảo - Wakodo - Ăn dậm kiểu Nhật_Gallery.jpg",
+      "size_kb": 1893.8
+    },
+    {
+      "folder": "Hội thảo - Wakodo - Ăn dậm kiểu Nhật",
+      "filename": "beauty_1728105535836.jpg",
+      "rel_path": "Hội thảo - Wakodo - Ăn dậm kiểu Nhật/beauty_1728105535836.jpg",
+      "size_kb": 2380.8
+    },
+    {
+      "folder": "Hội thảo - Wakodo - Ăn dậm kiểu Nhật",
+      "filename": "z6178630909067_998ba8e609a46799938fdd77f8729fef.jpg",
+      "rel_path": "Hội thảo - Wakodo - Ăn dậm kiểu Nhật/z6178630909067_998ba8e609a46799938fdd77f8729fef.jpg",
+      "size_kb": 824.4
+    },
+    {
+      "folder": "Hội thảo - Wakodo - Ăn dậm kiểu Nhật",
+      "filename": "z6178630909155_88db0beaa3cb040ffffba21064eb9961.jpg",
+      "rel_path": "Hội thảo - Wakodo - Ăn dậm kiểu Nhật/z6178630909155_88db0beaa3cb040ffffba21064eb9961.jpg",
+      "size_kb": 848.6
+    },
+    {
+      "folder": "Hội thảo - Wakodo - Ăn dậm kiểu Nhật",
+      "filename": "z6178630910553_aac410161bfa6ce599c53ffd361a5cfa.jpg",
+      "rel_path": "Hội thảo - Wakodo - Ăn dậm kiểu Nhật/z6178630910553_aac410161bfa6ce599c53ffd361a5cfa.jpg",
+      "size_kb": 824.3
+    },
+    {
+      "folder": "Hội thảo - Wakodo - Ăn dậm kiểu Nhật",
+      "filename": "z6178630911381_f29668720e2c51124f0e171bd303888a.jpg",
+      "rel_path": "Hội thảo - Wakodo - Ăn dậm kiểu Nhật/z6178630911381_f29668720e2c51124f0e171bd303888a.jpg",
+      "size_kb": 832.1
+    },
+    {
+      "folder": "Hội thảo - Wakodo - Ăn dậm kiểu Nhật",
+      "filename": "z6178630912398_195927349c264b498d05eb8ecf031575.jpg",
+      "rel_path": "Hội thảo - Wakodo - Ăn dậm kiểu Nhật/z6178630912398_195927349c264b498d05eb8ecf031575.jpg",
+      "size_kb": 1246.9
+    },
+    {
+      "folder": "Khai trương - Circle K - Chi nhánh quận 7",
+      "filename": "20250528_101603.jpg",
+      "rel_path": "Khai trương - Circle K - Chi nhánh quận 7/20250528_101603.jpg",
+      "size_kb": 3333.3
+    },
+    {
+      "folder": "Khai trương - Circle K - Chi nhánh quận 7",
+      "filename": "20250528_101605.jpg",
+      "rel_path": "Khai trương - Circle K - Chi nhánh quận 7/20250528_101605.jpg",
+      "size_kb": 3327.3
+    },
+    {
+      "folder": "Khai trương - Circle K - Chi nhánh quận 7",
+      "filename": "IMG_1748407365275_1748407984260.jpg",
+      "rel_path": "Khai trương - Circle K - Chi nhánh quận 7/IMG_1748407365275_1748407984260.jpg",
+      "size_kb": 552.2
+    },
+    {
+      "folder": "Khai trương - Circle K - Chi nhánh quận 7",
+      "filename": "Khai trương - Circle K - Chi nhánh quận 7_Gallery.jpg",
+      "rel_path": "Khai trương - Circle K - Chi nhánh quận 7/Khai trương - Circle K - Chi nhánh quận 7_Gallery.jpg",
+      "size_kb": 511.2
+    },
+    {
+      "folder": "Khai trương - Circle K - Chi nhánh quận 7",
+      "filename": "MEITU_20250528_121736352.jpg",
+      "rel_path": "Khai trương - Circle K - Chi nhánh quận 7/MEITU_20250528_121736352.jpg",
+      "size_kb": 1779.6
+    },
+    {
+      "folder": "Khai trương - Hacom - Chi nhánh Gò Vấp",
+      "filename": "571090478_2278623252576627_1531294662972514880_n.jpg",
+      "rel_path": "Khai trương - Hacom - Chi nhánh Gò Vấp/571090478_2278623252576627_1531294662972514880_n.jpg",
+      "size_kb": 406.5
+    },
+    {
+      "folder": "Khai trương - Hacom - Chi nhánh Gò Vấp",
+      "filename": "IMG_20251018_113704.jpg",
+      "rel_path": "Khai trương - Hacom - Chi nhánh Gò Vấp/IMG_20251018_113704.jpg",
+      "size_kb": 502.3
+    },
+    {
+      "folder": "Khai trương - Hacom - Chi nhánh Gò Vấp",
+      "filename": "IMG_20251019_070624.jpg",
+      "rel_path": "Khai trương - Hacom - Chi nhánh Gò Vấp/IMG_20251019_070624.jpg",
+      "size_kb": 638.6
+    },
+    {
+      "folder": "Khai trương - Hacom - Chi nhánh Gò Vấp",
+      "filename": "IMG_20251019_070629.jpg",
+      "rel_path": "Khai trương - Hacom - Chi nhánh Gò Vấp/IMG_20251019_070629.jpg",
+      "size_kb": 582.1
+    },
+    {
+      "folder": "Khai trương - Hacom - Chi nhánh Gò Vấp",
+      "filename": "IMG_20251022_174723.jpg",
+      "rel_path": "Khai trương - Hacom - Chi nhánh Gò Vấp/IMG_20251022_174723.jpg",
+      "size_kb": 513.4
+    },
+    {
+      "folder": "Khai trương - Hacom - Chi nhánh Gò Vấp",
+      "filename": "IMG_20251022_174733.jpg",
+      "rel_path": "Khai trương - Hacom - Chi nhánh Gò Vấp/IMG_20251022_174733.jpg",
+      "size_kb": 696.1
+    },
+    {
+      "folder": "Khai trương - Hacom - Chi nhánh Gò Vấp",
+      "filename": "IMG_20251022_174737.jpg",
+      "rel_path": "Khai trương - Hacom - Chi nhánh Gò Vấp/IMG_20251022_174737.jpg",
+      "size_kb": 539.0
+    },
+    {
+      "folder": "Khai trương - Hacom - Chi nhánh Gò Vấp",
+      "filename": "Khai trương - Hacom - Chi nhánh Gò Vấp_Gallery.jpg",
+      "rel_path": "Khai trương - Hacom - Chi nhánh Gò Vấp/Khai trương - Hacom - Chi nhánh Gò Vấp_Gallery.jpg",
+      "size_kb": 3367.6
+    },
+    {
+      "folder": "Khai trương - Hacom - Chi nhánh Gò Vấp",
+      "filename": "MEITU_20251019_071502683.jpg",
+      "rel_path": "Khai trương - Hacom - Chi nhánh Gò Vấp/MEITU_20251019_071502683.jpg",
+      "size_kb": 2054.5
+    },
+    {
+      "folder": "Khai trương - Hacom - Chi nhánh Gò Vấp",
+      "filename": "MEITU_20251022_205532798.jpg",
+      "rel_path": "Khai trương - Hacom - Chi nhánh Gò Vấp/MEITU_20251022_205532798.jpg",
+      "size_kb": 1567.0
+    },
+    {
+      "folder": "Khai trương - Hacom - Chi nhánh Gò Vấp",
+      "filename": "drive (2).jpg",
+      "rel_path": "Khai trương - Hacom - Chi nhánh Gò Vấp/drive (2).jpg",
+      "size_kb": 2197.2
+    },
+    {
+      "folder": "Khai trương - Hacom - Chi nhánh Gò Vấp",
+      "filename": "drive.JPG",
+      "rel_path": "Khai trương - Hacom - Chi nhánh Gò Vấp/drive.JPG",
+      "size_kb": 2821.0
+    },
+    {
+      "folder": "Khai trương - Phở Việt Nam - Chi nhánh quận 1",
+      "filename": "20250426_085710.jpg",
+      "rel_path": "Khai trương - Phở Việt Nam - Chi nhánh quận 1/20250426_085710.jpg",
+      "size_kb": 3132.7
+    },
+    {
+      "folder": "Khai trương - Phở Việt Nam - Chi nhánh quận 1",
+      "filename": "Khai trương - Phở Việt Nam - Chi nhánh quận 1_Gallery.jpg",
+      "rel_path": "Khai trương - Phở Việt Nam - Chi nhánh quận 1/Khai trương - Phở Việt Nam - Chi nhánh quận 1_Gallery.jpg",
+      "size_kb": 1162.8
+    },
+    {
+      "folder": "Khai trương - Phở Việt Nam - Chi nhánh quận 1",
+      "filename": "MC Thùy Trang - Phở Việt Nam.jpg",
+      "rel_path": "Khai trương - Phở Việt Nam - Chi nhánh quận 1/MC Thùy Trang - Phở Việt Nam.jpg",
+      "size_kb": 485.7
+    },
+    {
+      "folder": "Lauching Event - Cat's lab - Sự kiện ra mắt sản phẩm ",
+      "filename": "Lauching Event - Cat's lab - Sự kiện ra mắt sản phẩm _Gallery.jpg",
+      "rel_path": "Lauching Event - Cat's lab - Sự kiện ra mắt sản phẩm /Lauching Event - Cat's lab - Sự kiện ra mắt sản phẩm _Gallery.jpg",
+      "size_kb": 805.6
+    },
+    {
+      "folder": "Lauching Event - Cat's lab - Sự kiện ra mắt sản phẩm ",
+      "filename": "z6178631237524_a7a2d2f1c321dd115c99b47f14f99e12.jpg",
+      "rel_path": "Lauching Event - Cat's lab - Sự kiện ra mắt sản phẩm /z6178631237524_a7a2d2f1c321dd115c99b47f14f99e12.jpg",
+      "size_kb": 581.2
+    },
+    {
+      "folder": "Lauching Event - Cat's lab - Sự kiện ra mắt sản phẩm ",
+      "filename": "z6178631241812_9ba43f5eb7d0d2176b5ea2759e684f23.jpg",
+      "rel_path": "Lauching Event - Cat's lab - Sự kiện ra mắt sản phẩm /z6178631241812_9ba43f5eb7d0d2176b5ea2759e684f23.jpg",
+      "size_kb": 556.4
+    },
+    {
+      "folder": "Lauching Event - Gari Gari Kun - Chương trình dùng thử & Ra mắt sản phẩm",
+      "filename": "IMG_1744545063118_1744551680017.jpg",
+      "rel_path": "Lauching Event - Gari Gari Kun - Chương trình dùng thử & Ra mắt sản phẩm/IMG_1744545063118_1744551680017.jpg",
+      "size_kb": 690.4
+    },
+    {
+      "folder": "Lauching Event - Gari Gari Kun - Chương trình dùng thử & Ra mắt sản phẩm",
+      "filename": "IMG_1744545063165_1744551680322.jpg",
+      "rel_path": "Lauching Event - Gari Gari Kun - Chương trình dùng thử & Ra mắt sản phẩm/IMG_1744545063165_1744551680322.jpg",
+      "size_kb": 705.1
+    },
+    {
+      "folder": "Lauching Event - Gari Gari Kun - Chương trình dùng thử & Ra mắt sản phẩm",
+      "filename": "IMG_1744545063260_1744551683556.jpg",
+      "rel_path": "Lauching Event - Gari Gari Kun - Chương trình dùng thử & Ra mắt sản phẩm/IMG_1744545063260_1744551683556.jpg",
+      "size_kb": 672.1
+    },
+    {
+      "folder": "Lauching Event - Gari Gari Kun - Chương trình dùng thử & Ra mắt sản phẩm",
+      "filename": "IMG_1744545063599_1744551698473.jpg",
+      "rel_path": "Lauching Event - Gari Gari Kun - Chương trình dùng thử & Ra mắt sản phẩm/IMG_1744545063599_1744551698473.jpg",
+      "size_kb": 646.0
+    },
+    {
+      "folder": "Lauching Event - Gari Gari Kun - Chương trình dùng thử & Ra mắt sản phẩm",
+      "filename": "IMG_1744545063621_1744551700834.jpg",
+      "rel_path": "Lauching Event - Gari Gari Kun - Chương trình dùng thử & Ra mắt sản phẩm/IMG_1744545063621_1744551700834.jpg",
+      "size_kb": 641.3
+    },
+    {
+      "folder": "Lauching Event - Gari Gari Kun - Chương trình dùng thử & Ra mắt sản phẩm",
+      "filename": "Lauching Event - Gari Gari Kun - Chương trình dùng thử & Ra mắt sản phẩm_Gallery.jpg",
+      "rel_path": "Lauching Event - Gari Gari Kun - Chương trình dùng thử & Ra mắt sản phẩm/Lauching Event - Gari Gari Kun - Chương trình dùng thử & Ra mắt sản phẩm_Gallery.jpg",
+      "size_kb": 1260.0
+    },
+    {
+      "folder": "Lauching Event - Grab - Concert Anh Trai Say Hi",
+      "filename": "20250321_171112_872.jpg",
+      "rel_path": "Lauching Event - Grab - Concert Anh Trai Say Hi/20250321_171112_872.jpg",
+      "size_kb": 1194.3
+    },
+    {
+      "folder": "Lauching Event - Grab - Concert Anh Trai Say Hi",
+      "filename": "Lauching Event - Grab - Concert Anh Trai Say Hi_Gallery.jpg",
+      "rel_path": "Lauching Event - Grab - Concert Anh Trai Say Hi/Lauching Event - Grab - Concert Anh Trai Say Hi_Gallery.jpg",
+      "size_kb": 963.2
+    },
+    {
+      "folder": "Lauching Event - Grab - Concert Anh Trai Say Hi",
+      "filename": "MEITU_20250322_232846157.jpg",
+      "rel_path": "Lauching Event - Grab - Concert Anh Trai Say Hi/MEITU_20250322_232846157.jpg",
+      "size_kb": 1859.9
+    },
+    {
+      "folder": "Lauching Event - Hảo Hảo - Sự kiện ra mắt Hảo Hảo Handy + Kẹo muối",
+      "filename": "555825872_2252764021829217_2562476623981523474_n.jpg",
+      "rel_path": "Lauching Event - Hảo Hảo - Sự kiện ra mắt Hảo Hảo Handy + Kẹo muối/555825872_2252764021829217_2562476623981523474_n.jpg",
+      "size_kb": 583.4
+    },
+    {
+      "folder": "Lauching Event - Hảo Hảo - Sự kiện ra mắt Hảo Hảo Handy + Kẹo muối",
+      "filename": "556864615_2253052791800340_3895300443987509489_n.jpg",
+      "rel_path": "Lauching Event - Hảo Hảo - Sự kiện ra mắt Hảo Hảo Handy + Kẹo muối/556864615_2253052791800340_3895300443987509489_n.jpg",
+      "size_kb": 548.6
+    },
+    {
+      "folder": "Lauching Event - Hảo Hảo - Sự kiện ra mắt Hảo Hảo Handy + Kẹo muối",
+      "filename": "IMG_20250930_142158.jpg",
+      "rel_path": "Lauching Event - Hảo Hảo - Sự kiện ra mắt Hảo Hảo Handy + Kẹo muối/IMG_20250930_142158.jpg",
+      "size_kb": 638.1
+    },
+    {
+      "folder": "Lauching Event - Hảo Hảo - Sự kiện ra mắt Hảo Hảo Handy + Kẹo muối",
+      "filename": "Lauching Event - Hảo Hảo - Sự kiện ra mắt Hảo Hảo Handy + Kẹo muối_Gallery.jpg",
+      "rel_path": "Lauching Event - Hảo Hảo - Sự kiện ra mắt Hảo Hảo Handy + Kẹo muối/Lauching Event - Hảo Hảo - Sự kiện ra mắt Hảo Hảo Handy + Kẹo muối_Gallery.jpg",
+      "size_kb": 574.0
+    },
+    {
+      "folder": "Lauching Event - Honor - Sự kiện ra mắt & Trải nghiệm Honor X9c",
+      "filename": "Lauching Event - Honor - Sự kiện ra mắt & Trải nghiệm Honor X9c_Gallery.jpg",
+      "rel_path": "Lauching Event - Honor - Sự kiện ra mắt & Trải nghiệm Honor X9c/Lauching Event - Honor - Sự kiện ra mắt & Trải nghiệm Honor X9c_Gallery.jpg",
+      "size_kb": 648.4
+    },
+    {
+      "folder": "Lauching Event - Huawei - Sự kiện ra mắt Huawei Watch GT5",
+      "filename": "MC-Thùy Trang-Huawei-12-29-2024.png",
+      "rel_path": "Lauching Event - Huawei - Sự kiện ra mắt Huawei Watch GT5/MC-Thùy Trang-Huawei-12-29-2024.png",
+      "size_kb": 2063.7
+    },
+    {
+      "folder": "Lauching Event - L'oréal - Sự kiện ra mắt sản phẩm",
+      "filename": "611654710_2338808869891398_2680996935119394619_n.jpg",
+      "rel_path": "Lauching Event - L'oréal - Sự kiện ra mắt sản phẩm/611654710_2338808869891398_2680996935119394619_n.jpg",
+      "size_kb": 513.6
+    },
+    {
+      "folder": "Lauching Event - L'oréal - Sự kiện ra mắt sản phẩm",
+      "filename": "611656546_2338808913224727_1460871663741962418_n.jpg",
+      "rel_path": "Lauching Event - L'oréal - Sự kiện ra mắt sản phẩm/611656546_2338808913224727_1460871663741962418_n.jpg",
+      "size_kb": 488.6
+    },
+    {
+      "folder": "Lauching Event - L'oréal - Sự kiện ra mắt sản phẩm",
+      "filename": "612459640_2338809046558047_2025565259391877536_n.jpg",
+      "rel_path": "Lauching Event - L'oréal - Sự kiện ra mắt sản phẩm/612459640_2338809046558047_2025565259391877536_n.jpg",
+      "size_kb": 610.5
+    },
+    {
+      "folder": "Lauching Event - L'oréal - Sự kiện ra mắt sản phẩm",
+      "filename": "613100443_2338808989891386_3943873815802803903_n.jpg",
+      "rel_path": "Lauching Event - L'oréal - Sự kiện ra mắt sản phẩm/613100443_2338808989891386_3943873815802803903_n.jpg",
+      "size_kb": 626.1
+    },
+    {
+      "folder": "Lauching Event - L'oréal - Sự kiện ra mắt sản phẩm",
+      "filename": "613150831_2338809096558042_2128281038561959433_n.jpg",
+      "rel_path": "Lauching Event - L'oréal - Sự kiện ra mắt sản phẩm/613150831_2338809096558042_2128281038561959433_n.jpg",
+      "size_kb": 530.1
+    },
+    {
+      "folder": "Lauching Event - L'oréal - Sự kiện ra mắt sản phẩm",
+      "filename": "613489730_2338809149891370_3803836943528413002_n.jpg",
+      "rel_path": "Lauching Event - L'oréal - Sự kiện ra mắt sản phẩm/613489730_2338809149891370_3803836943528413002_n.jpg",
+      "size_kb": 537.8
+    },
+    {
+      "folder": "Lauching Event - L'oréal - Sự kiện ra mắt sản phẩm",
+      "filename": "IMG_1767803528301_1767803663057.jpg",
+      "rel_path": "Lauching Event - L'oréal - Sự kiện ra mắt sản phẩm/IMG_1767803528301_1767803663057.jpg",
+      "size_kb": 418.7
+    },
+    {
+      "folder": "Lauching Event - L'oréal - Sự kiện ra mắt sản phẩm",
+      "filename": "Lauching Event - L'oréal - Sự kiện ra mắt sản phẩm_Gallery.jpg",
+      "rel_path": "Lauching Event - L'oréal - Sự kiện ra mắt sản phẩm/Lauching Event - L'oréal - Sự kiện ra mắt sản phẩm_Gallery.jpg",
+      "size_kb": 1432.3
+    },
+    {
+      "folder": "Lauching Event - L'oréal - Sự kiện ra mắt sản phẩm",
+      "filename": "Mc Thùy Trang X L'Oréal-1.jpg",
+      "rel_path": "Lauching Event - L'oréal - Sự kiện ra mắt sản phẩm/Mc Thùy Trang X L'Oréal-1.jpg",
+      "size_kb": 1013.8
+    },
+    {
+      "folder": "Lauching Event - L'oréal - Sự kiện ra mắt sản phẩm",
+      "filename": "Mc Thùy Trang X L'Oréal-2.jpg",
+      "rel_path": "Lauching Event - L'oréal - Sự kiện ra mắt sản phẩm/Mc Thùy Trang X L'Oréal-2.jpg",
+      "size_kb": 824.6
+    },
+    {
+      "folder": "Lauching Event - L'oréal - Sự kiện ra mắt sản phẩm",
+      "filename": "Mc Thùy Trang X L'Oréal-3.jpg",
+      "rel_path": "Lauching Event - L'oréal - Sự kiện ra mắt sản phẩm/Mc Thùy Trang X L'Oréal-3.jpg",
+      "size_kb": 905.2
+    },
+    {
+      "folder": "Lauching Event - L'oréal - Sự kiện ra mắt sản phẩm",
+      "filename": "Mc Thùy Trang X L'Oréal-4.jpg",
+      "rel_path": "Lauching Event - L'oréal - Sự kiện ra mắt sản phẩm/Mc Thùy Trang X L'Oréal-4.jpg",
+      "size_kb": 903.1
+    },
+    {
+      "folder": "Lauching Event - L'oréal - Sự kiện ra mắt sản phẩm",
+      "filename": "Mc Thùy Trang X L'Oréal-5.jpg",
+      "rel_path": "Lauching Event - L'oréal - Sự kiện ra mắt sản phẩm/Mc Thùy Trang X L'Oréal-5.jpg",
+      "size_kb": 1438.6
+    },
+    {
+      "folder": "Lauching Event - L'oréal - Sự kiện ra mắt sản phẩm",
+      "filename": "Mc Thùy Trang X L'Oréal-6.jpg",
+      "rel_path": "Lauching Event - L'oréal - Sự kiện ra mắt sản phẩm/Mc Thùy Trang X L'Oréal-6.jpg",
+      "size_kb": 2251.7
+    },
+    {
+      "folder": "Lauching Event - L'oréal - Sự kiện ra mắt sản phẩm",
+      "filename": "Mc Thùy Trang X L'Oréal-7.jpg",
+      "rel_path": "Lauching Event - L'oréal - Sự kiện ra mắt sản phẩm/Mc Thùy Trang X L'Oréal-7.jpg",
+      "size_kb": 2836.8
+    },
+    {
+      "folder": "Lauching Event - Lactacyd - Sự kiện ra mắt Lactacyd Cool Sensation",
+      "filename": "z6178631232598_f37a5c4e23e1b70cd947bdad93e968ab.jpg",
+      "rel_path": "Lauching Event - Lactacyd - Sự kiện ra mắt Lactacyd Cool Sensation/z6178631232598_f37a5c4e23e1b70cd947bdad93e968ab.jpg",
+      "size_kb": 521.9
+    },
+    {
+      "folder": "Lauching Event - Lactacyd - Sự kiện ra mắt Lactacyd Cool Sensation",
+      "filename": "z6178631238527_002d0c86641f0338d09b55ed79522bf7.jpg",
+      "rel_path": "Lauching Event - Lactacyd - Sự kiện ra mắt Lactacyd Cool Sensation/z6178631238527_002d0c86641f0338d09b55ed79522bf7.jpg",
+      "size_kb": 830.1
+    },
+    {
+      "folder": "Lauching Event - Lactacyd - Sự kiện ra mắt Lactacyd Cool Sensation",
+      "filename": "z6178631370612_87471066e5f2b387eccca0440fc138cb.jpg",
+      "rel_path": "Lauching Event - Lactacyd - Sự kiện ra mắt Lactacyd Cool Sensation/z6178631370612_87471066e5f2b387eccca0440fc138cb.jpg",
+      "size_kb": 403.4
+    },
+    {
+      "folder": "Lauching Event - LocknLock - Sự kiện ra mắt máy sấy tạo kiểu",
+      "filename": "IMG_1760200136103_1760200202668.jpg",
+      "rel_path": "Lauching Event - LocknLock - Sự kiện ra mắt máy sấy tạo kiểu/IMG_1760200136103_1760200202668.jpg",
+      "size_kb": 507.2
+    },
+    {
+      "folder": "Lauching Event - LocknLock - Sự kiện ra mắt máy sấy tạo kiểu",
+      "filename": "Lauching Event - LocknLock - Sự kiện ra mắt máy sấy tạo kiểu_Gallery.jpg",
+      "rel_path": "Lauching Event - LocknLock - Sự kiện ra mắt máy sấy tạo kiểu/Lauching Event - LocknLock - Sự kiện ra mắt máy sấy tạo kiểu_Gallery.jpg",
+      "size_kb": 661.6
+    },
+    {
+      "folder": "Lauching Event - LocknLock - Sự kiện ra mắt máy sấy tạo kiểu",
+      "filename": "MEITU_20251011_235415970.jpg",
+      "rel_path": "Lauching Event - LocknLock - Sự kiện ra mắt máy sấy tạo kiểu/MEITU_20251011_235415970.jpg",
+      "size_kb": 1476.7
+    },
+    {
+      "folder": "Lauching Event - Nisshin Seifun Welna - Lễ hội Việt Nhật",
+      "filename": "IMG_1741408260125_1741410482258.jpg",
+      "rel_path": "Lauching Event - Nisshin Seifun Welna - Lễ hội Việt Nhật/IMG_1741408260125_1741410482258.jpg",
+      "size_kb": 759.9
+    },
+    {
+      "folder": "Lauching Event - Oishi - Ra mắt Oishi Tater Thins",
+      "filename": "Lauching Event - Oishi - Ra mắt Oishi Tater Thins_Gallery.jpg",
+      "rel_path": "Lauching Event - Oishi - Ra mắt Oishi Tater Thins/Lauching Event - Oishi - Ra mắt Oishi Tater Thins_Gallery.jpg",
+      "size_kb": 3036.3
+    },
+    {
+      "folder": "Lauching Event - Oishi - Ra mắt Oishi Tater Thins",
+      "filename": "beauty_1719628941112.jpg",
+      "rel_path": "Lauching Event - Oishi - Ra mắt Oishi Tater Thins/beauty_1719628941112.jpg",
+      "size_kb": 1777.5
+    },
+    {
+      "folder": "Lauching Event - Oishi - Ra mắt Oishi Tater Thins",
+      "filename": "beauty_1719628945864.jpg",
+      "rel_path": "Lauching Event - Oishi - Ra mắt Oishi Tater Thins/beauty_1719628945864.jpg",
+      "size_kb": 1709.2
+    },
+    {
+      "folder": "Lauching Event - Oishi - Ra mắt Oishi Tater Thins",
+      "filename": "beauty_1719628950318.jpg",
+      "rel_path": "Lauching Event - Oishi - Ra mắt Oishi Tater Thins/beauty_1719628950318.jpg",
+      "size_kb": 1805.8
+    },
+    {
+      "folder": "Lauching Event - Oishi - Ra mắt Oishi Tater Thins",
+      "filename": "beauty_1719628953376.jpg",
+      "rel_path": "Lauching Event - Oishi - Ra mắt Oishi Tater Thins/beauty_1719628953376.jpg",
+      "size_kb": 2109.9
+    },
+    {
+      "folder": "Lauching Event - Oishi - Ra mắt Oishi Tater Thins",
+      "filename": "beauty_1719647851005 (1).jpg",
+      "rel_path": "Lauching Event - Oishi - Ra mắt Oishi Tater Thins/beauty_1719647851005 (1).jpg",
+      "size_kb": 1540.7
+    },
+    {
+      "folder": "Lauching Event - Oishi - Ra mắt Oishi Tater Thins",
+      "filename": "beauty_1719647851005.jpg",
+      "rel_path": "Lauching Event - Oishi - Ra mắt Oishi Tater Thins/beauty_1719647851005.jpg",
+      "size_kb": 1540.7
+    },
+    {
+      "folder": "Lauching Event - Oishi - Ra mắt Oishi Tater Thins",
+      "filename": "z6178630893022_06998870bc7c12ffc2c45893e24af82f.jpg",
+      "rel_path": "Lauching Event - Oishi - Ra mắt Oishi Tater Thins/z6178630893022_06998870bc7c12ffc2c45893e24af82f.jpg",
+      "size_kb": 699.1
+    },
+    {
+      "folder": "Lauching Event - Oishi - Ra mắt Oishi Tater Thins",
+      "filename": "z6178630893514_330a01b7acfcfe53011f34ee80bb7645.jpg",
+      "rel_path": "Lauching Event - Oishi - Ra mắt Oishi Tater Thins/z6178630893514_330a01b7acfcfe53011f34ee80bb7645.jpg",
+      "size_kb": 553.3
+    },
+    {
+      "folder": "Lauching Event - Oishi - Ra mắt Oishi Tater Thins",
+      "filename": "z6178630896476_d96683f1a49a3d5039d8e04074fdbdc5.jpg",
+      "rel_path": "Lauching Event - Oishi - Ra mắt Oishi Tater Thins/z6178630896476_d96683f1a49a3d5039d8e04074fdbdc5.jpg",
+      "size_kb": 619.1
+    },
+    {
+      "folder": "Lễ quốc tế thiếu nhi - Đảo Kim Cương",
+      "filename": "beauty_1748741256602.jpeg",
+      "rel_path": "Lễ quốc tế thiếu nhi - Đảo Kim Cương/beauty_1748741256602.jpeg",
+      "size_kb": 1792.1
+    },
+    {
+      "folder": "Lễ quốc tế thiếu nhi - Đảo Kim Cương",
+      "filename": "beauty_1748741263752.jpeg",
+      "rel_path": "Lễ quốc tế thiếu nhi - Đảo Kim Cương/beauty_1748741263752.jpeg",
+      "size_kb": 1486.1
+    },
+    {
+      "folder": "Lễ quốc tế thiếu nhi - Đảo Kim Cương",
+      "filename": "beauty_1748742058150.jpeg",
+      "rel_path": "Lễ quốc tế thiếu nhi - Đảo Kim Cương/beauty_1748742058150.jpeg",
+      "size_kb": 1658.1
+    },
+    {
+      "folder": "Lễ quốc tế thiếu nhi - Đảo Kim Cương",
+      "filename": "beauty_1748743072419.jpeg",
+      "rel_path": "Lễ quốc tế thiếu nhi - Đảo Kim Cương/beauty_1748743072419.jpeg",
+      "size_kb": 2135.0
+    },
+    {
+      "folder": "Lễ quốc tế thiếu nhi - Đảo Kim Cương",
+      "filename": "beauty_1748743094628.jpeg",
+      "rel_path": "Lễ quốc tế thiếu nhi - Đảo Kim Cương/beauty_1748743094628.jpeg",
+      "size_kb": 2196.5
+    },
+    {
+      "folder": "Lễ trao bằng - Trung tâm ngoại ngữ quốc tế Anh Mỹ  (2026)",
+      "filename": "FB_IMG_1776844441134.jpg",
+      "rel_path": "Lễ trao bằng - Trung tâm ngoại ngữ quốc tế Anh Mỹ  (2026)/FB_IMG_1776844441134.jpg",
+      "size_kb": 410.9
+    },
+    {
+      "folder": "Lễ trao bằng - Trung tâm ngoại ngữ quốc tế Anh Mỹ (2024)",
+      "filename": "FB_IMG_1775747869029.jpg",
+      "rel_path": "Lễ trao bằng - Trung tâm ngoại ngữ quốc tế Anh Mỹ (2024)/FB_IMG_1775747869029.jpg",
+      "size_kb": 413.1
+    },
+    {
+      "folder": "Lễ trao bằng - Trung tâm ngoại ngữ quốc tế Anh Mỹ (2025)",
+      "filename": "0228(1).png",
+      "rel_path": "Lễ trao bằng - Trung tâm ngoại ngữ quốc tế Anh Mỹ (2025)/0228(1).png",
+      "size_kb": 8993.9
+    },
+    {
+      "folder": "Lễ trao bằng - Trung tâm ngoại ngữ quốc tế Anh Mỹ (2025)",
+      "filename": "0228(2).png",
+      "rel_path": "Lễ trao bằng - Trung tâm ngoại ngữ quốc tế Anh Mỹ (2025)/0228(2).png",
+      "size_kb": 3058.7
+    },
+    {
+      "folder": "Lễ trao bằng - Trung tâm ngoại ngữ quốc tế Anh Mỹ (2025)",
+      "filename": "0228(3).png",
+      "rel_path": "Lễ trao bằng - Trung tâm ngoại ngữ quốc tế Anh Mỹ (2025)/0228(3).png",
+      "size_kb": 4224.5
+    },
+    {
+      "folder": "Lễ trao bằng - Trung tâm ngoại ngữ quốc tế Anh Mỹ (2025)",
+      "filename": "0228.png",
+      "rel_path": "Lễ trao bằng - Trung tâm ngoại ngữ quốc tế Anh Mỹ (2025)/0228.png",
+      "size_kb": 8592.8
+    },
+    {
+      "folder": "Lễ trao bằng - Trung tâm ngoại ngữ quốc tế Anh Mỹ (2025)",
+      "filename": "FB_IMG_1776320845679.jpg",
+      "rel_path": "Lễ trao bằng - Trung tâm ngoại ngữ quốc tế Anh Mỹ (2025)/FB_IMG_1776320845679.jpg",
+      "size_kb": 408.2
+    },
+    {
+      "folder": "Lễ trao bằng - Trung tâm ngoại ngữ quốc tế Anh Mỹ (2025)",
+      "filename": "FB_IMG_1776320863285.jpg",
+      "rel_path": "Lễ trao bằng - Trung tâm ngoại ngữ quốc tế Anh Mỹ (2025)/FB_IMG_1776320863285.jpg",
+      "size_kb": 447.4
+    },
+    {
+      "folder": "Lễ trao bằng - Trung tâm ngoại ngữ quốc tế Anh Mỹ (2025)",
+      "filename": "IMG_1737784757295_1737901371502.jpg",
+      "rel_path": "Lễ trao bằng - Trung tâm ngoại ngữ quốc tế Anh Mỹ (2025)/IMG_1737784757295_1737901371502.jpg",
+      "size_kb": 888.0
+    },
+    {
+      "folder": "Lễ trao bằng - Trung tâm ngoại ngữ quốc tế Anh Mỹ (2025)",
+      "filename": "IMG_1737784799576_1737901464529.jpg",
+      "rel_path": "Lễ trao bằng - Trung tâm ngoại ngữ quốc tế Anh Mỹ (2025)/IMG_1737784799576_1737901464529.jpg",
+      "size_kb": 943.5
+    },
+    {
+      "folder": "Lễ trao bằng - Trung tâm ngoại ngữ quốc tế Anh Mỹ (2025)",
+      "filename": "IMG_1737784799601_1737901465768.jpg",
+      "rel_path": "Lễ trao bằng - Trung tâm ngoại ngữ quốc tế Anh Mỹ (2025)/IMG_1737784799601_1737901465768.jpg",
+      "size_kb": 722.9
+    },
+    {
+      "folder": "Party - Sinh nhật ",
+      "filename": "Screenshot_20260422_023325_Photos.jpg",
+      "rel_path": "Party - Sinh nhật /Screenshot_20260422_023325_Photos.jpg",
+      "size_kb": 551.2
+    },
+    {
+      "folder": "Party - Sinh nhật ",
+      "filename": "Screenshot_20260422_023522_Photos.jpg",
+      "rel_path": "Party - Sinh nhật /Screenshot_20260422_023522_Photos.jpg",
+      "size_kb": 605.7
+    },
+    {
+      "folder": "Party - Sinh nhật ",
+      "filename": "Screenshot_20260422_023535_Photos.jpg",
+      "rel_path": "Party - Sinh nhật /Screenshot_20260422_023535_Photos.jpg",
+      "size_kb": 611.4
+    },
+    {
+      "folder": "Phim - Thỏ ơi",
+      "filename": "633275974_2371783563260595_5026479016168470911_n.jpg",
+      "rel_path": "Phim - Thỏ ơi/633275974_2371783563260595_5026479016168470911_n.jpg",
+      "size_kb": 695.7
+    },
+    {
+      "folder": "Phim - Thỏ ơi",
+      "filename": "633681310_2371783699927248_4979577924426427248_n.jpg",
+      "rel_path": "Phim - Thỏ ơi/633681310_2371783699927248_4979577924426427248_n.jpg",
+      "size_kb": 536.4
+    },
+    {
+      "folder": "Phim - Thỏ ơi",
+      "filename": "634018473_2371783636593921_8776142236074003538_n.jpg",
+      "rel_path": "Phim - Thỏ ơi/634018473_2371783636593921_8776142236074003538_n.jpg",
+      "size_kb": 660.0
+    },
+    {
+      "folder": "Phim - Thỏ ơi",
+      "filename": "639661651_2379197069185911_2985512575262749210_n.jpg",
+      "rel_path": "Phim - Thỏ ơi/639661651_2379197069185911_2985512575262749210_n.jpg",
+      "size_kb": 546.4
+    },
+    {
+      "folder": "Phim - Thỏ ơi",
+      "filename": "IMG_20260215_114236.jpg",
+      "rel_path": "Phim - Thỏ ơi/IMG_20260215_114236.jpg",
+      "size_kb": 594.2
+    },
+    {
+      "folder": "Phim - Thỏ ơi",
+      "filename": "Phim - Thỏ ơi_Gallery.jpg",
+      "rel_path": "Phim - Thỏ ơi/Phim - Thỏ ơi_Gallery.jpg",
+      "size_kb": 659.6
+    },
+    {
+      "folder": "Ra mắt phim - Cục vàng của ngoại - Cinetour",
+      "filename": "571260493_2280452789060340_5429771098767281317_n.jpg",
+      "rel_path": "Ra mắt phim - Cục vàng của ngoại - Cinetour/571260493_2280452789060340_5429771098767281317_n.jpg",
+      "size_kb": 1123.4
+    },
+    {
+      "folder": "Ra mắt phim - Cục vàng của ngoại - Cinetour",
+      "filename": "571637563_2280452705727015_4672428101580191699_n.jpg",
+      "rel_path": "Ra mắt phim - Cục vàng của ngoại - Cinetour/571637563_2280452705727015_4672428101580191699_n.jpg",
+      "size_kb": 843.2
+    },
+    {
+      "folder": "Ra mắt phim - Cục vàng của ngoại - Cinetour",
+      "filename": "572364362_2280452822393670_8143586359408584906_n.jpg",
+      "rel_path": "Ra mắt phim - Cục vàng của ngoại - Cinetour/572364362_2280452822393670_8143586359408584906_n.jpg",
+      "size_kb": 1113.2
+    },
+    {
+      "folder": "Ra mắt phim - Doraemon - Nobita và cuộc phiêu lưu vào thế giới trong tranh",
+      "filename": "beauty_1748608134000.jpg",
+      "rel_path": "Ra mắt phim - Doraemon - Nobita và cuộc phiêu lưu vào thế giới trong tranh/beauty_1748608134000.jpg",
+      "size_kb": 1948.8
+    },
+    {
+      "folder": "Ra mắt phim - Hoàng Tử Quỷ - Cinetour",
+      "filename": "600103320_2321439494961669_2427880328270711765_n.jpg",
+      "rel_path": "Ra mắt phim - Hoàng Tử Quỷ - Cinetour/600103320_2321439494961669_2427880328270711765_n.jpg",
+      "size_kb": 635.1
+    },
+    {
+      "folder": "Ra mắt phim - Hoàng Tử Quỷ - Cinetour",
+      "filename": "600393894_2324570531315232_4289152247915420456_n.jpg",
+      "rel_path": "Ra mắt phim - Hoàng Tử Quỷ - Cinetour/600393894_2324570531315232_4289152247915420456_n.jpg",
+      "size_kb": 462.8
+    },
+    {
+      "folder": "Ra mắt phim - Hoàng Tử Quỷ - Cinetour",
+      "filename": "603780649_2324570454648573_5291952741292039406_n.jpg",
+      "rel_path": "Ra mắt phim - Hoàng Tử Quỷ - Cinetour/603780649_2324570454648573_5291952741292039406_n.jpg",
+      "size_kb": 492.8
+    },
+    {
+      "folder": "Ra mắt phim - Lotte Mart",
+      "filename": "MEITU_20250730_102315710.jpg",
+      "rel_path": "Ra mắt phim - Lotte Mart/MEITU_20250730_102315710.jpg",
+      "size_kb": 1174.8
+    },
+    {
+      "folder": "Ra mắt phim - Lotte Mart",
+      "filename": "MEITU_20250730_102701891.jpg",
+      "rel_path": "Ra mắt phim - Lotte Mart/MEITU_20250730_102701891.jpg",
+      "size_kb": 2805.2
+    },
+    {
+      "folder": "Ra mắt phim - Lotte Mart",
+      "filename": "MEITU_20250730_103029957.jpg",
+      "rel_path": "Ra mắt phim - Lotte Mart/MEITU_20250730_103029957.jpg",
+      "size_kb": 2833.0
+    },
+    {
+      "folder": "Ra mắt phim - Nhà Gia Tiên - Cinetour",
+      "filename": "IMG_20250313_154824.jpg",
+      "rel_path": "Ra mắt phim - Nhà Gia Tiên - Cinetour/IMG_20250313_154824.jpg",
+      "size_kb": 617.4
+    },
+    {
+      "folder": "Ra mắt phim - Nhà Gia Tiên - Cinetour",
+      "filename": "MEITU_20250303_205510489.jpg",
+      "rel_path": "Ra mắt phim - Nhà Gia Tiên - Cinetour/MEITU_20250303_205510489.jpg",
+      "size_kb": 556.2
+    },
+    {
+      "folder": "Ra mắt phim - Nhà Gia Tiên - Cinetour",
+      "filename": "MEITU_20250303_205557404.jpg",
+      "rel_path": "Ra mắt phim - Nhà Gia Tiên - Cinetour/MEITU_20250303_205557404.jpg",
+      "size_kb": 583.2
+    },
+    {
+      "folder": "Ra mắt phim - Nhà Gia Tiên - Cinetour",
+      "filename": "MEITU_20250303_213909494.jpg",
+      "rel_path": "Ra mắt phim - Nhà Gia Tiên - Cinetour/MEITU_20250303_213909494.jpg",
+      "size_kb": 2422.9
+    },
+    {
+      "folder": "Song ngữ - Dazi Signature - Merry Christmas",
+      "filename": "606825546_2333433997095552_5755104068767710661_n.jpg",
+      "rel_path": "Song ngữ - Dazi Signature - Merry Christmas/606825546_2333433997095552_5755104068767710661_n.jpg",
+      "size_kb": 809.3
+    },
+    {
+      "folder": "Song ngữ - Dazi Signature - Merry Christmas",
+      "filename": "606828638_2333433907095561_3201353715909182611_n.jpg",
+      "rel_path": "Song ngữ - Dazi Signature - Merry Christmas/606828638_2333433907095561_3201353715909182611_n.jpg",
+      "size_kb": 691.1
+    },
+    {
+      "folder": "Song ngữ - Dazi Signature - Merry Christmas",
+      "filename": "606834461_2333434587095493_8130552241052434994_n.jpg",
+      "rel_path": "Song ngữ - Dazi Signature - Merry Christmas/606834461_2333434587095493_8130552241052434994_n.jpg",
+      "size_kb": 763.4
+    },
+    {
+      "folder": "Song ngữ - Dazi Signature - Merry Christmas",
+      "filename": "606876284_2333434107095541_4082658289899970209_n.jpg",
+      "rel_path": "Song ngữ - Dazi Signature - Merry Christmas/606876284_2333434107095541_4082658289899970209_n.jpg",
+      "size_kb": 630.3
+    },
+    {
+      "folder": "Song ngữ - Dazi Signature - Merry Christmas",
+      "filename": "606879830_2333433727095579_7519857239036245968_n.jpg",
+      "rel_path": "Song ngữ - Dazi Signature - Merry Christmas/606879830_2333433727095579_7519857239036245968_n.jpg",
+      "size_kb": 589.3
+    },
+    {
+      "folder": "Song ngữ - Dazi Signature - Merry Christmas",
+      "filename": "606881031_2333433847095567_8803462187179024530_n.jpg",
+      "rel_path": "Song ngữ - Dazi Signature - Merry Christmas/606881031_2333433847095567_8803462187179024530_n.jpg",
+      "size_kb": 705.4
+    },
+    {
+      "folder": "Song ngữ - Dazi Signature - Merry Christmas",
+      "filename": "606889592_2333434483762170_1333362336808202496_n.jpg",
+      "rel_path": "Song ngữ - Dazi Signature - Merry Christmas/606889592_2333434483762170_1333362336808202496_n.jpg",
+      "size_kb": 692.8
+    },
+    {
+      "folder": "Song ngữ - Dazi Signature - Merry Christmas",
+      "filename": "606904145_2333433587095593_6634502516580086785_n.jpg",
+      "rel_path": "Song ngữ - Dazi Signature - Merry Christmas/606904145_2333433587095593_6634502516580086785_n.jpg",
+      "size_kb": 535.9
+    },
+    {
+      "folder": "Song ngữ - Dazi Signature - Merry Christmas",
+      "filename": "606981866_2333433790428906_5626040009123199828_n.jpg",
+      "rel_path": "Song ngữ - Dazi Signature - Merry Christmas/606981866_2333433790428906_5626040009123199828_n.jpg",
+      "size_kb": 568.2
+    },
+    {
+      "folder": "Song ngữ - Dazi Signature - Merry Christmas",
+      "filename": "607084550_2333433640428921_2820641331755483291_n.jpg",
+      "rel_path": "Song ngữ - Dazi Signature - Merry Christmas/607084550_2333433640428921_2820641331755483291_n.jpg",
+      "size_kb": 570.7
+    },
+    {
+      "folder": "Song ngữ - Dazi Signature - Merry Christmas",
+      "filename": "608200628_2333433530428932_8762684839596280740_n.jpg",
+      "rel_path": "Song ngữ - Dazi Signature - Merry Christmas/608200628_2333433530428932_8762684839596280740_n.jpg",
+      "size_kb": 600.9
+    },
+    {
+      "folder": "Song ngữ - Dazi Signature - Merry Christmas",
+      "filename": "608882428_2333434197095532_4160208955464986965_n.jpg",
+      "rel_path": "Song ngữ - Dazi Signature - Merry Christmas/608882428_2333434197095532_4160208955464986965_n.jpg",
+      "size_kb": 781.1
+    },
+    {
+      "folder": "Song ngữ - Dazi Signature - Merry Christmas",
+      "filename": "Song ngữ - Dazi Signature - Merry Christmas_Gallery.jpg",
+      "rel_path": "Song ngữ - Dazi Signature - Merry Christmas/Song ngữ - Dazi Signature - Merry Christmas_Gallery.jpg",
+      "size_kb": 1245.7
+    },
+    {
+      "folder": "Song ngữ - Khai trương - Kira Art & Coffee",
+      "filename": "IMG_1755532554363_1755532782958.jpg",
+      "rel_path": "Song ngữ - Khai trương - Kira Art & Coffee/IMG_1755532554363_1755532782958.jpg",
+      "size_kb": 638.3
+    },
+    {
+      "folder": "Song ngữ - Khai trương - Kira Art & Coffee",
+      "filename": "IMG_1755532558411_1755532784452.jpg",
+      "rel_path": "Song ngữ - Khai trương - Kira Art & Coffee/IMG_1755532558411_1755532784452.jpg",
+      "size_kb": 608.2
+    },
+    {
+      "folder": "Song ngữ - Khai trương - Kira Art & Coffee",
+      "filename": "IMG_1755532604761_1755532841891.jpg",
+      "rel_path": "Song ngữ - Khai trương - Kira Art & Coffee/IMG_1755532604761_1755532841891.jpg",
+      "size_kb": 449.4
+    },
+    {
+      "folder": "Song ngữ - Khai trương - Kira Art & Coffee",
+      "filename": "IMG_20250818_225951.jpg",
+      "rel_path": "Song ngữ - Khai trương - Kira Art & Coffee/IMG_20250818_225951.jpg",
+      "size_kb": 526.1
+    },
+    {
+      "folder": "Song ngữ - Khai trương - Kira Art & Coffee",
+      "filename": "IMG_20250818_230000.jpg",
+      "rel_path": "Song ngữ - Khai trương - Kira Art & Coffee/IMG_20250818_230000.jpg",
+      "size_kb": 495.8
+    },
+    {
+      "folder": "Song ngữ - Khai trương - Kira Art & Coffee",
+      "filename": "IMG_20250818_230010.jpg",
+      "rel_path": "Song ngữ - Khai trương - Kira Art & Coffee/IMG_20250818_230010.jpg",
+      "size_kb": 477.5
+    },
+    {
+      "folder": "Song ngữ - Khai trương - Kira Art & Coffee",
+      "filename": "IMG_20250818_230405.jpg",
+      "rel_path": "Song ngữ - Khai trương - Kira Art & Coffee/IMG_20250818_230405.jpg",
+      "size_kb": 429.4
+    },
+    {
+      "folder": "Song ngữ - Khai trương - Kira Art & Coffee",
+      "filename": "MEITU_20250818_231800049.jpg",
+      "rel_path": "Song ngữ - Khai trương - Kira Art & Coffee/MEITU_20250818_231800049.jpg",
+      "size_kb": 1534.6
+    },
+    {
+      "folder": "Song ngữ - Khai trương - Kira Art & Coffee",
+      "filename": "MEITU_20250818_232746090.jpg",
+      "rel_path": "Song ngữ - Khai trương - Kira Art & Coffee/MEITU_20250818_232746090.jpg",
+      "size_kb": 1070.3
+    },
+    {
+      "folder": "Song ngữ - Khai trương - Kira Art & Coffee",
+      "filename": "MEITU_20250818_234842391.jpg",
+      "rel_path": "Song ngữ - Khai trương - Kira Art & Coffee/MEITU_20250818_234842391.jpg",
+      "size_kb": 756.0
+    },
+    {
+      "folder": "Song ngữ - Khai trương - Kira Art & Coffee",
+      "filename": "MEITU_20250818_235451519.jpg",
+      "rel_path": "Song ngữ - Khai trương - Kira Art & Coffee/MEITU_20250818_235451519.jpg",
+      "size_kb": 661.9
+    },
+    {
+      "folder": "Song ngữ - Khai trương - Kira Art & Coffee",
+      "filename": "MEITU_20250818_235623365.jpg",
+      "rel_path": "Song ngữ - Khai trương - Kira Art & Coffee/MEITU_20250818_235623365.jpg",
+      "size_kb": 1800.7
+    },
+    {
+      "folder": "Song ngữ - Khai trương - Kira Art & Coffee",
+      "filename": "MEITU_20250819_083706122.jpg",
+      "rel_path": "Song ngữ - Khai trương - Kira Art & Coffee/MEITU_20250819_083706122.jpg",
+      "size_kb": 1193.9
+    },
+    {
+      "folder": "Song ngữ - Khai trương - Kira Art & Coffee",
+      "filename": "MEITU_20250819_084249031.jpg",
+      "rel_path": "Song ngữ - Khai trương - Kira Art & Coffee/MEITU_20250819_084249031.jpg",
+      "size_kb": 633.7
+    },
+    {
+      "folder": "Song ngữ - Khai trương - Kira Art & Coffee",
+      "filename": "MEITU_20250819_084635136.jpg",
+      "rel_path": "Song ngữ - Khai trương - Kira Art & Coffee/MEITU_20250819_084635136.jpg",
+      "size_kb": 1263.6
+    },
+    {
+      "folder": "Song ngữ - Khai trương - Kira Art & Coffee",
+      "filename": "MEITU_20250819_085014109.jpg",
+      "rel_path": "Song ngữ - Khai trương - Kira Art & Coffee/MEITU_20250819_085014109.jpg",
+      "size_kb": 1664.9
+    },
+    {
+      "folder": "Song ngữ - Khai trương - Kira Art & Coffee",
+      "filename": "Song ngữ - Khai trương - Kira Art & Coffee_Gallery.jpg",
+      "rel_path": "Song ngữ - Khai trương - Kira Art & Coffee/Song ngữ - Khai trương - Kira Art & Coffee_Gallery.jpg",
+      "size_kb": 3435.0
+    },
+    {
+      "folder": "Song ngữ - Wedding & Lễ gia tiên - Phượng Hoàng & Harris",
+      "filename": "641662307_2383000212138930_3518582963047992804_n.jpg",
+      "rel_path": "Song ngữ - Wedding & Lễ gia tiên - Phượng Hoàng & Harris/641662307_2383000212138930_3518582963047992804_n.jpg",
+      "size_kb": 757.9
+    },
+    {
+      "folder": "Song ngữ - Wedding & Lễ gia tiên - Phượng Hoàng & Harris",
+      "filename": "643723918_2383000325472252_1828586231761123992_n.jpg",
+      "rel_path": "Song ngữ - Wedding & Lễ gia tiên - Phượng Hoàng & Harris/643723918_2383000325472252_1828586231761123992_n.jpg",
+      "size_kb": 854.5
+    },
+    {
+      "folder": "Song ngữ - Wedding & Lễ gia tiên - Phượng Hoàng & Harris",
+      "filename": "643900206_2383000442138907_8117697928830987009_n.jpg",
+      "rel_path": "Song ngữ - Wedding & Lễ gia tiên - Phượng Hoàng & Harris/643900206_2383000442138907_8117697928830987009_n.jpg",
+      "size_kb": 723.9
+    },
+    {
+      "folder": "Song ngữ - Wedding & Lễ gia tiên - Phượng Hoàng & Harris",
+      "filename": "644369372_2383000285472256_7849542112756635409_n.jpg",
+      "rel_path": "Song ngữ - Wedding & Lễ gia tiên - Phượng Hoàng & Harris/644369372_2383000285472256_7849542112756635409_n.jpg",
+      "size_kb": 468.9
+    },
+    {
+      "folder": "Song ngữ - Wedding & Lễ gia tiên - Phượng Hoàng & Harris",
+      "filename": "644370749_2383000145472270_6818380062131385365_n.jpg",
+      "rel_path": "Song ngữ - Wedding & Lễ gia tiên - Phượng Hoàng & Harris/644370749_2383000145472270_6818380062131385365_n.jpg",
+      "size_kb": 591.3
+    },
+    {
+      "folder": "Song ngữ - Wedding & Lễ gia tiên - Phượng Hoàng & Harris",
+      "filename": "644438870_2383000968805521_8068525980412278176_n.jpg",
+      "rel_path": "Song ngữ - Wedding & Lễ gia tiên - Phượng Hoàng & Harris/644438870_2383000968805521_8068525980412278176_n.jpg",
+      "size_kb": 813.1
+    },
+    {
+      "folder": "Song ngữ - Wedding & Lễ gia tiên - Phượng Hoàng & Harris",
+      "filename": "644470463_2383000372138914_6257945501674775231_n.jpg",
+      "rel_path": "Song ngữ - Wedding & Lễ gia tiên - Phượng Hoàng & Harris/644470463_2383000372138914_6257945501674775231_n.jpg",
+      "size_kb": 828.5
+    },
+    {
+      "folder": "Song ngữ - Wedding & Lễ gia tiên - Phượng Hoàng & Harris",
+      "filename": "DSC02393.JPG",
+      "rel_path": "Song ngữ - Wedding & Lễ gia tiên - Phượng Hoàng & Harris/DSC02393.JPG",
+      "size_kb": 14625.8
+    },
+    {
+      "folder": "Song ngữ - Wedding & Lễ gia tiên - Phượng Hoàng & Harris",
+      "filename": "DSC02447.JPG",
+      "rel_path": "Song ngữ - Wedding & Lễ gia tiên - Phượng Hoàng & Harris/DSC02447.JPG",
+      "size_kb": 18579.9
+    },
+    {
+      "folder": "Song ngữ - Wedding & Lễ gia tiên - Phượng Hoàng & Harris",
+      "filename": "DSC02452.JPG",
+      "rel_path": "Song ngữ - Wedding & Lễ gia tiên - Phượng Hoàng & Harris/DSC02452.JPG",
+      "size_kb": 17543.6
+    },
+    {
+      "folder": "Song ngữ - Wedding & Lễ gia tiên - Phượng Hoàng & Harris",
+      "filename": "DSC02468.JPG",
+      "rel_path": "Song ngữ - Wedding & Lễ gia tiên - Phượng Hoàng & Harris/DSC02468.JPG",
+      "size_kb": 14213.0
+    },
+    {
+      "folder": "Talkshow - HTV9 - Gia tăng nhận thức về bệnh hen suyễn",
+      "filename": "578353710_2292009634571322_2606961475540866932_n.jpg",
+      "rel_path": "Talkshow - HTV9 - Gia tăng nhận thức về bệnh hen suyễn/578353710_2292009634571322_2606961475540866932_n.jpg",
+      "size_kb": 722.0
+    },
+    {
+      "folder": "Talkshow - HTV9 - Gia tăng nhận thức về bệnh hen suyễn",
+      "filename": "579009878_2292011611237791_3159431605302404538_n.jpg",
+      "rel_path": "Talkshow - HTV9 - Gia tăng nhận thức về bệnh hen suyễn/579009878_2292011611237791_3159431605302404538_n.jpg",
+      "size_kb": 629.3
+    },
+    {
+      "folder": "Talkshow - HTV9 - Gia tăng nhận thức về bệnh hen suyễn",
+      "filename": "579242336_2292009351238017_845994082238981161_n.jpg",
+      "rel_path": "Talkshow - HTV9 - Gia tăng nhận thức về bệnh hen suyễn/579242336_2292009351238017_845994082238981161_n.jpg",
+      "size_kb": 510.7
+    },
+    {
+      "folder": "Talkshow - HTV9 - Gia tăng nhận thức về bệnh hen suyễn",
+      "filename": "579251242_2292008667904752_1972413149576443388_n.jpg",
+      "rel_path": "Talkshow - HTV9 - Gia tăng nhận thức về bệnh hen suyễn/579251242_2292008667904752_1972413149576443388_n.jpg",
+      "size_kb": 565.2
+    },
+    {
+      "folder": "Talkshow - HTV9 - Gia tăng nhận thức về bệnh hen suyễn",
+      "filename": "579286453_2292011561237796_163977061256101277_n.jpg",
+      "rel_path": "Talkshow - HTV9 - Gia tăng nhận thức về bệnh hen suyễn/579286453_2292011561237796_163977061256101277_n.jpg",
+      "size_kb": 683.1
+    },
+    {
+      "folder": "Talkshow - HTV9 - Gia tăng nhận thức về bệnh hen suyễn",
+      "filename": "579377504_2292008161238136_1610134815643101220_n.jpg",
+      "rel_path": "Talkshow - HTV9 - Gia tăng nhận thức về bệnh hen suyễn/579377504_2292008161238136_1610134815643101220_n.jpg",
+      "size_kb": 448.5
+    },
+    {
+      "folder": "Talkshow - HTV9 - Gia tăng nhận thức về bệnh hen suyễn",
+      "filename": "580540264_2292009544571331_1615165170409660541_n.jpg",
+      "rel_path": "Talkshow - HTV9 - Gia tăng nhận thức về bệnh hen suyễn/580540264_2292009544571331_1615165170409660541_n.jpg",
+      "size_kb": 584.5
+    },
+    {
+      "folder": "Talkshow - HTV9 - Gia tăng nhận thức về bệnh hen suyễn",
+      "filename": "580633614_2292011767904442_7369975991878490662_n.jpg",
+      "rel_path": "Talkshow - HTV9 - Gia tăng nhận thức về bệnh hen suyễn/580633614_2292011767904442_7369975991878490662_n.jpg",
+      "size_kb": 730.8
+    },
+    {
+      "folder": "Talkshow - HTV9 - Gia tăng nhận thức về bệnh hen suyễn",
+      "filename": "580705594_2292009707904648_2244738739645583997_n.jpg",
+      "rel_path": "Talkshow - HTV9 - Gia tăng nhận thức về bệnh hen suyễn/580705594_2292009707904648_2244738739645583997_n.jpg",
+      "size_kb": 714.9
+    },
+    {
+      "folder": "Talkshow - HTV9 - Gia tăng nhận thức về bệnh hen suyễn",
+      "filename": "581740343_2292009127904706_7818754686857067643_n.jpg",
+      "rel_path": "Talkshow - HTV9 - Gia tăng nhận thức về bệnh hen suyễn/581740343_2292009127904706_7818754686857067643_n.jpg",
+      "size_kb": 709.3
+    },
+    {
+      "folder": "Talkshow - HTV9 - Gia tăng nhận thức về bệnh hen suyễn",
+      "filename": "581765551_2292011877904431_6707639183439083174_n.jpg",
+      "rel_path": "Talkshow - HTV9 - Gia tăng nhận thức về bệnh hen suyễn/581765551_2292011877904431_6707639183439083174_n.jpg",
+      "size_kb": 660.6
+    },
+    {
+      "folder": "Talkshow - HTV9 - Gia tăng nhận thức về bệnh hen suyễn",
+      "filename": "581828745_2292009494571336_33318689126401168_n.jpg",
+      "rel_path": "Talkshow - HTV9 - Gia tăng nhận thức về bệnh hen suyễn/581828745_2292009494571336_33318689126401168_n.jpg",
+      "size_kb": 549.2
+    },
+    {
+      "folder": "Talkshow - HTV9 - Gia tăng nhận thức về bệnh hen suyễn",
+      "filename": "581836226_2292009417904677_5840928948248465099_n.jpg",
+      "rel_path": "Talkshow - HTV9 - Gia tăng nhận thức về bệnh hen suyễn/581836226_2292009417904677_5840928948248465099_n.jpg",
+      "size_kb": 615.3
+    },
+    {
+      "folder": "Talkshow - HTV9 - Gia tăng nhận thức về bệnh hen suyễn",
+      "filename": "581938554_2292011691237783_2620488772162748279_n.jpg",
+      "rel_path": "Talkshow - HTV9 - Gia tăng nhận thức về bệnh hen suyễn/581938554_2292011691237783_2620488772162748279_n.jpg",
+      "size_kb": 616.7
+    },
+    {
+      "folder": "Talkshow - HTV9 - Gia tăng nhận thức về bệnh hen suyễn",
+      "filename": "DSC_8920.JPG",
+      "rel_path": "Talkshow - HTV9 - Gia tăng nhận thức về bệnh hen suyễn/DSC_8920.JPG",
+      "size_kb": 11647.4
+    },
+    {
+      "folder": "Talkshow - Huy Forum x Lê Tiêu Linh - Master your language",
+      "filename": "IMG_1744370423633_1744370468344.jpg",
+      "rel_path": "Talkshow - Huy Forum x Lê Tiêu Linh - Master your language/IMG_1744370423633_1744370468344.jpg",
+      "size_kb": 442.0
+    },
+    {
+      "folder": "Talkshow - Huy Forum x Lê Tiêu Linh - Master your language",
+      "filename": "IMG_1744370424534_1744370468818.jpg",
+      "rel_path": "Talkshow - Huy Forum x Lê Tiêu Linh - Master your language/IMG_1744370424534_1744370468818.jpg",
+      "size_kb": 458.4
+    },
+    {
+      "folder": "Talkshow - Huy Forum x Lê Tiêu Linh - Master your language",
+      "filename": "IMG_1744370426769_1744370470448.jpg",
+      "rel_path": "Talkshow - Huy Forum x Lê Tiêu Linh - Master your language/IMG_1744370426769_1744370470448.jpg",
+      "size_kb": 486.7
+    },
+    {
+      "folder": "Talkshow - Huy Forum x Lê Tiêu Linh - Master your language",
+      "filename": "IMG_1744370431732_1744370472749.jpg",
+      "rel_path": "Talkshow - Huy Forum x Lê Tiêu Linh - Master your language/IMG_1744370431732_1744370472749.jpg",
+      "size_kb": 589.6
+    },
+    {
+      "folder": "Talkshow - Huy Forum x Lê Tiêu Linh - Master your language",
+      "filename": "IMG_1744370432393_1744370473130.jpg",
+      "rel_path": "Talkshow - Huy Forum x Lê Tiêu Linh - Master your language/IMG_1744370432393_1744370473130.jpg",
+      "size_kb": 625.4
+    },
+    {
+      "folder": "Talkshow - Huy Forum x Lê Tiêu Linh - Master your language",
+      "filename": "MC Thùy Trang - Master your language.jpg",
+      "rel_path": "Talkshow - Huy Forum x Lê Tiêu Linh - Master your language/MC Thùy Trang - Master your language.jpg",
+      "size_kb": 2487.8
+    },
+    {
+      "folder": "Trung thu - Kira Art & Coffee",
+      "filename": "557621962_2258815887890697_3290187935512091524_n.jpg",
+      "rel_path": "Trung thu - Kira Art & Coffee/557621962_2258815887890697_3290187935512091524_n.jpg",
+      "size_kb": 679.5
+    },
+    {
+      "folder": "Trung thu - Kira Art & Coffee",
+      "filename": "557698270_2258816134557339_9004114298995657925_n.jpg",
+      "rel_path": "Trung thu - Kira Art & Coffee/557698270_2258816134557339_9004114298995657925_n.jpg",
+      "size_kb": 448.7
+    },
+    {
+      "folder": "Trung thu - Kira Art & Coffee",
+      "filename": "557742297_2258815971224022_2856237174579019246_n.jpg",
+      "rel_path": "Trung thu - Kira Art & Coffee/557742297_2258815971224022_2856237174579019246_n.jpg",
+      "size_kb": 637.5
+    },
+    {
+      "folder": "Trung thu - Kira Art & Coffee",
+      "filename": "558664237_2258816061224013_2182698444666028361_n.jpg",
+      "rel_path": "Trung thu - Kira Art & Coffee/558664237_2258816061224013_2182698444666028361_n.jpg",
+      "size_kb": 687.8
+    },
+    {
+      "folder": "Trung thu - Kira Art & Coffee",
+      "filename": "558884641_2258815621224057_8887709846126253227_n.jpg",
+      "rel_path": "Trung thu - Kira Art & Coffee/558884641_2258815621224057_8887709846126253227_n.jpg",
+      "size_kb": 604.5
+    },
+    {
+      "folder": "Trung thu - Kira Art & Coffee",
+      "filename": "FB_IMG_1759910855836.jpg",
+      "rel_path": "Trung thu - Kira Art & Coffee/FB_IMG_1759910855836.jpg",
+      "size_kb": 495.5
+    },
+    {
+      "folder": "Trung thu - Kira Art & Coffee",
+      "filename": "Trung thu - Kira Art & Coffee_Gallery.jpg",
+      "rel_path": "Trung thu - Kira Art & Coffee/Trung thu - Kira Art & Coffee_Gallery.jpg",
+      "size_kb": 2020.3
+    },
+    {
+      "folder": "Trung thu - Thảo điền Pearl",
+      "filename": "20251003_190136.jpg",
+      "rel_path": "Trung thu - Thảo điền Pearl/20251003_190136.jpg",
+      "size_kb": 2493.9
+    },
+    {
+      "folder": "Trung thu - Thảo điền Pearl",
+      "filename": "20251003_190142.jpg",
+      "rel_path": "Trung thu - Thảo điền Pearl/20251003_190142.jpg",
+      "size_kb": 2454.2
+    },
+    {
+      "folder": "Trung thu - Thảo điền Pearl",
+      "filename": "20251003_190146.jpg",
+      "rel_path": "Trung thu - Thảo điền Pearl/20251003_190146.jpg",
+      "size_kb": 2551.8
+    },
+    {
+      "folder": "Trung thu - Thảo điền Pearl",
+      "filename": "20251003_191743.jpg",
+      "rel_path": "Trung thu - Thảo điền Pearl/20251003_191743.jpg",
+      "size_kb": 1041.3
+    },
+    {
+      "folder": "Trung thu - Thảo điền Pearl",
+      "filename": "20251003_191843.jpg",
+      "rel_path": "Trung thu - Thảo điền Pearl/20251003_191843.jpg",
+      "size_kb": 1277.7
+    },
+    {
+      "folder": "Trung thu - Thảo điền Pearl",
+      "filename": "MEITU_20251003_201216496.jpg",
+      "rel_path": "Trung thu - Thảo điền Pearl/MEITU_20251003_201216496.jpg",
+      "size_kb": 3858.0
+    },
+    {
+      "folder": "Trung thu - Thảo điền Pearl",
+      "filename": "MEITU_20251003_201646748.jpg",
+      "rel_path": "Trung thu - Thảo điền Pearl/MEITU_20251003_201646748.jpg",
+      "size_kb": 3850.2
+    },
+    {
+      "folder": "Trung thu - Thảo điền Pearl",
+      "filename": "MEITU_20251003_202029503.jpg",
+      "rel_path": "Trung thu - Thảo điền Pearl/MEITU_20251003_202029503.jpg",
+      "size_kb": 2218.3
+    },
+    {
+      "folder": "Trung thu - Thảo điền Pearl",
+      "filename": "MEITU_20251003_202322450.jpg",
+      "rel_path": "Trung thu - Thảo điền Pearl/MEITU_20251003_202322450.jpg",
+      "size_kb": 2110.4
+    },
+    {
+      "folder": "Trung thu - Tropic Garden",
+      "filename": "558043098_2261744967597789_2621479192741966538_n.jpg",
+      "rel_path": "Trung thu - Tropic Garden/558043098_2261744967597789_2621479192741966538_n.jpg",
+      "size_kb": 860.9
+    },
+    {
+      "folder": "Trung thu - Tropic Garden",
+      "filename": "558184257_2256098248162461_4783001048271844457_n.jpg",
+      "rel_path": "Trung thu - Tropic Garden/558184257_2256098248162461_4783001048271844457_n.jpg",
+      "size_kb": 464.1
+    },
+    {
+      "folder": "Trung thu - Tropic Garden",
+      "filename": "558871430_2261745190931100_1179035660684437680_n.jpg",
+      "rel_path": "Trung thu - Tropic Garden/558871430_2261745190931100_1179035660684437680_n.jpg",
+      "size_kb": 822.2
+    },
+    {
+      "folder": "Trung thu - Tropic Garden",
+      "filename": "558890868_2261744874264465_8496731661221290835_n.jpg",
+      "rel_path": "Trung thu - Tropic Garden/558890868_2261744874264465_8496731661221290835_n.jpg",
+      "size_kb": 775.5
+    },
+    {
+      "folder": "Trung thu - Tropic Garden",
+      "filename": "558975508_2256098348162451_1293780348686370598_n.jpg",
+      "rel_path": "Trung thu - Tropic Garden/558975508_2256098348162451_1293780348686370598_n.jpg",
+      "size_kb": 475.0
+    },
+    {
+      "folder": "Wedding - Lễ vu quy - Kim Ngân & Minh Tiến",
+      "filename": "619672290_2353892241716394_3595998242888983375_n.jpg",
+      "rel_path": "Wedding - Lễ vu quy - Kim Ngân & Minh Tiến/619672290_2353892241716394_3595998242888983375_n.jpg",
+      "size_kb": 484.3
+    },
+    {
+      "folder": "Wedding - Lễ vu quy - Kim Ngân & Minh Tiến",
+      "filename": "619973887_2353892078383077_4904769288302725909_n.jpg",
+      "rel_path": "Wedding - Lễ vu quy - Kim Ngân & Minh Tiến/619973887_2353892078383077_4904769288302725909_n.jpg",
+      "size_kb": 541.7
+    },
+    {
+      "folder": "Wedding - Lễ vu quy - Kim Ngân & Minh Tiến",
+      "filename": "620104522_2353892331716385_7242578635716146453_n.jpg",
+      "rel_path": "Wedding - Lễ vu quy - Kim Ngân & Minh Tiến/620104522_2353892331716385_7242578635716146453_n.jpg",
+      "size_kb": 516.4
+    },
+    {
+      "folder": "Wedding - Lễ vu quy - Kim Ngân & Minh Tiến",
+      "filename": "622874597_2353892121716406_463375540461387358_n.jpg",
+      "rel_path": "Wedding - Lễ vu quy - Kim Ngân & Minh Tiến/622874597_2353892121716406_463375540461387358_n.jpg",
+      "size_kb": 477.8
+    },
+    {
+      "folder": "Wedding - Lễ vu quy - Kim Ngân & Minh Tiến",
+      "filename": "DSC01455.JPG",
+      "rel_path": "Wedding - Lễ vu quy - Kim Ngân & Minh Tiến/DSC01455.JPG",
+      "size_kb": 12179.2
+    },
+    {
+      "folder": "Wedding - Lễ vu quy - Kim Ngân & Minh Tiến",
+      "filename": "DSC01499.JPG",
+      "rel_path": "Wedding - Lễ vu quy - Kim Ngân & Minh Tiến/DSC01499.JPG",
+      "size_kb": 12556.8
+    },
+    {
+      "folder": "Wedding - Lễ vu quy - Kim Ngân & Minh Tiến",
+      "filename": "DSC01500.JPG",
+      "rel_path": "Wedding - Lễ vu quy - Kim Ngân & Minh Tiến/DSC01500.JPG",
+      "size_kb": 12735.9
+    },
+    {
+      "folder": "Wedding - Lễ vu quy - Kim Ngân & Minh Tiến",
+      "filename": "DSC01548.JPG",
+      "rel_path": "Wedding - Lễ vu quy - Kim Ngân & Minh Tiến/DSC01548.JPG",
+      "size_kb": 9455.7
+    },
+    {
+      "folder": "Wedding - Lễ vu quy - Kim Ngân & Minh Tiến",
+      "filename": "DSC01877.JPG",
+      "rel_path": "Wedding - Lễ vu quy - Kim Ngân & Minh Tiến/DSC01877.JPG",
+      "size_kb": 8879.1
+    },
+    {
+      "folder": "Wedding - Lễ vu quy - Kim Ngân & Minh Tiến",
+      "filename": "DSC02042.JPG",
+      "rel_path": "Wedding - Lễ vu quy - Kim Ngân & Minh Tiến/DSC02042.JPG",
+      "size_kb": 16431.4
+    },
+    {
+      "folder": "Wedding - Lễ vu quy - Kim Ngân & Minh Tiến",
+      "filename": "DSC02060.JPG",
+      "rel_path": "Wedding - Lễ vu quy - Kim Ngân & Minh Tiến/DSC02060.JPG",
+      "size_kb": 12322.0
+    },
+    {
+      "folder": "Wedding - Lễ vu quy - Kim Ngân & Minh Tiến",
+      "filename": "DSC02167.JPG",
+      "rel_path": "Wedding - Lễ vu quy - Kim Ngân & Minh Tiến/DSC02167.JPG",
+      "size_kb": 10703.4
+    },
+    {
+      "folder": "Wedding - Lễ vu quy - Kim Ngân & Minh Tiến",
+      "filename": "MEITU_20260124_235833366.jpg",
+      "rel_path": "Wedding - Lễ vu quy - Kim Ngân & Minh Tiến/MEITU_20260124_235833366.jpg",
+      "size_kb": 3176.0
+    },
+    {
+      "folder": "Wedding - Lễ vu quy - Kim Ngân & Minh Tiến",
+      "filename": "MEITU_20260125_000111915.jpg",
+      "rel_path": "Wedding - Lễ vu quy - Kim Ngân & Minh Tiến/MEITU_20260125_000111915.jpg",
+      "size_kb": 3337.4
+    },
+    {
+      "folder": "Wedding - Tân hôn - Hoàng Phúc & Diễm Kiều",
+      "filename": "MC Thùy Trang-Trang Naria-Đám cưới (1).png",
+      "rel_path": "Wedding - Tân hôn - Hoàng Phúc & Diễm Kiều/MC Thùy Trang-Trang Naria-Đám cưới (1).png",
+      "size_kb": 4174.8
+    },
+    {
+      "folder": "Wedding - Tân hôn - Hoàng Phúc & Diễm Kiều",
+      "filename": "MC Thùy Trang-Trang Naria-Đám cưới (2.png",
+      "rel_path": "Wedding - Tân hôn - Hoàng Phúc & Diễm Kiều/MC Thùy Trang-Trang Naria-Đám cưới (2.png",
+      "size_kb": 3874.0
+    },
+    {
+      "folder": "Wedding - Tân hôn - Hoàng Phúc & Diễm Kiều",
+      "filename": "MC Thùy Trang-Trang Naria-Đám cưới (3).png",
+      "rel_path": "Wedding - Tân hôn - Hoàng Phúc & Diễm Kiều/MC Thùy Trang-Trang Naria-Đám cưới (3).png",
+      "size_kb": 3846.0
+    },
+    {
+      "folder": "Wedding - Tân hôn - Hoàng Phúc & Diễm Kiều",
+      "filename": "MC Thùy Trang-Trang Naria-Đám cưới (4).png",
+      "rel_path": "Wedding - Tân hôn - Hoàng Phúc & Diễm Kiều/MC Thùy Trang-Trang Naria-Đám cưới (4).png",
+      "size_kb": 3710.8
+    },
+    {
+      "folder": "Wedding - Tân hôn - Hoàng Phúc & Diễm Kiều",
+      "filename": "MC Thùy Trang-Trang Naria-Đám cưới (5).png",
+      "rel_path": "Wedding - Tân hôn - Hoàng Phúc & Diễm Kiều/MC Thùy Trang-Trang Naria-Đám cưới (5).png",
+      "size_kb": 3821.1
+    },
+    {
+      "folder": "Workshop - Đại học Hồng Bàng",
+      "filename": "DSC_8988.JPG",
+      "rel_path": "Workshop - Đại học Hồng Bàng/DSC_8988.JPG",
+      "size_kb": 9748.6
+    },
+    {
+      "folder": "Workshop - Đại học Hồng Bàng",
+      "filename": "DSC_8992.JPG",
+      "rel_path": "Workshop - Đại học Hồng Bàng/DSC_8992.JPG",
+      "size_kb": 9293.7
+    },
+    {
+      "folder": "Workshop - Đại học Hồng Bàng",
+      "filename": "DSC_8993.JPG",
+      "rel_path": "Workshop - Đại học Hồng Bàng/DSC_8993.JPG",
+      "size_kb": 10593.9
+    },
+    {
+      "folder": "Workshop - Đại học Hồng Bàng",
+      "filename": "DSC_9089.JPG",
+      "rel_path": "Workshop - Đại học Hồng Bàng/DSC_9089.JPG",
+      "size_kb": 9158.5
+    },
+    {
+      "folder": "Workshop - Đại học Hồng Bàng",
+      "filename": "DSC_9101.JPG",
+      "rel_path": "Workshop - Đại học Hồng Bàng/DSC_9101.JPG",
+      "size_kb": 8851.4
+    },
+    {
+      "folder": "Workshop - Đại học Hồng Bàng",
+      "filename": "DSC_9126 (1).JPG",
+      "rel_path": "Workshop - Đại học Hồng Bàng/DSC_9126 (1).JPG",
+      "size_kb": 11435.1
+    },
+    {
+      "folder": "YEP -  ZENS (2026)",
+      "filename": "DSC02581.jpg",
+      "rel_path": "YEP -  ZENS (2026)/DSC02581.jpg",
+      "size_kb": 6225.2
+    },
+    {
+      "folder": "YEP -  ZENS (2026)",
+      "filename": "DSC02594.jpg",
+      "rel_path": "YEP -  ZENS (2026)/DSC02594.jpg",
+      "size_kb": 4637.4
+    },
+    {
+      "folder": "YEP -  ZENS (2026)",
+      "filename": "DSC02667.jpg",
+      "rel_path": "YEP -  ZENS (2026)/DSC02667.jpg",
+      "size_kb": 1682.8
+    },
+    {
+      "folder": "YEP -  ZENS (2026)",
+      "filename": "DSC02723.jpg",
+      "rel_path": "YEP -  ZENS (2026)/DSC02723.jpg",
+      "size_kb": 2830.9
+    },
+    {
+      "folder": "YEP -  ZENS (2026)",
+      "filename": "DSC03120.jpg",
+      "rel_path": "YEP -  ZENS (2026)/DSC03120.jpg",
+      "size_kb": 3472.4
+    },
+    {
+      "folder": "YEP -  ZENS (2026)",
+      "filename": "MEITU_20260427_123956525.jpg",
+      "rel_path": "YEP -  ZENS (2026)/MEITU_20260427_123956525.jpg",
+      "size_kb": 3741.0
+    },
+    {
+      "folder": "YEP -  ZENS (2026)",
+      "filename": "MEITU_20260427_124918591.jpg",
+      "rel_path": "YEP -  ZENS (2026)/MEITU_20260427_124918591.jpg",
+      "size_kb": 5829.4
+    },
+    {
+      "folder": "YEP -  ZENS (2026)",
+      "filename": "MEITU_20260427_125456613.jpg",
+      "rel_path": "YEP -  ZENS (2026)/MEITU_20260427_125456613.jpg",
+      "size_kb": 5395.3
+    },
+    {
+      "folder": "YEP -  ZENS (2026)",
+      "filename": "MEITU_20260427_125906254.jpg",
+      "rel_path": "YEP -  ZENS (2026)/MEITU_20260427_125906254.jpg",
+      "size_kb": 5717.4
+    },
+    {
+      "folder": "YEP - 2025",
+      "filename": "0328.png",
+      "rel_path": "YEP - 2025/0328.png",
+      "size_kb": 5866.1
+    },
+    {
+      "folder": "YEP - Dòng họ Hoàng Đình",
+      "filename": "beauty_1735988735746.jpeg",
+      "rel_path": "YEP - Dòng họ Hoàng Đình/beauty_1735988735746.jpeg",
+      "size_kb": 2579.5
+    },
+    {
+      "folder": "YEP - Hội đồng hương xóm Lộc Nội",
+      "filename": "0103(1).png",
+      "rel_path": "YEP - Hội đồng hương xóm Lộc Nội/0103(1).png",
+      "size_kb": 1574.4
+    },
+    {
+      "folder": "YEP - Hội đồng hương xóm Lộc Nội",
+      "filename": "0103.png",
+      "rel_path": "YEP - Hội đồng hương xóm Lộc Nội/0103.png",
+      "size_kb": 3718.4
+    },
+    {
+      "folder": "YEP - Hội đồng hương xóm Lộc Nội",
+      "filename": "YEP-MC Thùy Trang 1.png",
+      "rel_path": "YEP - Hội đồng hương xóm Lộc Nội/YEP-MC Thùy Trang 1.png",
+      "size_kb": 3545.0
+    },
+    {
+      "folder": "YEP - Hội đồng hương xóm Lộc Nội",
+      "filename": "YEP-MC Thùy Trang 2.png",
+      "rel_path": "YEP - Hội đồng hương xóm Lộc Nội/YEP-MC Thùy Trang 2.png",
+      "size_kb": 3486.4
+    },
+    {
+      "folder": "YEP - PAPA LEE'S (2024)",
+      "filename": "YEP - PAPA LEE'S (2024)_Gallery.jpg",
+      "rel_path": "YEP - PAPA LEE'S (2024)/YEP - PAPA LEE'S (2024)_Gallery.jpg",
+      "size_kb": 3507.4
+    },
+    {
+      "folder": "YEP - PAPA LEE'S (2025)",
+      "filename": "KJT02900.jpg",
+      "rel_path": "YEP - PAPA LEE'S (2025)/KJT02900.jpg",
+      "size_kb": 478.6
+    },
+    {
+      "folder": "YEP - PAPA LEE'S (2025)",
+      "filename": "KJT02902.jpg",
+      "rel_path": "YEP - PAPA LEE'S (2025)/KJT02902.jpg",
+      "size_kb": 461.2
+    },
+    {
+      "folder": "YEP - PAPA LEE'S (2025)",
+      "filename": "KJT02903.jpg",
+      "rel_path": "YEP - PAPA LEE'S (2025)/KJT02903.jpg",
+      "size_kb": 454.0
+    },
+    {
+      "folder": "YEP - PAPA LEE'S (2025)",
+      "filename": "KJT02908.jpg",
+      "rel_path": "YEP - PAPA LEE'S (2025)/KJT02908.jpg",
+      "size_kb": 540.3
+    },
+    {
+      "folder": "YEP - PAPA LEE'S (2025)",
+      "filename": "KJT02910.jpg",
+      "rel_path": "YEP - PAPA LEE'S (2025)/KJT02910.jpg",
+      "size_kb": 526.7
+    },
+    {
+      "folder": "YEP - PAPA LEE'S (2025)",
+      "filename": "KJT02912.jpg",
+      "rel_path": "YEP - PAPA LEE'S (2025)/KJT02912.jpg",
+      "size_kb": 555.7
+    },
+    {
+      "folder": "YEP - PAPA LEE'S (2025)",
+      "filename": "KJT03246.jpg",
+      "rel_path": "YEP - PAPA LEE'S (2025)/KJT03246.jpg",
+      "size_kb": 511.2
+    },
+    {
+      "folder": "YEP - PAPA LEE'S (2025)",
+      "filename": "KJT03247.jpg",
+      "rel_path": "YEP - PAPA LEE'S (2025)/KJT03247.jpg",
+      "size_kb": 530.8
+    },
+    {
+      "folder": "YEP - PAPA LEE'S (2025)",
+      "filename": "KJT03249.jpg",
+      "rel_path": "YEP - PAPA LEE'S (2025)/KJT03249.jpg",
+      "size_kb": 521.2
+    },
+    {
+      "folder": "YEP - PAPA LEE'S (2025)",
+      "filename": "KJT03251.jpg",
+      "rel_path": "YEP - PAPA LEE'S (2025)/KJT03251.jpg",
+      "size_kb": 564.8
+    },
+    {
+      "folder": "YEP - PAPA LEE'S (2025)",
+      "filename": "KJT03252.jpg",
+      "rel_path": "YEP - PAPA LEE'S (2025)/KJT03252.jpg",
+      "size_kb": 527.6
+    },
+    {
+      "folder": "YEP - PAPA LEE'S (2025)",
+      "filename": "KJT03283.jpg",
+      "rel_path": "YEP - PAPA LEE'S (2025)/KJT03283.jpg",
+      "size_kb": 516.1
+    },
+    {
+      "folder": "YEP - PAPA LEE'S (2025)",
+      "filename": "KJT03288.jpg",
+      "rel_path": "YEP - PAPA LEE'S (2025)/KJT03288.jpg",
+      "size_kb": 452.7
+    },
+    {
+      "folder": "YEP - PAPA LEE'S (2025)",
+      "filename": "KJT03289.jpg",
+      "rel_path": "YEP - PAPA LEE'S (2025)/KJT03289.jpg",
+      "size_kb": 507.5
+    },
+    {
+      "folder": "YEP - PAPA LEE'S (2025)",
+      "filename": "KJT03385.jpg",
+      "rel_path": "YEP - PAPA LEE'S (2025)/KJT03385.jpg",
+      "size_kb": 509.8
+    },
+    {
+      "folder": "YEP - PAPA LEE'S (2025)",
+      "filename": "KJT03417.jpg",
+      "rel_path": "YEP - PAPA LEE'S (2025)/KJT03417.jpg",
+      "size_kb": 502.8
+    },
+    {
+      "folder": "YEP - PAPA LEE'S (2025)",
+      "filename": "KJT03420.jpg",
+      "rel_path": "YEP - PAPA LEE'S (2025)/KJT03420.jpg",
+      "size_kb": 778.5
+    },
+    {
+      "folder": "YEP - PAPA LEE'S (2025)",
+      "filename": "KJT03426.jpg",
+      "rel_path": "YEP - PAPA LEE'S (2025)/KJT03426.jpg",
+      "size_kb": 712.6
+    },
+    {
+      "folder": "YEP - PAPA LEE'S (2025)",
+      "filename": "KJT03477.jpg",
+      "rel_path": "YEP - PAPA LEE'S (2025)/KJT03477.jpg",
+      "size_kb": 695.1
+    },
+    {
+      "folder": "YEP - PAPA LEE'S (2025)",
+      "filename": "KJT03481.jpg",
+      "rel_path": "YEP - PAPA LEE'S (2025)/KJT03481.jpg",
+      "size_kb": 595.1
+    },
+    {
+      "folder": "YEP - PAPA LEE'S (2025)",
+      "filename": "KJT03681.jpg",
+      "rel_path": "YEP - PAPA LEE'S (2025)/KJT03681.jpg",
+      "size_kb": 484.4
+    },
+    {
+      "folder": "YEP - PAPA LEE'S (2025)",
+      "filename": "KJT03682.jpg",
+      "rel_path": "YEP - PAPA LEE'S (2025)/KJT03682.jpg",
+      "size_kb": 492.4
+    }
+  ]
+}

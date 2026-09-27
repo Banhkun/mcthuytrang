@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Page Layout</title>
+    <style>
+        /* 
+         * PDF PRINT OPTIMIZATION 
+         * Ensures background colors, images, and glowing shadows 
+         * are not stripped out when saving as PDF.
+         */
+        @media print {
+            * {
+                -webkit-print-color-adjust: exact !important;
+                print-color-adjust: exact !important;
+            }
+
+            body {
+                margin: 0;
+                padding: 0;
+            }
+
+            .page-container {
+                page-break-after: always;
+                box-shadow: none !important;
+            }
+        }
+
+        /* Base Reset */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            font-family: Arial, sans-serif;
+        }
+
+        /* 
+         * MAIN PAGE CANVAS
+         * Adjust the width and aspect-ratio based on your target PDF size 
+         * (e.g., A4 landscape is roughly 297mm x 210mm).
+         */
+        .page-container {
+            position: relative;
+            width: 100%;
+            max-width: 1200px;
+            aspect-ratio: 16 / 10;
+            background-color: #050515;
+            /* Deep night sky base */
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+        }
+
+        /* LAYER 1: Background Event Scene */
+        .layer-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: 1;
+            /* Optional: Add a subtle gradient overlay to make text/foreground pop */
+            mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 60%, rgba(0, 0, 0, 0.4) 100%);
+            -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 60%, rgba(0, 0, 0, 0.4) 100%);
+        }
+
+        /* Base style for the floating picture-in-picture frames */
+        .inset-frame {
+            position: absolute;
+            z-index: 3;
+            border: 3px solid #f9d976;
+            /* Gold border */
+            border-radius: 16px;
+            overflow: hidden;
+            /* Glowing gold shadow */
+            box-shadow: 0 0 20px rgba(249, 217, 118, 0.6), inset 0 0 10px rgba(249, 217, 118, 0.3);
+            background-color: #000;
+        }
+
+        .inset-frame img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        /* LAYER 3: Bottom Left Inset Frame (Hosts on stage) */
+        .frame-left {
+            bottom: 4%;
+            left: 4%;
+            width: 38%;
+            aspect-ratio: 4 / 3;
+        }
+
+        /* LAYER 3: Bottom Center Title Graphic */
+        .frame-center {
+            bottom: 4%;
+            left: 44%;
+            width: 32%;
+            aspect-ratio: 16 / 9;
+            /* Slightly softer border for typography cards */
+            border-color: #e5c05e;
+            border-radius: 12px;
+        }
+
+        /* LAYER 2: Cut-out Hosts (Transparent PNG) */
+        .layer-subjects {
+            position: absolute;
+            bottom: -2%;
+            /* Anchored to the bottom edge */
+            right: 2%;
+            height: 75%;
+            /* Scales the subjects relative to page height */
+            z-index: 4;
+            /* Use transform: scaleX(-1); here if you ever need to flip the subjects to face center */
+            object-fit: contain;
+            /* Subtle drop shadow to separate subjects from background */
+            filter: drop-shadow(-5px 5px 15px rgba(0, 0, 0, 0.5));
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="page-container">
+        <!-- LAYER 1: Background -->
+        <!-- Replace src with your main crowd/fireworks image -->
+        <img class="layer-background"
+            src="https://via.placeholder.com/1200x800/1a1a3a/ffffff?text=Main+Background+Event+Scene"
+            alt="Event Background">
+
+        <!-- LAYER 3: Bottom Left Picture-in-Picture -->
+        <!-- Replace src with your secondary stage shot -->
+        <div class="inset-frame frame-left">
+            <img src="https://via.placeholder.com/600x450/000044/ffffff?text=Stage+Shot" alt="Stage Event">
+        </div>
+
+        <!-- LAYER 3: Center Title Graphic -->
+        <!-- Replace src with your typography/event title card -->
+        <div class="inset-frame frame-center">
+            <img src="https://via.placeholder.com/600x337/330033/f9d976?text=Event+Title+Graphic" alt="Event Title">
+        </div>
+
+        <!-- LAYER 2: Foreground Subjects -->
+        <!-- MUST be a transparent PNG or WebP -->
+        <img class="layer-subjects"
+            src="https://via.placeholder.com/500x800/ff0000/ffffff?text=Transparent+Cutout+Hosts" alt="Hosts">
+    </div>
+
+</body>
+
+</html>
