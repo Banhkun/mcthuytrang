@@ -10,13 +10,14 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Dancing+Script:wght@600;700&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600;1,700&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Dancing+Script:wght@600;700&display=swap"
     rel="stylesheet">
 
   <style>
     /* ========================================================
-       CANVA COLOR FORMULA & SYSTEM DESIGN
+       ORIGINAL BELOVED CANVA COLOR FORMULA & SYSTEM DESIGN
        3 Key Canva Colors: Sky Blue (#4bb5e8), White (#ffffff), Warm Cream (#fae8b4)
+       Enhanced with Gestalt Laws (Figure-Ground, Visual Hierarchy, Common Region)
        ======================================================== */
     :root {
       --canva-sky: #4bb5e8;
@@ -31,6 +32,7 @@
       --text-gray: #4a5568;
       --accent-red: #c5293e;
       --gold-border: #e2be67;
+      --gold-accent: #f7d58b;
     }
 
     * {
@@ -47,14 +49,14 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      gap: 32px;
-      padding: 76px 20px 70px;
+      gap: 34px;
+      padding: 76px 20px 76px;
       font-family: 'Montserrat', sans-serif;
       overflow-x: hidden;
       position: relative;
     }
 
-    /* === GENERATIVE CODE ART OVERLAY CANVAS === */
+    /* Ambient Particle Canvas Overlay */
     #mag-canvas {
       position: fixed;
       top: 0;
@@ -65,20 +67,23 @@
       z-index: 1;
     }
 
-    /* === FLOATING MAGAZINE HUD & QUICK JUMP TOOLBAR === */
+    /* ========================================================
+       FLOATING MAGAZINE HUD & QUICK JUMP TOOLBAR
+       ======================================================== */
     .magazine-toolbar {
       position: fixed;
-      top: 16px;
+      top: 14px;
       z-index: 1000;
       background: rgba(21, 44, 91, 0.94);
-      backdrop-filter: blur(16px);
+      backdrop-filter: blur(18px);
+      -webkit-backdrop-filter: blur(18px);
       border: 1px solid rgba(255, 255, 255, 0.2);
       border-radius: 40px;
-      padding: 8px 22px;
+      padding: 7px 22px;
       display: flex;
       align-items: center;
       gap: 16px;
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.45);
+      box-shadow: 0 12px 34px rgba(0, 0, 0, 0.45);
       color: #fff;
     }
 
@@ -86,34 +91,37 @@
       font-weight: 800;
       font-size: 13px;
       letter-spacing: 2px;
-      color: #f7d58b;
+      color: var(--gold-accent);
       text-transform: uppercase;
       display: flex;
       align-items: center;
       gap: 8px;
+      white-space: nowrap;
     }
 
     .toolbar-title::before {
       content: '✨';
-      font-size: 14px;
+      font-size: 13px;
     }
 
     .page-quicknav {
       display: flex;
       gap: 6px;
       overflow-x: auto;
-      max-width: 580px;
+      max-width: 550px;
       scrollbar-width: none;
     }
 
-    .page-quicknav::-webkit-scrollbar { display: none; }
+    .page-quicknav::-webkit-scrollbar {
+      display: none;
+    }
 
     .nav-pill {
       background: rgba(255, 255, 255, 0.12);
       color: #e0f2fe;
       border: 1px solid rgba(255, 255, 255, 0.18);
       padding: 5px 12px;
-      border-radius: 16px;
+      border-radius: 18px;
       font-size: 11px;
       font-weight: 600;
       cursor: pointer;
@@ -122,11 +130,13 @@
       transition: all 0.2s ease;
     }
 
-    .nav-pill:hover, .nav-pill.active {
-      background: #f7d58b;
+    .nav-pill:hover,
+    .nav-pill.active {
+      background: var(--gold-accent);
       color: var(--navy-blue);
-      border-color: #f7d58b;
+      border-color: var(--gold-accent);
       font-weight: 700;
+      box-shadow: 0 2px 10px rgba(247, 213, 139, 0.45);
     }
 
     .tool-btn {
@@ -141,16 +151,20 @@
       display: flex;
       align-items: center;
       gap: 6px;
+      white-space: nowrap;
       transition: all 0.2s ease;
     }
 
     .tool-btn:hover {
-      background: #f7d58b;
-      color: #000;
-      border-color: #f7d58b;
+      background: var(--gold-accent);
+      color: var(--navy-dark);
+      border-color: var(--gold-accent);
     }
 
-    /* === EXACT A4 LANDSCAPE MAGAZINE SPREAD (297mm x 210mm) === */
+    /* ========================================================
+       EXACT A4 LANDSCAPE SPREAD (297mm x 210mm)
+       Signature 3-color Canva Gradient Formula Preserved
+       ======================================================== */
     @page {
       size: A4 landscape;
       margin: 0;
@@ -181,75 +195,46 @@
 
     @media print {
       body {
-        background-color: #fff;
-        padding: 0;
-        gap: 0;
+        background-color: #fff !important;
+        padding: 0 !important;
+        gap: 0 !important;
+        display: block !important;
       }
-      .magazine-toolbar, #mag-canvas {
+
+      .magazine-toolbar,
+      #mag-canvas,
+      .lightbox-modal {
         display: none !important;
       }
+
       .page {
-        box-shadow: none;
-        margin: 0;
-        border-radius: 0;
+        box-shadow: none !important;
+        margin: 0 !important;
+        border-radius: 0 !important;
+        page-break-after: always !important;
+        break-after: page !important;
+        page-break-inside: avoid !important;
+        break-inside: avoid !important;
+        zoom: 1 !important;
+        transform: none !important;
+      }
+
+      .page:last-of-type {
+        page-break-after: auto !important;
+        break-after: auto !important;
+      }
+
+      .glass-box,
+      .page-indicator-pill {
+        backdrop-filter: none !important;
+        -webkit-backdrop-filter: none !important;
+        background: rgba(255, 255, 255, 0.96) !important;
       }
     }
 
-    /* === CANVA 3D RETRO TITLE & TYPOGRAPHY === */
-    .title-3d-retro {
-      font-size: 64pt;
-      font-weight: 900;
-      color: #27477d;
-      text-transform: uppercase;
-      line-height: 0.95;
-      letter-spacing: 2px;
-      text-shadow: 
-        1px 1px 0px #ffffff,
-        2px 2px 0px #27477d,
-        3px 3px 0px #27477d,
-        4px 4px 0px #27477d,
-        5px 5px 0px #27477d,
-        6px 6px 14px rgba(21, 44, 91, 0.4);
-    }
-
-    h2.section-title {
-      font-size: 28pt;
-      font-weight: 800;
-      color: var(--navy-blue);
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      line-height: 1.15;
-      z-index: 20;
-      position: relative;
-    }
-
-    .subtitle {
-      font-size: 11pt;
-      color: var(--mid-blue);
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 3px;
-      margin-bottom: 6px;
-      z-index: 20;
-      position: relative;
-    }
-
-    .script-text {
-      font-family: 'Dancing Script', cursive;
-      font-size: 44pt;
-      color: var(--navy-blue);
-      line-height: 1;
-    }
-
-    p {
-      font-size: 11pt;
-      color: var(--text-dark);
-      line-height: 1.6;
-      z-index: 20;
-      position: relative;
-    }
-
-    /* === FORMULA-GENERATED SHAPES (Replaces broken Canva layers) === */
+    /* ========================================================
+       CANVA FORMULA SHAPES (Preserved with Refined Elevation)
+       ======================================================== */
     .formula-circle-blue {
       position: absolute;
       border-radius: 50%;
@@ -275,8 +260,8 @@
     }
 
     .formula-emblem-badge {
-      width: 76mm;
-      height: 76mm;
+      width: 78mm;
+      height: 78mm;
       border-radius: 50%;
       background: #ffffff;
       box-shadow: 0 12px 32px rgba(21, 44, 91, 0.12), 0 0 0 6px rgba(255, 255, 255, 0.75);
@@ -286,69 +271,80 @@
       z-index: 10;
     }
 
-    /* === PRISTINE TRANSPARENT CUTOUT SUBJECTS === */
-    .img-cutout {
-      position: absolute;
-      bottom: 0;
-      z-index: 15;
-      object-fit: contain;
-      object-position: bottom;
-      filter: drop-shadow(-8px 12px 18px rgba(21, 44, 91, 0.28));
-      cursor: pointer;
-      transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), filter 0.3s ease;
+    /* ========================================================
+       EDITORIAL TYPOGRAPHY (Hierarchy + Gestalt Clarity)
+       ======================================================== */
+    .title-cover-hero {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 56pt;
+      font-weight: 800;
+      color: var(--navy-blue);
+      text-transform: uppercase;
+      line-height: 0.92;
+      letter-spacing: -0.5px;
     }
 
-    .img-cutout:hover {
-      transform: scale(1.025) translateY(-4px);
-      filter: drop-shadow(-12px 18px 26px rgba(21, 44, 91, 0.42));
+    .title-cover-hero em {
+      font-style: italic;
+      color: #1e4b85;
+      font-weight: 600;
     }
 
-    .img-cover {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      display: block;
-    }
-
-    /* === GLASS & EDITORIAL CARDS === */
-    .glass-box {
-      background: rgba(255, 255, 255, 0.88);
-      backdrop-filter: blur(12px);
-      padding: 22px 26px;
-      border-radius: 18px;
-      border: 1px solid rgba(255, 255, 255, 0.95);
-      box-shadow: 0 8px 24px rgba(21, 44, 91, 0.08);
-      z-index: 20;
-      position: relative;
-    }
-
-    .badge-pill {
-      background: var(--mid-blue);
-      color: #fff;
-      padding: 6px 18px;
+    h2.section-title {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 26pt;
       font-weight: 700;
-      display: inline-block;
-      font-size: 11pt;
-      border-radius: 20px;
+      color: var(--navy-blue);
+      text-transform: uppercase;
       letter-spacing: 0.5px;
-      box-shadow: 0 4px 12px rgba(112, 151, 170, 0.3);
+      line-height: 1.15;
     }
 
-    .badge-pill.dark {
-      background: var(--navy-blue);
+    .subtitle {
+      font-size: 9pt;
+      color: var(--mid-blue);
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      margin-bottom: 6px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
     }
 
-    /* Page Tagline on Top */
+    .subtitle::after {
+      content: '';
+      display: inline-block;
+      width: 26px;
+      height: 1.5px;
+      background: var(--mid-blue);
+    }
+
+    .script-text {
+      font-family: 'Dancing Script', cursive;
+      font-size: 42pt;
+      color: var(--navy-blue);
+      line-height: 1;
+    }
+
+    p.lead-text {
+      font-size: 10.5pt;
+      color: var(--text-dark);
+      line-height: 1.62;
+    }
+
+    /* Page Tagline / Folio on Top */
     .page-tagline {
       position: absolute;
-      top: 13mm;
+      top: 12mm;
       left: 20mm;
       right: 20mm;
       display: flex;
       justify-content: space-between;
-      font-size: 9pt;
+      align-items: center;
+      font-size: 8.5pt;
       font-weight: 700;
-      letter-spacing: 3px;
+      letter-spacing: 2.5px;
       color: var(--navy-blue);
       text-transform: uppercase;
       z-index: 25;
@@ -356,15 +352,110 @@
       padding-bottom: 5px;
     }
 
-    /* Page Header positioning */
-    .page-header {
-      position: absolute;
-      top: 22mm;
-      left: 20mm;
-      z-index: 20;
+    .page-tagline-left {
+      display: flex;
+      align-items: center;
+      gap: 8px;
     }
 
-    /* Editorial bullet points */
+    .page-tagline-left::before {
+      content: '◆';
+      font-size: 7px;
+      color: var(--canva-sky);
+    }
+
+    /* Page Indicator Pill */
+    .page-indicator-pill {
+      position: absolute;
+      bottom: 12mm;
+      right: 20mm;
+      z-index: 30;
+      font-size: 8.5pt;
+      font-weight: 700;
+      color: var(--navy-blue);
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      background: rgba(255, 255, 255, 0.92);
+      backdrop-filter: blur(8px);
+      padding: 4px 14px;
+      border-radius: 16px;
+      border: 1px solid rgba(21, 44, 91, 0.15);
+      box-shadow: 0 4px 12px rgba(21, 44, 91, 0.06);
+    }
+
+    /* ========================================================
+       ELEVATED EDITORIAL CARDS (Law of Figure-Ground)
+       ======================================================== */
+    .glass-box {
+      background: rgba(255, 255, 255, 0.92);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      padding: 24px 28px;
+      border-radius: 18px;
+      border: 1px solid rgba(255, 255, 255, 0.95);
+      box-shadow: 0 10px 30px rgba(21, 44, 91, 0.09), 0 3px 8px rgba(21, 44, 91, 0.04);
+      z-index: 20;
+      position: relative;
+    }
+
+    /* Badges */
+    .badge-pill {
+      background: var(--mid-blue);
+      color: #fff;
+      padding: 6px 16px;
+      font-weight: 700;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 9.5pt;
+      border-radius: 20px;
+      letter-spacing: 0.5px;
+      box-shadow: 0 4px 12px rgba(112, 151, 170, 0.28);
+    }
+
+    .badge-pill.dark {
+      background: var(--navy-blue);
+      box-shadow: 0 4px 12px rgba(21, 44, 91, 0.28);
+    }
+
+    .badge-pill.sky {
+      background: var(--canva-sky);
+      color: var(--navy-blue);
+      box-shadow: 0 4px 12px rgba(75, 181, 232, 0.35);
+    }
+
+    .badge-pill.cream {
+      background: var(--canva-cream);
+      color: var(--navy-blue);
+      border: 1px solid rgba(21, 44, 91, 0.1);
+    }
+
+    /* Pristine Cutouts */
+    .img-cutout {
+      position: absolute;
+      bottom: 0;
+      z-index: 15;
+      object-fit: contain;
+      object-position: bottom;
+      filter: drop-shadow(0 16px 28px rgba(21, 44, 91, 0.22));
+      cursor: pointer;
+      transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), filter 0.3s ease;
+    }
+
+    .img-cutout:hover {
+      transform: scale(1.02) translateY(-4px);
+      filter: drop-shadow(0 22px 36px rgba(21, 44, 91, 0.32));
+    }
+
+    .img-cover {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.4s ease;
+    }
+
+    /* Bullet List */
     .bullet-list {
       list-style: none;
       margin-top: 12px;
@@ -373,11 +464,11 @@
     .bullet-list li {
       position: relative;
       padding-left: 20px;
-      margin-bottom: 10px;
-      font-size: 10.5pt;
+      margin-bottom: 9px;
+      font-size: 10pt;
       font-weight: 500;
       color: var(--text-dark);
-      line-height: 1.5;
+      line-height: 1.55;
     }
 
     .bullet-list li::before {
@@ -385,134 +476,135 @@
       position: absolute;
       left: 0;
       color: var(--navy-blue);
-      font-size: 18pt;
-      line-height: 11pt;
+      font-size: 16pt;
+      line-height: 10pt;
+      top: 1px;
     }
 
-    /* Personal info specs grid */
+    /* Specs Matrix */
     .specs-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 16px 24px;
-      margin-top: 20px;
+      gap: 12px 20px;
+      margin: 16px 0;
     }
 
     .spec-item {
       display: flex;
       align-items: center;
-      gap: 12px;
+      gap: 10px;
       font-weight: 600;
       color: var(--navy-blue);
-      font-size: 12pt;
+      font-size: 10.5pt;
+      padding: 6px 10px;
+      background: rgba(255, 255, 255, 0.7);
+      border-radius: 8px;
+      border: 1px solid rgba(112, 151, 170, 0.2);
     }
 
     .spec-icon {
-      font-size: 15pt;
-      color: var(--mid-blue);
+      font-size: 13pt;
+      color: var(--canva-sky);
     }
 
-    /* Photo Frame for live event shots */
+    /* Interactive Photo Frames */
     .photo-frame {
-      border: 4px solid #fff;
+      border: 3.5px solid #ffffff;
       border-radius: 12px;
       overflow: hidden;
-      box-shadow: 0 8px 24px rgba(21, 44, 91, 0.15);
+      box-shadow: 0 10px 28px rgba(21, 44, 91, 0.14);
       position: relative;
-      background: #000;
-      transition: transform 0.3s ease;
+      background: #0f172a;
+      cursor: zoom-in;
+      transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.35s ease;
     }
 
     .photo-frame:hover {
-      transform: scale(1.03) translateY(-3px);
-      box-shadow: 0 12px 30px rgba(21, 44, 91, 0.25);
+      transform: translateY(-4px) scale(1.015);
+      box-shadow: 0 16px 36px rgba(21, 44, 91, 0.24);
     }
 
-    /* Two-page field indicator */
-    .page-indicator-pill {
+    .photo-frame:hover .img-cover {
+      transform: scale(1.04);
+    }
+
+    .photo-caption-bar {
       position: absolute;
-      bottom: 12mm;
-      right: 20mm;
-      z-index: 30;
-      font-size: 9pt;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: linear-gradient(to top, rgba(14, 30, 62, 0.94) 0%, rgba(14, 30, 62, 0.5) 75%, transparent 100%);
+      padding: 16px 14px 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      color: #fff;
+      z-index: 5;
+    }
+
+    .caption-title {
       font-weight: 700;
-      color: var(--navy-blue);
-      letter-spacing: 2px;
-      text-transform: uppercase;
-      background: rgba(255, 255, 255, 0.85);
-      padding: 4px 14px;
-      border-radius: 12px;
-      border: 1px solid rgba(21, 44, 91, 0.15);
+      font-size: 9.5pt;
+      color: var(--canva-cream);
+      letter-spacing: 0.5px;
     }
 
-    /* Filmstrip formula */
-    .filmstrip-container {
-      background: #111;
-      padding: 8px;
-      border-radius: 10px;
-      display: flex;
-      flex-direction: column;
-      gap: 8px;
-      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    .caption-sub {
+      font-size: 8pt;
+      color: #bae6fd;
+      font-weight: 500;
     }
 
-    .filmstrip-sprockets {
-      display: flex;
-      justify-content: space-around;
-      gap: 6px;
-    }
-
-    .filmstrip-sprocket {
-      width: 8px;
-      height: 10px;
-      background: #fff;
-      border-radius: 2px;
-    }
-
-    /* Soundwave visualizer formula */
+    /* Soundwave Visualizer */
     .soundwave-visualizer {
       display: flex;
       align-items: center;
       gap: 4px;
-      height: 38px;
-      margin: 14px 0;
+      height: 34px;
+      margin: 12px 0;
     }
 
     .soundwave-bar {
       width: 4px;
-      background: linear-gradient(to top, var(--navy-blue), #38bdf8);
+      background: linear-gradient(to top, var(--navy-blue), var(--canva-sky));
       border-radius: 3px;
-      animation: wave-bounce 1.2s ease-in-out infinite;
+      animation: wave-bounce 1.2s ease-in-out infinite alternate;
     }
 
     @keyframes wave-bounce {
-      0%, 100% { height: 8px; }
-      50% { height: 34px; }
+      0% {
+        height: 6px;
+      }
+      100% {
+        height: 32px;
+      }
     }
 
-    /* Client logos grid */
+    /* Client Logo Cards */
     .client-grid {
       display: grid;
       grid-template-columns: repeat(5, 1fr);
-      gap: 16px;
-      margin-top: 18px;
+      gap: 14px;
+      margin-top: 16px;
     }
 
     .client-card {
       background: #ffffff;
-      border-radius: 10px;
-      padding: 12px;
+      border-radius: 12px;
+      padding: 10px 14px;
       height: 68px;
       display: flex;
       justify-content: center;
       align-items: center;
       box-shadow: 0 4px 15px rgba(21, 44, 91, 0.08);
       border: 1px solid rgba(0, 0, 0, 0.04);
-      transition: transform 0.3s ease;
+      transition: all 0.3s ease;
     }
 
     .client-card:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 8px 20px rgba(21, 44, 91, 0.15);
+      transform: translateY(-4px);
+      box-shadow: 0 10px 24px rgba(21, 44, 91, 0.15);
+      border-color: var(--canva-sky);
     }
 
     .client-card img {
@@ -525,37 +617,575 @@
     .qr-frame {
       background: #ffffff;
       border: 2px solid var(--navy-blue);
-      border-radius: 16px;
-      padding: 16px;
-      box-shadow: 0 8px 25px rgba(21, 44, 91, 0.12);
+      border-radius: 18px;
+      padding: 14px;
+      box-shadow: 0 10px 28px rgba(21, 44, 91, 0.12);
       display: inline-block;
       text-align: center;
+      position: relative;
     }
 
     .qr-frame img {
-      width: 140px;
-      height: 140px;
+      width: 130px;
+      height: 130px;
       object-fit: contain;
     }
 
-    .bracket-tl, .bracket-br {
+    .bracket-tl,
+    .bracket-br {
       position: absolute;
-      width: 24px;
-      height: 24px;
+      width: 22px;
+      height: 22px;
       border-color: var(--navy-blue);
       border-style: solid;
     }
-    .bracket-tl { top: -6px; left: -6px; border-width: 3px 0 0 3px; }
-    .bracket-br { bottom: -6px; right: -6px; border-width: 0 3px 3px 0; }
+
+    .bracket-tl {
+      top: -5px;
+      left: -5px;
+      border-width: 3px 0 0 3px;
+    }
+
+    .bracket-br {
+      bottom: -5px;
+      right: -5px;
+      border-width: 0 3px 3px 0;
+    }
+
+    /* Modal Lightbox (Figure-Ground separation) */
+    .lightbox-modal {
+      position: fixed;
+      inset: 0;
+      background: rgba(14, 30, 62, 0.88);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      z-index: 2000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.3s ease;
+      padding: 30px;
+    }
+
+    .lightbox-modal.active {
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    .lightbox-content {
+      position: relative;
+      max-width: 90vw;
+      max-height: 88vh;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 25px 60px rgba(0, 0, 0, 0.7);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      transform: scale(0.95);
+      transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .lightbox-modal.active .lightbox-content {
+      transform: scale(1);
+    }
+
+    .lightbox-img {
+      max-width: 90vw;
+      max-height: 85vh;
+      object-fit: contain;
+      display: block;
+    }
+
+    .lightbox-close {
+      position: absolute;
+      top: 16px;
+      right: 20px;
+      background: rgba(255, 255, 255, 0.15);
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      color: #fff;
+      font-size: 20px;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      z-index: 2010;
+    }
+
+    .lightbox-close:hover {
+      background: var(--gold-accent);
+      color: var(--navy-dark);
+      border-color: var(--gold-accent);
+    }
+
+    /* ========================================================
+       SILK & LUMINOUS EDITORIAL THEME (Mềm mại, Thanh thoát & Thuận mắt)
+       - Bảng màu Pastel Pearl, Misty Sky & Warm Champagne dịu nhẹ
+       - Typography Cormorant Garamond + Plus Jakarta Sans mềm mại, bỏ in hoa cứng nhắc
+       - Thẻ lụa kính mờ (.glass-box), nhãn nổi ngọc trai (.photo-caption-bar)
+       - Quầng sáng đa tầng và viền đồng tâm tinh tế sau ảnh cutout
+       ======================================================== */
+    :root {
+      --navy-blue: #253b61;
+      --navy-soft: #36507d;
+      --mid-blue: #789bb0;
+      --text-dark: #2c3545;
+      --text-gray: #596579;
+      --soft-shadow: 0 24px 52px -20px rgba(37, 59, 97, 0.14), 0 6px 18px -6px rgba(37, 59, 97, 0.06);
+      --frame-shadow: 0 20px 44px -16px rgba(37, 59, 97, 0.16), 0 4px 12px -4px rgba(37, 59, 97, 0.05);
+    }
+
+    body {
+      font-family: 'Plus Jakarta Sans', 'Montserrat', sans-serif;
+      background:
+        radial-gradient(1200px 800px at 15% 0%, #f5f1ea 0%, transparent 65%),
+        radial-gradient(1000px 700px at 100% 100%, #e6eff5 0%, transparent 65%),
+        #eeeae3;
+      gap: 42px;
+    }
+
+    /* Thanh công cụ nổi dạng ngọc trai sáng dịu mắt */
+    .magazine-toolbar {
+      background: rgba(255, 255, 255, 0.84);
+      backdrop-filter: blur(22px);
+      -webkit-backdrop-filter: blur(22px);
+      border: 1px solid rgba(255, 255, 255, 0.95);
+      box-shadow: 0 16px 40px -12px rgba(37, 59, 97, 0.18), 0 2px 8px rgba(37, 59, 97, 0.05);
+      color: var(--navy-blue);
+    }
+
+    .toolbar-title {
+      color: var(--navy-blue);
+      font-family: 'Cormorant Garamond', 'Playfair Display', serif;
+      font-weight: 700;
+      font-size: 15px;
+      letter-spacing: 1.5px;
+      text-transform: none;
+    }
+
+    .nav-pill {
+      background: rgba(226, 238, 248, 0.55);
+      color: var(--navy-soft);
+      border: 1px solid rgba(120, 155, 176, 0.18);
+      font-weight: 500;
+      border-radius: 999px;
+      transition: all 0.28s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .nav-pill:hover,
+    .nav-pill.active {
+      background: linear-gradient(135deg, #2b4570 0%, #3d6098 100%);
+      color: #ffffff;
+      border-color: transparent;
+      font-weight: 600;
+      box-shadow: 0 6px 16px -4px rgba(37, 59, 97, 0.32);
+    }
+
+    .tool-btn {
+      background: linear-gradient(135deg, #fbefcf 0%, #f7dfa4 100%);
+      color: var(--navy-blue);
+      border: 1px solid rgba(226, 190, 103, 0.45);
+      font-weight: 600;
+      box-shadow: 0 4px 12px -2px rgba(226, 190, 103, 0.3);
+    }
+
+    .tool-btn:hover {
+      background: linear-gradient(135deg, #2b4570 0%, #3d6098 100%);
+      color: #ffffff;
+      border-color: transparent;
+    }
+
+    /* Mặt trang A4 mềm mại như giấy lụa tạp chí */
+    .page {
+      border-radius: 20px;
+      box-shadow:
+        0 32px 64px -28px rgba(35, 45, 70, 0.24),
+        0 8px 22px -10px rgba(35, 45, 70, 0.08),
+        inset 0 0 0 1px rgba(255, 255, 255, 0.85);
+      background:
+        radial-gradient(95% 85% at 0% 0%, rgba(178, 222, 244, 0.48) 0%, rgba(178, 222, 244, 0) 58%),
+        radial-gradient(90% 80% at 100% 100%, rgba(252, 236, 190, 0.56) 0%, rgba(252, 236, 190, 0) 62%),
+        radial-gradient(65% 65% at 82% 18%, rgba(235, 245, 252, 0.7) 0%, rgba(235, 245, 252, 0) 60%),
+        linear-gradient(180deg, #fcfdff 0%, #fdfbf7 100%);
+    }
+
+    .page[data-bg="cream"] {
+      background:
+        radial-gradient(95% 85% at 100% 0%, rgba(206, 234, 248, 0.42) 0%, rgba(206, 234, 248, 0) 55%),
+        radial-gradient(95% 90% at 0% 100%, rgba(248, 229, 194, 0.5) 0%, rgba(248, 229, 194, 0) 62%),
+        radial-gradient(70% 60% at 25% 20%, rgba(255, 255, 255, 0.85) 0%, rgba(255, 255, 255, 0) 60%),
+        linear-gradient(180deg, #fdfbf7 0%, #faf6ee 100%) !important;
+    }
+
+    /* Quầng sáng hào quang mềm & vòng tròn đồng tâm mảnh */
+    .formula-circle-blue {
+      background: radial-gradient(circle at 50% 45%, rgba(200, 232, 248, 0.88) 0%, rgba(218, 240, 251, 0.52) 48%, rgba(225, 243, 251, 0) 72%);
+      box-shadow: none;
+      filter: blur(2px);
+    }
+
+    .formula-circle-blue::after {
+      content: '';
+      position: absolute;
+      inset: 14%;
+      border-radius: 50%;
+      border: 1px solid rgba(255, 255, 255, 0.62);
+      pointer-events: none;
+    }
+
+    .formula-circle-cream {
+      background: radial-gradient(circle at 50% 45%, rgba(252, 234, 188, 0.88) 0%, rgba(252, 238, 204, 0.5) 48%, rgba(250, 232, 180, 0) 72%);
+      box-shadow: none;
+      filter: blur(2px);
+    }
+
+    .formula-circle-cream::after {
+      content: '';
+      position: absolute;
+      inset: 14%;
+      border-radius: 50%;
+      border: 1px solid rgba(255, 255, 255, 0.65);
+      pointer-events: none;
+    }
+
+    .formula-arch-plate {
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0.94) 0%, rgba(255, 255, 255, 0.72) 68%, rgba(255, 255, 255, 0.25) 100%);
+      border: 1px solid rgba(255, 255, 255, 0.92);
+      box-shadow: 0 28px 60px -28px rgba(75, 181, 232, 0.22);
+    }
+
+    .formula-emblem-badge {
+      background: radial-gradient(circle at 35% 30%, #ffffff 0%, #fafcff 100%);
+      border: 1px solid rgba(255, 255, 255, 0.95);
+      box-shadow: 0 24px 50px -20px rgba(37, 59, 97, 0.18), 0 0 0 12px rgba(255, 255, 255, 0.52);
+    }
+
+    /* Typography mềm mại, tự nhiên, bỏ chữ in hoa gắt */
+    .title-cover-hero {
+      font-family: 'Cormorant Garamond', 'Playfair Display', Georgia, serif;
+      font-weight: 700;
+      font-size: 58pt;
+      line-height: 0.94;
+      letter-spacing: -0.3px;
+      color: var(--navy-blue);
+      text-transform: none;
+    }
+
+    .title-cover-hero em {
+      font-family: 'Cormorant Garamond', 'Playfair Display', Georgia, serif;
+      font-style: italic;
+      font-weight: 600;
+      color: #35639c;
+    }
+
+    h1.section-title,
+    h2.section-title {
+      font-family: 'Cormorant Garamond', 'Playfair Display', Georgia, serif;
+      font-weight: 600;
+      font-size: 28pt;
+      letter-spacing: 0.2px;
+      line-height: 1.14;
+      color: var(--navy-blue);
+      text-transform: none;
+    }
+
+    h1.section-title em,
+    h2.section-title em {
+      font-style: italic;
+      font-weight: 600;
+      color: #35639c;
+    }
+
+    .subtitle {
+      font-family: 'Plus Jakarta Sans', 'Montserrat', sans-serif;
+      font-size: 8.2pt;
+      font-weight: 600;
+      letter-spacing: 3.2px;
+      color: var(--mid-blue);
+      margin-bottom: 6px;
+    }
+
+    .subtitle::after {
+      width: 32px;
+      height: 1px;
+      background: linear-gradient(90deg, var(--mid-blue), transparent);
+    }
+
+    .script-text {
+      font-family: 'Dancing Script', cursive;
+      color: #2f4f80;
+    }
+
+    p.lead-text {
+      font-family: 'Plus Jakarta Sans', 'Montserrat', sans-serif;
+      font-size: 10.2pt;
+      font-weight: 400;
+      color: var(--text-gray);
+      line-height: 1.72;
+    }
+
+    /* Running Header thanh mảnh, đường kẻ mờ dần */
+    .page-tagline {
+      font-family: 'Plus Jakarta Sans', 'Montserrat', sans-serif;
+      font-size: 7.8pt;
+      font-weight: 500;
+      letter-spacing: 2.8px;
+      color: var(--mid-blue);
+      border-bottom: none;
+      padding-bottom: 7px;
+    }
+
+    .page-tagline::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      height: 1px;
+      background: linear-gradient(90deg, rgba(120, 155, 176, 0.32) 0%, rgba(120, 155, 176, 0.14) 50%, rgba(120, 155, 176, 0) 100%);
+    }
+
+    .page-tagline-left {
+      color: var(--navy-soft);
+      font-weight: 600;
+    }
+
+    .page-tagline-left::before {
+      content: '';
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #6cc3ec, #b5e2f7);
+      box-shadow: 0 0 0 3px rgba(108, 195, 236, 0.18);
+    }
+
+    .page-indicator-pill {
+      font-family: 'Plus Jakarta Sans', 'Montserrat', sans-serif;
+      font-size: 7.8pt;
+      font-weight: 600;
+      letter-spacing: 2.2px;
+      color: var(--navy-soft);
+      background: rgba(255, 255, 255, 0.76);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border: 1px solid rgba(255, 255, 255, 0.95);
+      padding: 5px 16px;
+      border-radius: 999px;
+      box-shadow: 0 10px 24px -12px rgba(37, 59, 97, 0.2);
+    }
+
+    /* Thẻ kính lụa mềm mại (.glass-box) */
+    .glass-box {
+      background: linear-gradient(155deg, rgba(255, 255, 255, 0.86) 0%, rgba(255, 255, 255, 0.66) 100%);
+      backdrop-filter: blur(18px);
+      -webkit-backdrop-filter: blur(18px);
+      border-radius: 28px;
+      border: 1px solid rgba(255, 255, 255, 0.94);
+      box-shadow: var(--soft-shadow), inset 0 1px 0 rgba(255, 255, 255, 0.95);
+    }
+
+    /* Trích dẫn mềm mại thay cho vạch dọc cứng */
+    .soft-quote {
+      position: relative;
+      background: linear-gradient(135deg, rgba(226, 243, 252, 0.55) 0%, rgba(253, 244, 215, 0.42) 100%);
+      border: 1px solid rgba(255, 255, 255, 0.9);
+      border-radius: 20px;
+      padding: 13px 18px;
+      font-family: 'Cormorant Garamond', 'Playfair Display', Georgia, serif;
+      font-size: 12.2pt;
+      font-style: italic;
+      font-weight: 600;
+      line-height: 1.52;
+      color: var(--navy-blue);
+    }
+
+    /* Huy hiệu màu Pastel hài hòa, bỏ khối màu tối nặng nề */
+    .badge-pill {
+      font-family: 'Plus Jakarta Sans', 'Montserrat', sans-serif;
+      font-weight: 600;
+      font-size: 8.8pt;
+      padding: 6px 15px;
+      border-radius: 999px;
+      letter-spacing: 0.2px;
+      box-shadow: 0 6px 16px -8px rgba(37, 59, 97, 0.14);
+    }
+
+    .badge-pill.dark {
+      background: linear-gradient(135deg, #2c4670 0%, #3d5f94 100%);
+      color: #ffffff;
+      border: 1px solid rgba(255, 255, 255, 0.25);
+    }
+
+    .badge-pill.sky {
+      background: linear-gradient(135deg, #d8effb 0%, #eaf6fd 100%);
+      color: var(--navy-blue);
+      border: 1px solid rgba(255, 255, 255, 0.9);
+    }
+
+    .badge-pill.cream {
+      background: linear-gradient(135deg, #fdf2d0 0%, #fab8 100%);
+      background-color: #fcefca;
+      color: var(--navy-blue);
+      border: 1px solid rgba(255, 255, 255, 0.9);
+    }
+
+    /* Ảnh tách nền (Cutout) bóng đổ mềm tự nhiên */
+    .img-cutout,
+    img[data-cutout] {
+      filter: drop-shadow(0 20px 28px rgba(37, 59, 97, 0.13)) drop-shadow(0 4px 8px rgba(37, 59, 97, 0.05));
+    }
+
+    .img-cutout:hover {
+      filter: drop-shadow(0 24px 34px rgba(37, 59, 97, 0.18)) drop-shadow(0 6px 10px rgba(37, 59, 97, 0.06));
+    }
+
+    /* Khung ảnh bo tròn mềm mại & Nhãn chú thích kính mờ nổi (Floating Frosted Pill) */
+    .photo-frame {
+      border: 2.5px solid rgba(255, 255, 255, 0.92);
+      border-radius: 24px;
+      background: #eef3f7;
+      box-shadow: var(--frame-shadow);
+      outline: none;
+    }
+
+    .photo-frame:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 26px 48px -18px rgba(37, 59, 97, 0.26), 0 6px 14px -6px rgba(37, 59, 97, 0.08);
+    }
+
+    .photo-frame:hover .img-cover {
+      transform: scale(1.03);
+    }
+
+    .img-cover {
+      transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .photo-caption-bar {
+      left: 10px;
+      right: 10px;
+      bottom: 10px;
+      background: rgba(255, 255, 255, 0.86);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      border: 1px solid rgba(255, 255, 255, 0.96);
+      border-radius: 16px;
+      padding: 8px 14px;
+      box-shadow: 0 10px 24px -8px rgba(21, 44, 91, 0.18);
+    }
+
+    .caption-title {
+      font-family: 'Plus Jakarta Sans', 'Montserrat', sans-serif;
+      font-weight: 700;
+      color: var(--navy-blue);
+      letter-spacing: 0.4px;
+      font-size: 8.4pt;
+    }
+
+    .caption-sub {
+      color: var(--text-gray);
+      font-weight: 500;
+      font-size: 7.6pt;
+      margin-top: 1px;
+    }
+
+    .bullet-list li {
+      font-weight: 400;
+      color: var(--text-dark);
+      line-height: 1.62;
+      margin-bottom: 8px;
+    }
+
+    .bullet-list li::before {
+      content: '';
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #4bb5e8, #8fd3f4);
+      box-shadow: 0 0 0 3px rgba(75, 181, 232, 0.16);
+      top: 0.62em;
+      left: 3px;
+    }
+
+    .spec-item {
+      font-weight: 500;
+      font-size: 9.8pt;
+      border-radius: 14px;
+      padding: 8px 12px;
+      border: 1px solid rgba(255, 255, 255, 0.9);
+      background: rgba(255, 255, 255, 0.68);
+      box-shadow: 0 4px 12px -6px rgba(37, 59, 97, 0.08);
+    }
+
+    .client-card {
+      border-radius: 18px;
+      background: rgba(255, 255, 255, 0.88);
+      border: 1px solid rgba(255, 255, 255, 0.95);
+      box-shadow: 0 12px 26px -14px rgba(37, 59, 97, 0.16);
+    }
+
+    .qr-frame {
+      border: 1px solid rgba(120, 155, 176, 0.25);
+      border-radius: 22px;
+      box-shadow: var(--soft-shadow);
+    }
+
+    .bracket-tl,
+    .bracket-br {
+      border-color: rgba(75, 181, 232, 0.65);
+      border-radius: 4px;
+    }
+
+    /* Layout Guard: nền kính mờ dự phòng khi không thể tách chữ khỏi người */
+    .guard-soft-backdrop {
+      background: rgba(255, 255, 255, 0.82);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      border-radius: 22px;
+      padding: 12px 16px;
+      border: 1px solid rgba(255, 255, 255, 0.92);
+      box-shadow: var(--soft-shadow);
+    }
+
+    @media print {
+      body {
+        background: #fff !important;
+      }
+
+      .page {
+        border-radius: 0 !important;
+        box-shadow: none !important;
+      }
+
+      .photo-frame {
+        outline: none !important;
+      }
+
+      .photo-caption-bar {
+        background: rgba(255, 255, 255, 0.94) !important;
+      }
+    }
   </style>
 </head>
 
 <body>
 
-  <!-- Ambient Generative Code Art Canvas Overlay -->
+  <!-- Ambient Generative Code Art Overlay -->
   <canvas id="mag-canvas"></canvas>
 
-  <!-- Floating Magazine Toolbar -->
+  <!-- Interactive Lightbox Modal -->
+  <div class="lightbox-modal" id="lightbox">
+    <button class="lightbox-close" id="lightbox-close" aria-label="Close Preview">&times;</button>
+    <div class="lightbox-content">
+      <img class="lightbox-img" id="lightbox-img" src="" alt="Enlarged Stage Photo">
+    </div>
+  </div>
+
+  <!-- Floating Magazine HUD -->
   <header class="magazine-toolbar">
     <div class="toolbar-title">MC Thùy Trang Magazine</div>
     <nav class="page-quicknav">
@@ -585,54 +1215,76 @@
   </header>
 
   <!-- ========================================================
-       PAGE 1: COVER (Exact Canva Composition with Formula Backplate)
+       PAGE 1: COVER (Canva Color Formula & Architectural Arch Plate)
        ======================================================== -->
   <section class="page" id="p1">
     <!-- Formula Backplate (Pure white arch with soft ambient glow) -->
     <div class="formula-circle-blue" style="width: 175mm; height: 175mm; top: 18mm; left: -15mm;"></div>
-    <div class="formula-arch-plate" style="width: 135mm; height: 180mm; left: 18mm; bottom: 0; box-shadow: 0 16px 40px rgba(75, 181, 232, 0.22);"></div>
+    <div class="formula-circle-cream" style="width: 130mm; height: 130mm; bottom: 8mm; right: -10mm; opacity: 0.55;"></div>
+    <div class="formula-arch-plate" style="width: 132mm; height: 184mm; left: 14mm; bottom: 0;"></div>
 
-    <!-- SIGNATURE ICONIC COVER PORTRAIT: MC Thùy Trang in Light Blue Blazer (image3.png) -->
-    <img class="img-cutout" style="left: 16mm; bottom: 0; height: 93%; z-index: 15; filter: drop-shadow(0 18px 28px rgba(21, 44, 91, 0.16));" src="assets/image3.png" alt="MC Thùy Trang Official Cover">
+    <!-- Master Cover Portrait: MC Thùy Trang in Light Blue Blazer (image3.png) -->
+    <img class="img-cutout" style="left: 8mm; bottom: 0; height: 88%; z-index: 15;" src="assets/image3.png"
+      alt="MC Thùy Trang Official Cover">
 
-    <!-- Right Side Header & 3D Extruded Title -->
-    <div style="position: absolute; top: 38mm; right: 24mm; width: 135mm; text-align: left; z-index: 20;">
-      <h1 class="title-3d-retro">THÙY<br>TRANG</h1>
-      
-      <div style="margin-top: 24px; font-weight: 800; font-size: 15pt; letter-spacing: 4px; color: var(--navy-blue); text-transform: uppercase;">
-        OFFICIAL PROFILE
+    <!-- Right Side Header & Editorial Typography -->
+    <div class="glass-box" style="position: absolute; top: 30mm; right: 18mm; width: 124mm; padding: 28px 30px; text-align: left; z-index: 20;">
+      <div class="subtitle">Official Portfolio 2025 – 2026</div>
+
+      <h1 class="title-cover-hero" style="margin: 6px 0 14px;">
+        Thùy<br><em>Trang</em>
+      </h1>
+
+      <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 16px;">
+        <div style="height: 1.5px; width: 36px; background: linear-gradient(90deg, var(--navy-blue), transparent);"></div>
+        <span style="font-size: 10pt; font-weight: 600; letter-spacing: 3.5px; color: var(--navy-soft); text-transform: uppercase;">
+          Trang Naria
+        </span>
       </div>
-      
-      <div style="margin-top: 18px;">
-        <div class="badge-pill" style="background: var(--navy-blue); margin-bottom: 10px;">
-          MC Song Ngữ - Sự Kiện - Active
-        </div><br>
-        <div class="badge-pill" style="background: var(--canva-sky); color: var(--navy-blue); font-weight: 800;">
-          Voice Talent - Livestreamer
+
+      <p class="lead-text" style="margin-bottom: 20px; color: var(--text-dark);">
+        Người dẫn chương trình chuyên nghiệp Song Ngữ Anh – Việt. Kiến tạo năng lượng kết nối, làm chủ sân khấu với phong cách đĩnh đạc, chuẩn mực ngoại giao và sự tinh tế đương đại.
+      </p>
+
+      <div style="display: flex; gap: 8px; flex-wrap: wrap;">
+        <div class="badge-pill dark">
+          <span>🎙️</span> MC Song Ngữ Ngoại Giao
+        </div>
+        <div class="badge-pill sky">
+          <span>✨</span> Talkshow & Hội Nghị
+        </div>
+        <div class="badge-pill cream">
+          <span>⚡</span> Active & Gala YEP
         </div>
       </div>
     </div>
+
+    <div class="page-indicator-pill">01 / 21 &bull; Cover</div>
   </section>
 
   <!-- ========================================================
        PAGE 2: GIỚI THIỆU (Transition Slide with Vintage Rose Mic)
        ======================================================== -->
   <section class="page" id="p2" data-bg="cream">
-    <div class="formula-circle-blue" style="width: 160mm; height: 160mm; top: 25mm; left: 68mm; opacity: 0.5;"></div>
-    
-    <!-- Rose Vintage Mic Emblem (image5.png) inside Formula Badge -->
+    <div class="formula-circle-blue" style="width: 165mm; height: 165mm; top: 22mm; left: 50%; transform: translateX(-50%); opacity: 0.55;"></div>
+    <div class="formula-circle-cream" style="width: 110mm; height: 110mm; top: 48mm; left: 56%; transform: translateX(-50%); opacity: 0.45;"></div>
+
+    <!-- Rose Vintage Mic Emblem inside Formula Badge -->
     <div style="position: absolute; top: 30mm; left: 50%; transform: translateX(-50%); z-index: 10;" class="formula-emblem-badge">
       <img src="assets/image5.png" alt="Vintage Rose Mic" style="width: 78%; height: 78%; object-fit: contain;">
     </div>
 
     <div style="position: absolute; top: 120mm; left: 0; width: 100%; text-align: center; z-index: 20;">
-      <h1 style="font-size: 44pt; font-weight: 800; color: var(--navy-blue); letter-spacing: 12px; text-transform: uppercase;">
-        GIỚI THIỆU
+      <div class="subtitle" style="justify-content: center; margin-bottom: 6px;">Prologue</div>
+      <h1 class="section-title" style="font-size: 44pt; letter-spacing: 4px;">
+        Giới <em>Thiệu</em>
       </h1>
-      <div class="script-text" style="font-size: 36pt; margin-top: 8px; color: var(--mid-blue);">
+      <div class="script-text" style="font-size: 36pt; margin-top: 4px; color: var(--mid-blue);">
         About Thùy Trang
       </div>
     </div>
+
+    <div class="page-indicator-pill">02 / 21 &bull; Prologue</div>
   </section>
 
   <!-- ========================================================
@@ -640,61 +1292,56 @@
        ======================================================== -->
   <section class="page" id="p3">
     <div class="page-tagline">
-      <span>PERSONAL HIGHLIGHT</span>
-      <span>MC THÙY TRANG</span>
+      <div class="page-tagline-left">Personal Highlight</div>
+      <div>MC Thùy Trang &bull; Trang Naria</div>
     </div>
 
-    <!-- Left side info box (Enriched to eliminate sparse space) -->
-    <div class="glass-box" style="position: absolute; top: 28mm; left: 20mm; width: 125mm; z-index: 20;">
-      <div class="subtitle">About me</div>
-      <h2 class="section-title" style="font-size: 26pt; margin-bottom: 12px;">THÔNG TIN CÁ NHÂN</h2>
+    <!-- Left Elevated Card (Figure-Ground Separation) -->
+    <div class="glass-box" style="position: absolute; top: 26mm; left: 20mm; width: 132mm; z-index: 20;">
+      <div class="subtitle">About Me</div>
+      <h2 class="section-title" style="font-size: 26pt; margin-bottom: 12px;">Thông Tin <em>Cá Nhân</em></h2>
 
-      <p style="font-size: 10.5pt; line-height: 1.6; color: var(--navy-blue); font-weight: 500; font-style: italic; margin-bottom: 16px;">
+      <div class="soft-quote" style="margin-bottom: 16px;">
         “Truyền tải thông điệp bằng sự chân thành, làm chủ sân khấu bằng sự tự tin và kiến tạo dấu ấn sự kiện bằng sự chỉn chu tuyệt đối.”
-      </p>
+      </div>
 
-      <div class="specs-grid" style="margin-top: 10px; margin-bottom: 16px;">
+      <div class="specs-grid">
         <div class="spec-item">
           <span class="spec-icon">📅</span> 29 / 06 / 2002
         </div>
         <div class="spec-item">
-          <span class="spec-icon">📏</span> 165 cm
+          <span class="spec-icon">📏</span> Chiều cao 165 cm
         </div>
         <div class="spec-item">
-          <span class="spec-icon">⚖️</span> 45 kg
+          <span class="spec-icon">⚖️</span> Cân nặng 45 kg
         </div>
         <div class="spec-item">
-          <span class="spec-icon">🌐</span> Song Ngữ Anh - Việt
+          <span class="spec-icon">🌐</span> Song Ngữ Anh – Việt
         </div>
       </div>
 
-      <div style="display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 16px;">
-        <span class="badge-pill dark" style="font-size: 9pt; padding: 4px 12px;">Song Ngữ Ngoại Giao</span>
-        <span class="badge-pill" style="font-size: 9pt; padding: 4px 12px; background: var(--canva-sky); color: var(--navy-blue); font-weight: 700;">Năng Lượng Kết Nối</span>
-        <span class="badge-pill" style="font-size: 9pt; padding: 4px 12px; background: #e0f2fe; color: var(--navy-blue); font-weight: 700;">Xử Lý Linh Hoạt</span>
+      <div style="display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 14px;">
+        <span class="badge-pill dark" style="font-size: 8.2pt; padding: 5px 13px;">Song Ngữ Ngoại Giao</span>
+        <span class="badge-pill sky" style="font-size: 8.2pt; padding: 5px 13px;">Năng Lượng Kết Nối</span>
+        <span class="badge-pill cream" style="font-size: 8.2pt; padding: 5px 13px;">Xử Lý Linh Hoạt</span>
       </div>
 
-      <div style="border-top: 1px solid rgba(112, 151, 170, 0.35); padding-top: 14px;">
-        <div class="subtitle" style="font-size: 8.5pt;">Booking & Contact</div>
-        <div style="font-size: 12pt; font-weight: 800; color: var(--navy-blue);">MC Thùy Trang (Trang Naria)</div>
-        <p style="font-size: 9.5pt; color: var(--text-gray); margin-top: 2px;">
-          Hotline &bull; Zalo &bull; Hội Nghị Quốc Tế &bull; Talkshow &bull; Gala Dinner &bull; YEP
+      <div style="border-top: 1px solid rgba(120, 155, 176, 0.22); padding-top: 12px;">
+        <div style="font-size: 7.5pt; font-weight: 600; letter-spacing: 2.5px; color: var(--mid-blue); text-transform: uppercase;">Direct Booking</div>
+        <div style="font-family: 'Cormorant Garamond', serif; font-size: 15pt; font-weight: 700; color: var(--navy-blue); margin-top: 1px;">MC Thùy Trang (Trang Naria)</div>
+        <p style="font-size: 8.8pt; color: var(--text-gray); margin-top: 2px;">
+          Hội Nghị Quốc Tế &bull; Talkshow &bull; Gala Dinner &bull; YEP &bull; Livestream
         </p>
       </div>
     </div>
 
-    <!-- Elegant Single Branding Watermark (No duplicate text) -->
-    <div style="position: absolute; bottom: 14mm; left: 20mm; z-index: 5; opacity: 0.12;">
-      <div style="font-size: 34pt; font-weight: 900; color: var(--navy-blue); letter-spacing: 8px;">
-        THÙY TRANG PROFILE
-      </div>
-    </div>
+    <!-- Formula Circle Backplate & Standing Gown Cutout -->
+    <div class="formula-circle-blue" style="width: 165mm; height: 165mm; right: 12mm; bottom: 6mm; opacity: 0.65;"></div>
+    <div class="formula-circle-cream" style="width: 115mm; height: 115mm; right: 28mm; top: 24mm; opacity: 0.45;"></div>
+    <img class="img-cutout" style="right: 18mm; bottom: 0; height: 91%; z-index: 15;" src="assets/cutouts/mc_danone_event.png"
+      alt="MC Thùy Trang Portrait">
 
-    <!-- Formula Circle Backplate (Large) -->
-    <div class="formula-circle-blue" style="width: 170mm; height: 170mm; right: 10mm; bottom: 5mm; opacity: 0.65;"></div>
-
-    <!-- LARGE COMMANDING PORTRAIT: Sitting in black dress (image8.png) -->
-    <img class="img-cutout" style="right: 10mm; bottom: 0; height: 92%; z-index: 15;" src="assets/image8.png" alt="MC Thùy Trang Sitting">
+    <div class="page-indicator-pill">03 / 21 &bull; Personal Highlight</div>
   </section>
 
   <!-- ========================================================
@@ -702,485 +1349,661 @@
        ======================================================== -->
   <section class="page" id="p4">
     <div class="page-tagline">
-      <span>PERSONAL HIGHLIGHT</span>
-      <span>ABOUT THÙY TRANG &bull; MC THÙY TRANG</span>
+      <div class="page-tagline-left">Personal Highlight</div>
+      <div>About Thùy Trang &bull; MC Thùy Trang</div>
     </div>
 
-    <!-- Formula Arched Backplate & Golden Aura -->
-    <div class="formula-arch-plate" style="width: 125mm; height: 175mm; left: 12mm; bottom: 0; box-shadow: 0 16px 36px rgba(75, 181, 232, 0.2);"></div>
-    <div class="formula-circle-cream" style="width: 110mm; height: 110mm; left: 20mm; bottom: 20mm; opacity: 0.45;"></div>
+    <!-- Formula Arched Backplate -->
+    <div class="formula-arch-plate" style="width: 122mm; height: 176mm; left: 16mm; bottom: 0;"></div>
+    <div class="formula-circle-cream" style="width: 115mm; height: 115mm; left: 20mm; bottom: 18mm; opacity: 0.5;"></div>
 
-    <!-- Artistic Botanical Floral Artifacts & Delicate Leaves framing MC -->
-    <svg style="position: absolute; left: 6mm; bottom: 20mm; width: 135mm; height: 165mm; z-index: 8; pointer-events: none; opacity: 0.75;" viewBox="0 0 400 500" fill="none">
-      <!-- Curved Golden Stem -->
-      <path d="M 50 480 C 65 350, 105 230, 185 140 C 235 80, 315 35, 365 15" stroke="#e2be67" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="3 4" />
-      <!-- Floral Blossoms & Rose Petals -->
-      <circle cx="185" cy="140" r="14" fill="#fae8b4" opacity="0.8" />
-      <circle cx="220" cy="100" r="18" fill="#e1f3fb" opacity="0.85" />
-      <circle cx="270" cy="65" r="15" fill="#fae8b4" opacity="0.85" />
-      <circle cx="325" cy="35" r="22" fill="#ffffff" opacity="0.95" filter="drop-shadow(0 4px 10px rgba(226, 190, 103, 0.4))" />
-      <path d="M 305 35 Q 325 15 345 35 Q 325 55 305 35 Z" fill="#e2be67" opacity="0.85" />
-      <path d="M 255 70 Q 275 50 290 70 Q 275 85 255 70 Z" fill="#e2be67" opacity="0.75" />
-      <path d="M 205 110 Q 225 90 235 110 Q 225 125 205 110 Z" fill="#e2be67" opacity="0.75" />
-      <!-- Floating Soft Petals -->
-      <ellipse cx="140" cy="220" rx="8" ry="14" fill="#fae8b4" opacity="0.65" transform="rotate(-25 140 220)" />
-      <ellipse cx="260" cy="180" rx="9" ry="16" fill="#e1f3fb" opacity="0.75" transform="rotate(35 260 180)" />
-    </svg>
+    <!-- White Ao Dai Cutout (căn chỉnh tỷ lệ để không bao giờ chạm thẻ bên phải) -->
+    <img class="img-cutout" style="left: 6mm; bottom: 0; height: 82%; z-index: 15;" src="assets/image13.png"
+      alt="MC Thùy Trang Ao Dai">
 
-    <!-- PRISTINE CUTOUT: White Ao Dai (image13.png) moved to left & flipped to face content -->
-    <img class="img-cutout" style="left: 12mm; height: 92%; z-index: 15; transform: scaleX(-1); filter: drop-shadow(0 18px 26px rgba(21, 44, 91, 0.16));" src="assets/image13.png" alt="MC Thùy Trang Ao Dai">
+    <!-- Right Side Content Card -->
+    <div class="glass-box" style="position: absolute; top: 26mm; right: 18mm; width: 124mm; z-index: 20;">
+      <div class="subtitle">Academic & Expertise</div>
+      <h2 class="section-title" style="font-size: 25pt; margin-bottom: 10px;">Học Vấn <em>Chuyên Môn</em></h2>
 
-    <!-- Right Side Content Box (Strictly on right, zero overlap with subject) -->
-    <div class="glass-box" style="position: absolute; top: 28mm; right: 18mm; width: 138mm; z-index: 20;">
-      <div style="display: flex; justify-content: space-between; align-items: baseline;">
-        <h2 class="section-title" style="font-size: 26pt;">Học vấn</h2>
-        <span style="font-size: 13pt; font-weight: 800; color: #7097aa; letter-spacing: 2px;">PERSONAL HIGHLIGHT</span>
-      </div>
-
-      <ul class="bullet-list" style="margin-top: 12px; margin-bottom: 24px;">
-        <li>Đại học Sư Phạm – Cử nhân chuyên ngành Quốc Tế Học</li>
-        <li>Cambridge Assessment English - FCE (B2 Quốc tế)</li>
-        <li>Tốt nghiệp khóa Professional MC - MC Academy</li>
+      <ul class="bullet-list" style="margin-bottom: 20px;">
+        <li><strong style="color: var(--navy-blue);">Đại học Sư Phạm</strong> – Cử nhân chuyên ngành Quốc Tế Học</li>
+        <li><strong style="color: var(--navy-blue);">Cambridge Assessment English</strong> – Chứng chỉ FCE (B2 Quốc tế)</li>
+        <li><strong style="color: var(--navy-blue);">MC Academy</strong> – Tốt nghiệp khóa Professional MC chuyên nghiệp</li>
       </ul>
 
-      <h2 class="section-title" style="font-size: 24pt;">Kỹ năng</h2>
-      <ul class="bullet-list" style="margin-top: 12px;">
-        <li>Quan hệ quốc tế, giao tiếp ngoại giao</li>
-        <li>Thông thạo biên phiên dịch và thông dịch tiếng Anh</li>
-        <li>Tổ chức sự kiện, làm chủ kịch bản, hoạt náo</li>
-        <li>Host Livestream chuyên nghiệp</li>
+      <div class="subtitle">Professional Skillset</div>
+      <h2 class="section-title" style="font-size: 22pt; margin-bottom: 10px;">Kỹ Năng <em>Nền Tảng</em></h2>
+
+      <ul class="bullet-list">
+        <li>Quan hệ quốc tế, giao tiếp ngoại giao và nghi thức chuẩn mực</li>
+        <li>Thông thạo biên phiên dịch tài liệu và thông dịch tiếng Anh trên sân khấu</li>
+        <li>Tổ chức sự kiện, làm chủ kịch bản, hoạt náo bùng nổ</li>
+        <li>Host Livestream chuyên nghiệp đa nền tảng</li>
       </ul>
     </div>
+
+    <div class="page-indicator-pill">04 / 21 &bull; Education & Skills</div>
   </section>
 
   <!-- ========================================================
-       PAGE 5: LĨNH VỰC MC (Divider Spread)
+       PAGE 5: LĨNH VỰC HOẠT ĐỘNG (Divider Spread)
        ======================================================== -->
   <section class="page" id="p5" data-bg="cream">
-    <div class="formula-circle-blue" style="width: 160mm; height: 160mm; top: 25mm; left: 68mm; opacity: 0.5;"></div>
-    
+    <div class="formula-circle-blue" style="width: 165mm; height: 165mm; top: 22mm; left: 50%; transform: translateX(-50%); opacity: 0.55;"></div>
+    <div class="formula-circle-cream" style="width: 110mm; height: 110mm; top: 48mm; left: 44%; transform: translateX(-50%); opacity: 0.45;"></div>
+
     <div style="position: absolute; top: 30mm; left: 50%; transform: translateX(-50%); z-index: 10;" class="formula-emblem-badge">
       <img src="assets/image5.png" alt="Vintage Rose Mic" style="width: 78%; height: 78%; object-fit: contain;">
     </div>
 
     <div style="position: absolute; top: 120mm; left: 0; width: 100%; text-align: center; z-index: 20;">
-      <h1 style="font-size: 46pt; font-weight: 800; color: var(--navy-blue); letter-spacing: 12px; text-transform: uppercase;">
-        LĨNH VỰC
+      <div class="subtitle" style="justify-content: center; margin-bottom: 6px;">Portfolio Disciplines</div>
+      <h1 class="section-title" style="font-size: 44pt; letter-spacing: 4px;">
+        Lĩnh Vực <em>Hoạt Động</em>
       </h1>
-      <div class="script-text" style="font-size: 36pt; margin-top: 8px; color: var(--mid-blue);">
+      <div class="script-text" style="font-size: 36pt; margin-top: 4px; color: var(--mid-blue);">
         MC Fields
       </div>
     </div>
+
+    <div class="page-indicator-pill">05 / 21 &bull; Disciplines</div>
   </section>
 
   <!-- ========================================================
-       PAGE 6: BILINGUAL MC (PAGE 1 - Slide 6 Exact)
+       PAGE 6: BILINGUAL MC (PAGE 1 - Overview & Live Proof)
        ======================================================== -->
   <section class="page" id="p6">
     <div class="page-tagline">
-      <span>MC SONG NGỮ</span>
-      <span>LĨNH VỰC MC &bull; MC THÙY TRANG</span>
+      <div class="page-tagline-left">MC Song Ngữ</div>
+      <div>Lĩnh Vực MC &bull; MC Thùy Trang</div>
     </div>
 
-    <!-- Left Side: Creative High-Fashion Typography & Dual Live Stage Montage -->
-    <div class="glass-box" style="position: absolute; top: 26mm; left: 20mm; width: 125mm; z-index: 20;">
-      <div style="font-family: 'Playfair Display', serif; font-style: italic; font-size: 22pt; color: #7097aa; margin-bottom: 2px;">
-        International &bull; Bilingual Host
-      </div>
-      <h2 class="section-title" style="font-size: 34pt; line-height: 1; letter-spacing: 1px; color: var(--navy-blue); margin-bottom: 12px;">
-        MC SONG NGỮ
+    <!-- Left Content Box -->
+    <div class="glass-box" style="position: absolute; top: 26mm; left: 20mm; width: 132mm; z-index: 20;">
+      <div class="subtitle">International &bull; Bilingual Host</div>
+      <h2 class="section-title" style="font-size: 28pt; margin-bottom: 10px;">
+        MC <em>Song Ngữ</em>
       </h2>
 
-      <div style="display: flex; gap: 8px; margin-bottom: 14px;">
-        <span class="badge-pill dark" style="font-size: 9pt; padding: 4px 12px;">Cambridge FCE (B2)</span>
-        <span class="badge-pill" style="font-size: 9pt; padding: 4px 12px; background: var(--canva-sky); color: var(--navy-blue); font-weight: 800;">Quốc Tế Học</span>
+      <div style="display: flex; gap: 8px; margin-bottom: 12px;">
+        <span class="badge-pill dark" style="font-size: 8.2pt;">Cambridge FCE (B2)</span>
+        <span class="badge-pill sky" style="font-size: 8.2pt;">Cử Nhân Quốc Tế Học</span>
       </div>
 
-      <ul class="bullet-list" style="margin-bottom: 16px;">
-        <li>Biên soạn kịch bản song ngữ Anh - Việt chuẩn mực ngoại giao & thương mại</li>
+      <ul class="bullet-list" style="margin-bottom: 14px;">
+        <li>Biên soạn kịch bản song ngữ Anh – Việt chuẩn mực ngoại giao & thương mại</li>
         <li>Kỹ năng thông dịch trực tiếp, thuyết trình song ngữ cuốn hút và đĩnh đạc</li>
         <li>Làm chủ sân khấu các diễn đàn đa quốc gia, lễ ký kết & hội nghị thượng đỉnh</li>
       </ul>
 
-      <!-- Embedded Stage Proof Montage Cards -->
-      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 14px; border-top: 1px solid rgba(112, 151, 170, 0.35); padding-top: 12px;">
-        <div style="border-radius: 8px; overflow: hidden; height: 26mm; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
-          <img src="assets/image22.png" alt="Stage Panel Live" style="width: 100%; height: 100%; object-fit: cover;">
+      <!-- Live Stage Proof Montage Cards (Dazi Signature & Danone Aptamil) -->
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 12px; border-top: 1px solid rgba(120, 155, 176, 0.22); padding-top: 12px;">
+        <div class="photo-frame" style="height: 33mm;">
+          <img class="img-cover" src="assets/portraits/Song_ngu_-_Dazi_Signat__606904145_2333433587095593_6634502516580086785_n__1cfa45.jpg" alt="Dazi Signature Bilingual Gala Stage" style="object-position: center 22%;">
+          <div class="photo-caption-bar" style="padding: 5px 10px; bottom: 6px; left: 6px; right: 6px;">
+            <div>
+              <div class="caption-title" style="font-size: 7.6pt;">Dazi Signature</div>
+            </div>
+          </div>
         </div>
-        <div style="border-radius: 8px; overflow: hidden; height: 26mm; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
-          <img src="assets/image24.png" alt="Stage Bilingual Keynote" style="width: 100%; height: 100%; object-fit: cover;">
+        <div class="photo-frame" style="height: 33mm;">
+          <img class="img-cover" src="assets/raw_danone/danone_01.jpg" alt="Danone Plenary Stage Live" style="object-position: center 20%;">
+          <div class="photo-caption-bar" style="padding: 5px 10px; bottom: 6px; left: 6px; right: 6px;">
+            <div>
+              <div class="caption-title" style="font-size: 7.6pt;">Danone Aptamil</div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
 
-    <!-- Center/Right Cutout: Red Roses & MC Thùy Trang (image17.png) -->
-    <img class="img-cutout" style="right: 18mm; height: 92%; z-index: 15; filter: drop-shadow(0 18px 30px rgba(21, 44, 91, 0.22));" src="assets/image17.png" alt="Bilingual MC Red Roses">
+    <!-- High-Definition Red Dress Gala Cutout (Dazi Signature) -->
+    <div class="formula-circle-blue" style="width: 165mm; height: 165mm; right: 12mm; bottom: 4mm; opacity: 0.65;"></div>
+    <div class="formula-circle-cream" style="width: 115mm; height: 115mm; right: 26mm; top: 24mm; opacity: 0.45;"></div>
+    <img class="img-cutout" style="right: 18mm; bottom: 0; height: 92%; z-index: 15;" src="assets/cutouts/mc_bilingual_dazi.png"
+      alt="MC Thùy Trang Bilingual Dazi Signature">
 
-    <div class="page-indicator-pill">Bilingual &bull; Page 1/2</div>
+    <div class="page-indicator-pill">06 / 21 &bull; Bilingual Host</div>
   </section>
 
   <!-- ========================================================
-       PAGE 7: BILINGUAL MC (PAGE 2 - Danone Aptamil & 3V Group)
+       PAGE 7: BILINGUAL MC (PAGE 2 - Dazi Signature, Danone Aptamil & 3V Group)
        ======================================================== -->
   <section class="page" id="p7" data-bg="cream">
     <div class="page-tagline">
-      <span>BILINGUAL MC HIGHLIGHTS</span>
-      <span>HỘI NGHỊ KHÁCH HÀNG &bull; DANONE APTAMIL & 3V GROUP</span>
+      <div class="page-tagline-left">Bilingual MC Highlights</div>
+      <div>Dazi Signature &bull; Danone Aptamil &bull; 3V Group</div>
     </div>
 
-    <div class="page-header">
+    <div style="position: absolute; top: 21mm; left: 20mm; z-index: 20;">
       <div class="subtitle">Bilingual MC &bull; Page 2/2</div>
-      <h2 class="section-title">Hội Nghị Khách Hàng Quốc Tế</h2>
-      <p style="color: var(--text-gray); max-width: 150mm; margin-top: 4px;">
-        Đồng hành cùng Danone (Aptamil) 2025 và Lễ kỷ niệm 10 năm 3V Group với phong cách đĩnh đạc, chuẩn xác ngữ nghĩa ngoại giao và thương mại quốc tế.
+      <h2 class="section-title" style="font-size: 25pt; margin-bottom: 3px;">Sự Kiện & Hội Nghị <em>Song Ngữ</em></h2>
+      <p class="lead-text" style="max-width: 185mm;">
+        Đồng hành cùng đêm tiệc Dazi Signature, Hội nghị Danone (Aptamil) và Lễ kỷ niệm 10 năm 3V Group với phong thái đĩnh đạc, chuẩn xác ngữ nghĩa ngoại giao và thương mại quốc tế.
       </p>
     </div>
 
-    <!-- Clean, High-Res Triple Stage Gallery (No dark blue screen overlay) -->
-    <div style="position: absolute; top: 48mm; left: 20mm; right: 20mm; bottom: 18mm; display: grid; grid-template-columns: 1.15fr 1fr 1fr; gap: 16px; z-index: 10;">
-      <div class="photo-frame" style="display: flex; flex-direction: column;">
-        <div style="height: 82%; overflow: hidden;"><img class="img-cover" src="assets/image22.png" alt="Danone Plenary"></div>
-        <div style="background: #111; padding: 8px 12px; color: #fff; height: 18%; display: flex; align-items: center; justify-content: space-between;">
-          <span style="font-weight: 700; font-size: 9.5pt; color: #fae8b4;">DANONE APTAMIL</span>
-          <span style="font-size: 8.5pt; color: #93c5fd;">Hội Nghị Khách Hàng 2025</span>
+    <!-- Triple Stage Gallery with Clear Captions & Lightbox Trigger -->
+    <div style="position: absolute; top: 50mm; left: 20mm; right: 20mm; bottom: 18mm; display: grid; grid-template-columns: 1.08fr 1.05fr 1fr; gap: 18px; z-index: 10;">
+      <div class="photo-frame">
+        <img class="img-cover" src="assets/portraits/Song_ngu_-_Dazi_Signat__606828638_2333433907095561_3201353715909182611_n__22a68b.jpg" alt="Dazi Signature Bilingual Gala" style="object-position: center 18%;">
+        <div class="photo-caption-bar">
+          <div>
+            <div class="caption-title">Dazi Signature Gala</div>
+            <div class="caption-sub">MC Song Ngữ Đêm Tiệc Giáng Sinh</div>
+          </div>
         </div>
       </div>
-      <div class="photo-frame" style="display: flex; flex-direction: column;">
-        <div style="height: 82%; overflow: hidden;"><img class="img-cover" src="assets/image24.png" alt="Danone Awards Stage"></div>
-        <div style="background: #111; padding: 8px 12px; color: #fff; height: 18%; display: flex; align-items: center; justify-content: space-between;">
-          <span style="font-weight: 700; font-size: 9.5pt; color: #38bdf8;">3V GROUP GALA</span>
-          <span style="font-size: 8.5pt; color: #93c5fd;">Kỷ Niệm 10 Năm</span>
+      <div class="photo-frame">
+        <img class="img-cover" src="assets/raw_danone/danone_05.jpg" alt="Danone Plenary Session">
+        <div class="photo-caption-bar">
+          <div>
+            <div class="caption-title">Danone Aptamil</div>
+            <div class="caption-sub">Hội Nghị Khách Hàng Quốc Tế</div>
+          </div>
         </div>
       </div>
-      <div class="photo-frame" style="display: flex; flex-direction: column;">
-        <div style="height: 82%; overflow: hidden;"><img class="img-cover" src="assets/image25.png" alt="International Dialogue"></div>
-        <div style="background: #111; padding: 8px 12px; color: #fff; height: 18%; display: flex; align-items: center; justify-content: space-between;">
-          <span style="font-weight: 700; font-size: 9.5pt; color: #fae8b4;">DIPLOMATIC FORUM</span>
-          <span style="font-size: 8.5pt; color: #93c5fd;">Thương Mại & Du Lịch</span>
+      <div class="photo-frame">
+        <img class="img-cover" src="assets/drive_photos/3v_group_03.jpg" alt="3V Group 10th Anniversary">
+        <div class="photo-caption-bar">
+          <div>
+            <div class="caption-title">3V Group Gala</div>
+            <div class="caption-sub">Lễ kỷ niệm cột mốc 10 năm</div>
+          </div>
         </div>
       </div>
     </div>
 
-    <div class="page-indicator-pill">Bilingual &bull; Page 2/2</div>
+    <div class="page-indicator-pill">07 / 21 &bull; Bilingual Stage Proof</div>
   </section>
 
   <!-- ========================================================
-       PAGE 8: TALK SHOW (PAGE 1 - Slide 7 Exact)
+       PAGE 8: TALK SHOW (PAGE 1 - HTV9 & In-Depth Interviewing)
        ======================================================== -->
   <section class="page" id="p8">
     <div class="page-tagline">
-      <span>MC TALKSHOW</span>
-      <span>LĨNH VỰC MC &bull; MC THÙY TRANG</span>
+      <div class="page-tagline-left">MC Talkshow</div>
+      <div>HTV9 Truyền Hình &bull; Tọa Đàm Chuyên Gia &bull; MC Thùy Trang</div>
     </div>
 
-    <div style="position: absolute; top: 22mm; left: 0; width: 100%; text-align: center; z-index: 20;">
-      <h1 style="font-size: 38pt; font-weight: 900; color: var(--navy-blue); letter-spacing: 4px;">
-        TALK SHOW
-      </h1>
-    </div>
-
-    <!-- Couch Discussion Photo (image19.png) -->
-    <div style="position: absolute; top: 42mm; left: 55mm; width: 185mm; height: 145mm; border-radius: 12px; overflow: hidden; z-index: 10; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
-      <img class="img-cover" src="assets/image19.png" alt="Talkshow Stage Couch">
-    </div>
-
-    <!-- Cutout Front Standing Host with Microphone (LocknLock Stage) -->
-    <img class="img-cutout" style="left: 15mm; height: 86%; z-index: 25; filter: drop-shadow(0 14px 24px rgba(21, 44, 91, 0.22));" src="assets/cutouts/mc_cover_locknlock.png" alt="Host Standing">
-
-    <!-- Formula TV Filmstrip on Right using real panel shots -->
-    <div class="filmstrip-container" style="position: absolute; top: 32mm; right: 18mm; width: 32mm; z-index: 20;">
-      <div class="filmstrip-sprockets"><div class="filmstrip-sprocket"></div><div class="filmstrip-sprocket"></div></div>
-      <div style="height: 38mm; overflow: hidden; border-radius: 4px;"><img class="img-cover" src="assets/image22.png" alt="Panel 1"></div>
-      <div style="height: 38mm; overflow: hidden; border-radius: 4px;"><img class="img-cover" src="assets/image23.png" alt="Panel 2"></div>
-      <div class="filmstrip-sprockets"><div class="filmstrip-sprocket"></div><div class="filmstrip-sprocket"></div></div>
-    </div>
-
-    <div class="page-indicator-pill">Talk Show &bull; Page 1/2</div>
-  </section>
-
-  <!-- ========================================================
-       PAGE 9: TALK SHOW (PAGE 2 - Panel Discussions)
-       ======================================================== -->
-  <section class="page" id="p9" data-bg="cream">
-    <div class="page-tagline">
-      <span>TALK SHOW HIGHLIGHTS</span>
-      <span>P5 PLUS &bull; NEXTGEN &bull; SỐ HÓA VÀ HỘI NHẬP</span>
-    </div>
-
-    <div class="page-header">
-      <div class="subtitle">Talk Show &bull; Page 2/2</div>
-      <h2 class="section-title">Khai Thác Câu Chuyện Sắc Bén</h2>
-      <p style="color: var(--text-gray); max-width: 140mm; margin-top: 4px;">
-        Dẫn dắt mạch cảm xúc tự nhiên, lắng nghe tinh tế và kết nối các góc nhìn chuyên gia trên sóng truyền hình và diễn đàn doanh nhân.
+    <!-- Left Heading & Lead (tách biệt hoàn toàn với cutout bên phải) -->
+    <div style="position: absolute; top: 21mm; left: 20mm; width: 165mm; z-index: 20;">
+      <div class="subtitle">HTV9 Broadcast &bull; Discussion & Dialogue</div>
+      <h1 class="section-title" style="font-size: 28pt; margin: 1px 0 4px;">MC <em>Talkshow</em></h1>
+      <p class="lead-text" style="max-width: 158mm;">
+        Dẫn dắt chương trình truyền hình HTV9 và các tọa đàm chuyên sâu với sự lắng nghe tinh tế, mạch cảm xúc tự nhiên kết nối bác sĩ, chuyên gia cùng khán giả.
       </p>
     </div>
 
-    <div style="position: absolute; top: 48mm; left: 20mm; right: 20mm; bottom: 18mm; display: grid; grid-template-columns: 1.6fr 1fr; gap: 20px; z-index: 10;">
-      <!-- Main Talk Show Live Stage: Master Your Language / NextGen -->
-      <div class="photo-frame" style="display: flex; flex-direction: column;">
-        <div style="height: 84%; overflow: hidden;">
-          <img class="img-cover" src="assets/image23.png" alt="Tọa đàm Master Your Language - Số Hóa và Hội Nhập">
-        </div>
-        <div style="background: #111; padding: 10px 16px; color: #fff; height: 16%; display: flex; align-items: center; justify-content: space-between;">
-          <span style="font-weight: 700; font-size: 10.5pt; color: #fae8b4;">🎙️ TỌA ĐÀM: NEXTGEN & SỐ HÓA</span>
-          <span style="font-size: 9pt; color: #38bdf8;">Đồng hành cùng Chuyên gia & Khách mời</span>
+    <!-- Left & Center Stage Gallery (x = 20mm .. 184mm): HTV9 Talkshow & Huy Forum -->
+    <div class="photo-frame" style="position: absolute; top: 53mm; left: 20mm; width: 112mm; height: 137mm; z-index: 10;">
+      <img class="img-cover" src="assets/portraits/Talkshow_-_HTV9_-_Gia_ta__579377504_2292008161238136_1610134815643101220_n__a70349.jpg" alt="Talkshow Truyền Hình HTV9" style="object-position: center 20%;">
+      <div class="photo-caption-bar">
+        <div>
+          <div class="caption-title">Talkshow Truyền Hình HTV9</div>
+          <div class="caption-sub">Gia tăng nhận thức về bệnh hen trẻ em</div>
         </div>
       </div>
+    </div>
 
-      <!-- Right Column: P5 Plus Filmstrip & Host Portrait -->
-      <div style="display: flex; flex-direction: column; gap: 14px;">
-        <div class="photo-frame" style="flex: 1; display: flex; flex-direction: column;">
-          <div style="height: 75%; overflow: hidden; background: #0e1e3e; display: flex; align-items: center; justify-content: center;">
-            <img src="assets/image21.png" alt="P5 Plus Filmstrip" style="width: 100%; height: 100%; object-fit: cover; opacity: 0.9;">
-          </div>
-          <div style="background: #111; padding: 8px 14px; color: #fff; height: 25%; display: flex; align-items: center; justify-content: space-between;">
-            <span style="font-weight: 700; font-size: 9.5pt; color: #38bdf8;">🔴 DIỄN ĐÀN P5 PLUS</span>
-            <span style="font-size: 8pt; color: #8baebd;">Kinh tế & Hội nhập</span>
+    <div style="position: absolute; top: 53mm; left: 138mm; width: 46mm; height: 137mm; z-index: 12; display: flex; flex-direction: column; gap: 12px;">
+      <div class="photo-frame" style="flex: 1;">
+        <img class="img-cover" src="assets/portraits/Talkshow_-_HTV9_-_Gia_ta__581828745_2292009494571336_33318689126401168_n__4524bd.jpg" alt="Sự kiện Talkshow HTV9" style="object-position: center 25%;">
+        <div class="photo-caption-bar" style="padding: 5px 10px; bottom: 6px; left: 6px; right: 6px;">
+          <div>
+            <div class="caption-title" style="font-size: 7.4pt;">HTV9 Sức Khỏe</div>
           </div>
         </div>
-
-        <div class="photo-frame" style="flex: 1; display: flex; flex-direction: column;">
-          <div style="height: 75%; overflow: hidden;">
-            <img class="img-cover" src="assets/image19.png" alt="Talkshow Discussion Stage">
-          </div>
-          <div style="background: #111; padding: 8px 14px; color: #fff; height: 25%; display: flex; align-items: center; justify-content: space-between;">
-            <span style="font-weight: 700; font-size: 9.5pt; color: #fae8b4;">📺 TALKSHOW STAGE</span>
-            <span style="font-size: 8pt; color: #8baebd;">Đối thoại Chuyên sâu</span>
+      </div>
+      <div class="photo-frame" style="flex: 1;">
+        <img class="img-cover" src="assets/portraits/Talkshow_-_Huy_Forum_x_L__IMG_1744370423633_1744370468344__0cced8.jpg" alt="Talkshow Huy Forum" style="object-position: center 20%;">
+        <div class="photo-caption-bar" style="padding: 5px 10px; bottom: 6px; left: 6px; right: 6px;">
+          <div>
+            <div class="caption-title" style="font-size: 7.4pt;">Huy Forum Talkshow</div>
           </div>
         </div>
       </div>
     </div>
 
-    <div class="page-indicator-pill">Talk Show &bull; Page 2/2</div>
+    <!-- Right Side Seated Host Cutout (nhìn hướng vào sân khấu bên trái, không đè chữ hay ảnh) -->
+    <div class="formula-circle-blue" style="width: 155mm; height: 155mm; right: 8mm; bottom: 6mm; opacity: 0.65;"></div>
+    <div class="formula-circle-cream" style="width: 105mm; height: 105mm; right: 22mm; top: 28mm; opacity: 0.45;"></div>
+    <img class="img-cutout" style="right: 14mm; bottom: 0; height: 88%; z-index: 25;" src="assets/cutouts/mc_danone_seated_script.png"
+      alt="Host with Script">
+
+    <div class="page-indicator-pill">08 / 21 &bull; Talkshow Host</div>
   </section>
 
   <!-- ========================================================
-       PAGE 10: WEDDINGS (PAGE 1 - Slide 8 Exact)
+       PAGE 9: TALK SHOW (PAGE 2 - HTV9, Panel Discussions & NextGen)
+       ======================================================== -->
+  <section class="page" id="p9" data-bg="cream">
+    <div class="page-tagline">
+      <div class="page-tagline-left">Talk Show Highlights</div>
+      <div>HTV9 Truyền Hình &bull; NextGen &bull; Số Hóa Và Hội Nhập</div>
+    </div>
+
+    <div style="position: absolute; top: 21mm; left: 20mm; z-index: 20;">
+      <div class="subtitle">Talk Show &bull; Page 2/2</div>
+      <h2 class="section-title" style="font-size: 25pt;">Khai Thác Câu Chuyện <em>Sắc Bén</em></h2>
+      <p class="lead-text" style="max-width: 175mm; margin-top: 3px;">
+        Dẫn dắt mạch cảm xúc tự nhiên, lắng nghe tinh tế và kết nối góc nhìn chuyên gia trên sóng truyền hình HTV9 cùng các diễn đàn doanh nhân.
+      </p>
+    </div>
+
+    <div style="position: absolute; top: 50mm; left: 20mm; right: 20mm; bottom: 18mm; display: grid; grid-template-columns: 1.45fr 1fr; gap: 20px; z-index: 10;">
+      <!-- Main Talk Show Stage -->
+      <div class="photo-frame">
+        <img class="img-cover" src="assets/image23.png" alt="Tọa đàm Master Your Language - Số Hóa và Hội Nhập">
+        <div class="photo-caption-bar">
+          <div>
+            <div class="caption-title">Tọa Đàm: NextGen & Số Hóa</div>
+            <div class="caption-sub">Đồng hành cùng chuyên gia & khách mời</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Column: Master Your Language & HTV9 / Huy Forum Discussion -->
+      <div style="display: flex; flex-direction: column; gap: 14px;">
+        <div class="photo-frame" style="flex: 1;">
+          <img class="img-cover" src="assets/image25.png" alt="Diễn đàn Master Your Language">
+          <div class="photo-caption-bar">
+            <div>
+              <div class="caption-title">Master Your Language</div>
+              <div class="caption-sub">Toàn cảnh diễn đàn & hội nhập</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="photo-frame" style="flex: 1;">
+          <img class="img-cover" src="assets/portraits/Song_ngu_-_Dazi_Signat__606881031_2333433847095567_8803462187179024530_n__201c38.jpg" alt="Dazi Signature & Talkshow Event" style="object-position: center 22%;">
+          <div class="photo-caption-bar">
+            <div>
+              <div class="caption-title">Giao Lưu & Chia Sẻ Chuyên Đề</div>
+              <div class="caption-sub">Phong thái thanh lịch & kết nối gần gũi</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="page-indicator-pill">09 / 21 &bull; Talk Show Panel</div>
+  </section>
+
+  <!-- ========================================================
+       PAGE 10: WEDDINGS (PAGE 1 - Romantic Ceremony Intro)
+       Bố cục 2 cột tách biệt tuyệt đối:
+       - Cột trái (20mm..174mm): Tiêu đề MC Weddings + Khung ảnh lễ đường + Thẻ dịch vụ
+       - Cột phải (196mm..279mm): Hoàn toàn trống trải từ đỉnh tới chân cho Cutout (86% chiều cao)
        ======================================================== -->
   <section class="page" id="p10">
     <div class="page-tagline">
-      <span>MC WEDDINGS</span>
-      <span>LĨNH VỰC MC &bull; MC THÙY TRANG</span>
+      <div class="page-tagline-left">MC Weddings</div>
+      <div>Lĩnh Vực MC &bull; MC Thùy Trang</div>
     </div>
 
-    <div style="position: absolute; top: 32mm; right: 24mm; text-align: right; z-index: 20;">
-      <div class="script-text" style="font-size: 52pt; color: var(--navy-blue);">MC</div>
-      <div style="font-size: 38pt; font-weight: 800; color: var(--navy-blue); letter-spacing: 6px; margin-top: -10px;">WEDDINGS</div>
+    <!-- Left Editorial Header (tách biệt hoàn toàn khỏi cutout bên phải) -->
+    <div style="position: absolute; top: 21mm; left: 20mm; width: 152mm; z-index: 20;">
+      <div class="subtitle">Romantic Ceremony &bull; Wedding Host</div>
+      <div style="display: flex; align-items: baseline; gap: 12px; margin-top: 2px;">
+        <span class="script-text" style="font-size: 38pt;">MC</span>
+        <h2 class="section-title" style="font-size: 30pt;"><em>Weddings</em></h2>
+      </div>
+      <p class="lead-text" style="margin-top: 3px; max-width: 148mm;">
+        Ghi dấu khoảnh khắc thiêng liêng bằng lời dẫn trang trọng, ấm áp và đong đầy cảm xúc yêu thương.
+      </p>
     </div>
 
-    <!-- Upper Wedding Ceremony Shot (image27.png) -->
-    <div style="position: absolute; top: 28mm; left: 20mm; width: 140mm; height: 80mm; border-radius: 12px; overflow: hidden; z-index: 10; box-shadow: 0 8px 24px rgba(0,0,0,0.1);">
-      <img class="img-cover" src="assets/image27.png" alt="Wedding Stage Top">
+    <!-- Left Split Showcase: Ceremony Photo + Service Glass Card (x = 20mm .. 172mm) -->
+    <div style="position: absolute; top: 64mm; left: 20mm; width: 152mm; height: 126mm; display: grid; grid-template-columns: 1.05fr 1fr; gap: 14px; z-index: 15;">
+      <div class="photo-frame" style="height: 100%;">
+        <img class="img-cover" src="assets/image27.png" alt="Wedding Stage Top" style="object-position: center 22%;">
+        <div class="photo-caption-bar">
+          <div>
+            <div class="caption-title">Grand Wedding Celebration</div>
+            <div class="caption-sub">Không gian lễ đường lộng lẫy & tinh tế</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="glass-box" style="padding: 18px 20px; display: flex; flex-direction: column; justify-content: center;">
+        <div class="soft-quote" style="font-size: 11pt; padding: 10px 14px; margin-bottom: 12px;">
+          “Mỗi lễ cưới là một bản giao hưởng tình yêu độc bản được dẫn dắt bằng cả trái tim.”
+        </div>
+        <ul class="bullet-list" style="margin-top: 0;">
+          <li style="font-size: 9.4pt; margin-bottom: 7px;"><strong style="color: var(--navy-blue);">Kịch bản cá nhân hóa:</strong> Khắc họa trọn vẹn câu chuyện riêng của từng cặp đôi.</li>
+          <li style="font-size: 9.4pt; margin-bottom: 7px;"><strong style="color: var(--navy-blue);">Nghi thức chuẩn mực:</strong> Dẫn dắt trang trọng lễ Gia Tiên, Thành Hôn & tiệc tối.</li>
+          <li style="font-size: 9.4pt; margin-bottom: 0;"><strong style="color: var(--navy-blue);">Song ngữ linh hoạt:</strong> Kết nối ấm áp quan khách hai họ và bạn bè quốc tế.</li>
+        </ul>
+      </div>
     </div>
 
-    <!-- Lower Wedding Ceremony Shot Cutout (image28.png) -->
-    <div style="position: absolute; bottom: 16mm; left: 60mm; width: 155mm; height: 80mm; border-radius: 12px; overflow: hidden; z-index: 10; box-shadow: 0 8px 24px rgba(0,0,0,0.1);">
-      <img class="img-cover" src="assets/image28.png" alt="Wedding Stage Bottom">
-    </div>
+    <!-- Right Column: Pure Open Space for Graceful Wedding Host Cutout (không có bất kỳ chữ nào phía trên/xung quanh) -->
+    <div class="formula-arch-plate" style="width: 104mm; height: 174mm; right: 14mm; bottom: 0;"></div>
+    <div class="formula-circle-cream" style="width: 135mm; height: 135mm; right: 8mm; bottom: 14mm; opacity: 0.6;"></div>
+    <img class="img-cutout" style="right: 20mm; bottom: 0; height: 86%; z-index: 18;" src="assets/cutouts/mc_wedding_script.png"
+      alt="MC Thùy Trang Wedding Host">
 
-    <div class="page-indicator-pill">Weddings &bull; Page 1/2</div>
+    <div class="page-indicator-pill">10 / 21 &bull; Weddings Showcase</div>
   </section>
 
   <!-- ========================================================
-       PAGE 11: WEDDINGS (PAGE 2 - Romantic Moments)
+       PAGE 11: WEDDINGS (PAGE 2 - Romantic Moments Gallery)
        ======================================================== -->
   <section class="page" id="p11" data-bg="cream">
     <div class="page-tagline">
-      <span>WEDDINGS HIGHLIGHTS</span>
-      <span>HẠNH PHÚC NGÀY CHUNG ĐÔI &bull; KHOẢNH KHẮC THIÊNG LIÊNG</span>
+      <div class="page-tagline-left">Weddings Highlights</div>
+      <div>Hạnh Phúc Ngày Chung Đôi &bull; Khoảnh Khắc Thiêng Liêng</div>
     </div>
 
-    <div class="page-header">
+    <div style="position: absolute; top: 21mm; left: 20mm; z-index: 20;">
       <div class="subtitle">Weddings &bull; Page 2/2</div>
-      <h2 class="section-title">Lễ Cưới Sang Trọng & Lãng Mạn</h2>
-      <p style="color: var(--text-gray); max-width: 140mm; margin-top: 4px;">
+      <h2 class="section-title" style="font-size: 25pt;">Lễ Cưới Sang Trọng & <em>Lãng Mạn</em></h2>
+      <p class="lead-text" style="max-width: 165mm; margin-top: 3px;">
         Kịch bản được cá nhân hóa trọn vẹn theo câu chuyện tình yêu của từng cặp đôi, dẫn dắt các nghi thức thiêng liêng và truyền tải trọn vẹn cảm xúc.
       </p>
     </div>
 
-    <div style="position: absolute; top: 48mm; left: 20mm; right: 20mm; bottom: 18mm; display: grid; grid-template-columns: 1fr 1fr; gap: 20px; z-index: 10;">
+    <div style="position: absolute; top: 50mm; left: 20mm; right: 20mm; bottom: 18mm; display: grid; grid-template-columns: 1fr 1fr; gap: 20px; z-index: 10;">
       <div class="photo-frame">
         <img class="img-cover" src="assets/image27.png" alt="Wedding Grand Stage">
+        <div class="photo-caption-bar">
+          <div>
+            <div class="caption-title">Không Gian Lễ Cưới Cổ Tích</div>
+            <div class="caption-sub">Âm nhạc hòa quyện cùng cảm xúc</div>
+          </div>
+        </div>
       </div>
       <div class="photo-frame">
         <img class="img-cover" src="assets/image28.png" alt="Wedding Toast Moment">
+        <div class="photo-caption-bar">
+          <div>
+            <div class="caption-title">Khoảnh Khắc Thề Nguyện</div>
+            <div class="caption-sub">Lời chúc phúc chân thành từ người thân</div>
+          </div>
+        </div>
       </div>
     </div>
 
-    <div class="page-indicator-pill">Weddings &bull; Page 2/2</div>
+    <div class="page-indicator-pill">11 / 21 &bull; Weddings Moments</div>
   </section>
 
   <!-- ========================================================
-       PAGE 12: ACTIVE (PAGE 1 - Slide 9 Exact)
+       PAGE 12: ACTIVE (PAGE 1 - High Energy, Festivals & Trung Thu)
        ======================================================== -->
   <section class="page" id="p12">
     <div class="page-tagline">
-      <span>MC ACTIVE</span>
-      <span>LĨNH VỰC MC &bull; MC THÙY TRANG</span>
+      <div class="page-tagline-left">MC Active & Lễ Hội</div>
+      <div>Lễ Hội Trung Thu &bull; Brand Activation &bull; MC Thùy Trang</div>
     </div>
 
-    <!-- Grab Green Cutout on Right (Pristine BiRefNet Cutout) -->
-    <img class="img-cutout" style="right: 15mm; height: 92%; z-index: 15; filter: drop-shadow(-6px 14px 22px rgba(21, 44, 91, 0.2));" src="assets/cutouts/mc_grab_active.png" alt="MC Active Grab">
+    <!-- Left Content Box (width 124mm -> kết thúc ở 144mm, cách cutout 10mm) -->
+    <div class="glass-box" style="position: absolute; top: 24mm; left: 20mm; width: 124mm; padding: 20px 24px; z-index: 20;">
+      <div class="subtitle">High Energy &bull; Cultural Festivals</div>
+      <h2 class="section-title" style="font-size: 28pt;">
+        MC <em>Active & Lễ Hội</em>
+      </h2>
 
-    <!-- Left Content Box -->
-    <div style="position: absolute; top: 38mm; left: 24mm; width: 140mm; z-index: 20;">
-      <div style="font-size: 34pt; font-weight: 900; color: var(--navy-blue); line-height: 0.95;">MC</div>
-      <div style="font-size: 52pt; font-weight: 900; color: #1e4b85; letter-spacing: 2px; margin-top: 4px;">ACTIVE</div>
-
-      <ul class="bullet-list" style="margin-top: 24px; font-size: 13pt;">
-        <li style="font-size: 13pt; margin-bottom: 16px;">Thông thạo kỹ năng hoạt náo</li>
-        <li style="font-size: 13pt; margin-bottom: 16px;">Biên tập nội dung gameshow</li>
-        <li style="font-size: 13pt; margin-bottom: 16px;">Đa dạng phong cách, bùng nổ năng lượng</li>
+      <ul class="bullet-list" style="margin-top: 10px; margin-bottom: 12px;">
+        <li style="font-size: 9.8pt; margin-bottom: 7px;"><strong style="color: var(--navy-blue);">Thông thạo kỹ năng hoạt náo:</strong> Làm chủ sân khấu lễ hội văn hóa, đêm hội Trung Thu và sự kiện quy mô lớn.</li>
+        <li style="font-size: 9.8pt; margin-bottom: 7px;"><strong style="color: var(--navy-blue);">Biên tập nội dung gameshow:</strong> Sáng tạo mini game cuốn hút, gắn kết gia đình, thiếu nhi và khán giả trẻ.</li>
+        <li style="font-size: 9.8pt; margin-bottom: 6px;"><strong style="color: var(--navy-blue);">Đa dạng phong cách:</strong> Biến hóa linh hoạt từ hóa thân Chị Hằng duyên dáng đến hoạt náo thể thao bùng nổ.</li>
       </ul>
+
+      <div style="display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 12px;">
+        <span class="badge-pill dark" style="font-size: 8pt;">🏮 Đêm Hội Trung Thu</span>
+        <span class="badge-pill sky" style="font-size: 8pt;">🏃 Marathon & Thể Thao</span>
+        <span class="badge-pill cream" style="font-size: 8pt;">✨ Lễ Hội & Activation</span>
+      </div>
+
+      <!-- Trung Thu Live Stage Montage Cards -->
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px; border-top: 1px solid rgba(120, 155, 176, 0.22); padding-top: 12px;">
+        <div class="photo-frame" style="height: 33mm;">
+          <img class="img-cover" src="assets/portraits/Trung_thu_-_Kira_Art_C__557698270_2258816134557339_9004114298995657925_n__aaee03.jpg" alt="Hoạt náo Đêm Hội Trung Thu Kira Art & Co" style="object-position: center 22%;">
+          <div class="photo-caption-bar" style="padding: 5px 10px; bottom: 6px; left: 6px; right: 6px;">
+            <div>
+              <div class="caption-title" style="font-size: 7.5pt;">Trung Thu Kira Art</div>
+            </div>
+          </div>
+        </div>
+        <div class="photo-frame" style="height: 33mm;">
+          <img class="img-cover" src="assets/portraits/Trung_thu_-_Tha_o_ie_n__20251003_190136__84f99a.jpg" alt="Tết Trung Thu Thảo Điền" style="object-position: center 18%;">
+          <div class="photo-caption-bar" style="padding: 5px 10px; bottom: 6px; left: 6px; right: 6px;">
+            <div>
+              <div class="caption-title" style="font-size: 7.5pt;">Trung Thu Thảo Điền</div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
-    <div class="page-indicator-pill">Active &bull; Page 1/2</div>
+    <!-- Cutout Grab Active on Right -->
+    <div class="formula-circle-blue" style="width: 165mm; height: 165mm; right: 10mm; bottom: 4mm; opacity: 0.65;"></div>
+    <div class="formula-circle-cream" style="width: 115mm; height: 115mm; right: 24mm; top: 24mm; opacity: 0.45;"></div>
+    <img class="img-cutout" style="right: 10mm; bottom: 0; height: 86%; z-index: 15;" src="assets/cutouts/mc_grab_active.png"
+      alt="MC Active Grab">
+
+    <div class="page-indicator-pill">12 / 21 &bull; Active Host</div>
   </section>
 
   <!-- ========================================================
-       PAGE 13: ACTIVE (PAGE 2 - Mega Activations)
+       PAGE 13: ACTIVE (PAGE 2 - Trung Thu Festivals & Mega Activations)
        ======================================================== -->
   <section class="page" id="p13" data-bg="cream">
     <div class="page-tagline">
-      <span>ACTIVE HIGHLIGHTS</span>
-      <span>GIẢI CHẠY MARATHON &bull; BIA SÀI GÒN &bull; BUDWEISER</span>
+      <div class="page-tagline-left">Active & Festival Highlights</div>
+      <div>Lễ Hội Trung Thu Kira Art & Thảo Điền &bull; Bia Sài Gòn &bull; Citigym Marathon</div>
     </div>
 
-    <div class="page-header">
+    <div style="position: absolute; top: 21mm; left: 20mm; z-index: 20;">
       <div class="subtitle">Active &bull; Page 2/2</div>
-      <h2 class="section-title">Sự Kiện Ngoài Trời & Brand Activation</h2>
-      <p style="color: var(--text-gray); max-width: 150mm; margin-top: 4px;">
-        Khuấy động không khí các sự kiện thể thao, lễ hội đường phố và trạm trải nghiệm thương hiệu với hàng ngàn người tham gia.
+      <h2 class="section-title" style="font-size: 25pt;">Lễ Hội Trung Thu & <em>Brand Activation</em></h2>
+      <p class="lead-text" style="max-width: 180mm; margin-top: 3px;">
+        Dẫn dắt duyên dáng các Đêm Hội Trăng Rằm (Kira Art & Co., Thảo Điền, Tropic Garden) và khuấy động bùng nổ chuỗi sự kiện thương hiệu ngoài trời.
       </p>
     </div>
 
-    <div style="position: absolute; top: 48mm; left: 20mm; right: 20mm; bottom: 18mm; display: grid; grid-template-columns: 1.2fr 1fr 1fr; gap: 18px; z-index: 10;">
-      <div class="photo-frame" style="background: #000; position: relative; overflow: hidden;">
-        <img class="img-cover" src="assets/image34.jpeg" alt="Mega Activation Event">
-        <img src="assets/cutouts/mc_saigon_cutout.png" alt="MC Bia Saigon Cutout" style="position: absolute; bottom: 0; right: -5mm; height: 95%; filter: drop-shadow(-4px 4px 10px rgba(0,0,0,0.6));">
+    <div style="position: absolute; top: 50mm; left: 20mm; right: 20mm; bottom: 18mm; display: grid; grid-template-columns: 1.05fr 1.05fr 1.15fr 1fr; gap: 16px; z-index: 10;">
+      <div class="photo-frame">
+        <img class="img-cover" src="assets/portraits/Trung_thu_-_Kira_Art_C__557621962_2258815887890697_3290187935512091524_n__fc1bff.jpg" alt="Đêm hội Trung Thu Kira Art & Co" style="object-position: center 20%;">
+        <div class="photo-caption-bar">
+          <div>
+            <div class="caption-title">Trung Thu Kira Art & Co.</div>
+            <div class="caption-sub">Hóa thân Chị Hằng & dẫn dắt lễ hội</div>
+          </div>
+        </div>
       </div>
       <div class="photo-frame">
-        <img class="img-cover" src="assets/image35.jpeg" alt="Citigym Marathon & Outdoor">
+        <img class="img-cover" src="assets/portraits/Trung_thu_-_Kira_Art_C__558884641_2258815621224057_8887709846126253227_n__71ada7.jpg" alt="Không gian văn hóa Trung Thu" style="object-position: center 25%;">
+        <div class="photo-caption-bar">
+          <div>
+            <div class="caption-title">Đêm Hội Trăng Rằm</div>
+            <div class="caption-sub">Giao lưu văn hóa & workshop thiếu nhi</div>
+          </div>
+        </div>
       </div>
       <div class="photo-frame">
-        <img class="img-cover" src="assets/image38.jpeg" alt="Budweiser Stage Activation">
+        <img class="img-cover" src="assets/drive_photos/bia_saigon_02.jpg" alt="Bia Saigon Activation Event" style="object-position: center 35%;">
+        <div class="photo-caption-bar">
+          <div>
+            <div class="caption-title">Bia Sài Gòn Activation</div>
+            <div class="caption-sub">Sân khấu Saigon Night bùng nổ</div>
+          </div>
+        </div>
+      </div>
+      <div class="photo-frame">
+        <img class="img-cover" src="assets/drive_photos/citigym_marathon_02.jpg" alt="Citigym Marathon & Outdoor">
+        <div class="photo-caption-bar">
+          <div>
+            <div class="caption-title">Citigym Marathon</div>
+            <div class="caption-sub">Trạm quay thưởng & cổ vũ đường chạy</div>
+          </div>
+        </div>
       </div>
     </div>
 
-    <div class="page-indicator-pill">Active &bull; Page 2/2</div>
+    <div class="page-indicator-pill">13 / 21 &bull; Active Moments</div>
   </section>
 
   <!-- ========================================================
-       PAGE 14: YEP (PAGE 1 - Slide 10 Exact)
+       PAGE 14: YEP & GALA DINNER (PAGE 1 - Event Gala Dinner & Evening Gown)
+       Bố cục 2 cột chuẩn xác cho dáng dang rộng tay của mc_gala_zens.png:
+       - Cột trái (20mm..142mm): Thẻ tiêu đề MC YEP & Gala Dinner + 2 khung ảnh Event Gala Dinner Tân Phú
+       - Cột phải (158mm..292mm): Cutout đầm dạ hội đỏ (height: 84%, right: 5mm), cách 16mm hoàn toàn không chạm chữ hay ảnh
        ======================================================== -->
   <section class="page" id="p14">
     <div class="page-tagline">
-      <span>MC YEP</span>
-      <span>LĨNH VỰC MC &bull; MC THÙY TRANG</span>
+      <div class="page-tagline-left">MC YEP & Gala Dinner</div>
+      <div>Event Gala Dinner &bull; Year End Party &bull; MC Thùy Trang</div>
     </div>
 
-    <div style="position: absolute; top: 32mm; right: 24mm; text-align: right; z-index: 20;">
-      <div class="script-text" style="font-size: 50pt; color: var(--navy-blue);">MC</div>
-      <div style="font-size: 42pt; font-weight: 900; color: var(--navy-blue); letter-spacing: 6px; margin-top: -10px;">YEP</div>
+    <!-- Left Editorial Card (x = 20mm .. 142mm, tách hẳn khỏi sải tay cutout ở x = 158.7mm) -->
+    <div class="glass-box" style="position: absolute; top: 23mm; left: 20mm; width: 122mm; padding: 16px 22px; z-index: 20;">
+      <div class="subtitle" style="margin-bottom: 2px;">Event Gala Dinner &bull; Year End Party</div>
+      <div style="display: flex; align-items: baseline; gap: 10px;">
+        <span class="script-text" style="font-size: 36pt;">MC</span>
+        <h2 class="section-title" style="font-size: 28pt;"><em>YEP & Gala</em></h2>
+      </div>
+      <p class="lead-text" style="margin-top: 4px; font-size: 9.6pt; line-height: 1.62;">
+        Sang trọng, cuốn hút và truyền cảm hứng trong các đêm tiệc Event Gala Dinner, tiệc tri ân cuối năm và dấu mốc kỷ niệm hoàng kim của doanh nghiệp.
+      </p>
     </div>
 
-    <!-- Papa Lee's Recap 2024 Filmstrips (image36.png, image39.png) -->
-    <div style="position: absolute; top: 28mm; left: 20mm; width: 66mm; height: 160mm; overflow: hidden; z-index: 10;">
-      <img src="assets/image36.png" alt="Papa Lee Recap 1" style="width: 100%; height: 100%; object-fit: contain;">
-    </div>
-    <div style="position: absolute; top: 35mm; left: 88mm; width: 66mm; height: 155mm; overflow: hidden; z-index: 10;">
-      <img src="assets/image39.png" alt="Papa Lee Recap 2" style="width: 100%; height: 100%; object-fit: contain;">
+    <!-- Event Gala Dinner Stage Cards (x = 20mm .. 142mm) -->
+    <div style="position: absolute; top: 75mm; left: 20mm; width: 122mm; height: 115mm; display: grid; grid-template-columns: 1fr 1fr; gap: 12px; z-index: 10;">
+      <div class="photo-frame" style="height: 100%;">
+        <img class="img-cover" src="assets/portraits/Gala_Dinner_-_Ta_n_Phu___IMG_1756881655941_1756881696064__c17e0e.jpg" alt="Event Gala Dinner Tân Phú Stage 1" style="object-position: center 18%;">
+        <div class="photo-caption-bar">
+          <div>
+            <div class="caption-title">Event Gala Dinner</div>
+            <div class="caption-sub">Đêm tiệc sang trọng & gắn kết</div>
+          </div>
+        </div>
+      </div>
+      <div class="photo-frame" style="height: 100%;">
+        <img class="img-cover" src="assets/portraits/Gala_Dinner_-_Ta_n_Phu___IMG_1756982232942_1756985391590__b083a6.jpg" alt="Event Gala Dinner Tân Phú Stage 2" style="object-position: center 20%;">
+        <div class="photo-caption-bar">
+          <div>
+            <div class="caption-title">Gala Dinner Stage</div>
+            <div class="caption-sub">Làm chủ sân khấu & dẫn dắt cảm xúc</div>
+          </div>
+        </div>
+      </div>
     </div>
 
-    <!-- Cutout: Gala Host Standing in Evening Gown (Pristine BiRefNet Cutout) -->
-    <img class="img-cutout" style="right: 12mm; bottom: 0; height: 88%; z-index: 15; filter: drop-shadow(-8px 16px 26px rgba(21, 44, 91, 0.24));" src="assets/cutouts/mc_gala_zens.png" alt="MC Thùy Trang YEP Gala">
+    <!-- Red Evening Gown Host Cutout (right: 5mm, height: 84% -> mũi bàn tay trái ở x = 158.7mm, cách cột trái 16.7mm) -->
+    <div class="formula-circle-blue" style="width: 158mm; height: 158mm; right: 8mm; bottom: 6mm; opacity: 0.65;"></div>
+    <div class="formula-circle-cream" style="width: 112mm; height: 112mm; right: 20mm; top: 26mm; opacity: 0.5;"></div>
+    <img class="img-cutout" style="right: 5mm; bottom: 0; height: 84%; z-index: 15;" src="assets/cutouts/mc_gala_zens.png"
+      alt="MC Thùy Trang YEP Gala">
 
-    <div class="page-indicator-pill">YEP &bull; Page 1/2</div>
+    <div class="page-indicator-pill">14 / 21 &bull; Gala & YEP Host</div>
   </section>
 
   <!-- ========================================================
-       PAGE 15: YEP (PAGE 2 - Corporate Gala)
+       PAGE 15: YEP & GALA DINNER (PAGE 2 - Event Gala Dinner & Corporate Highlights)
        ======================================================== -->
   <section class="page" id="p15" data-bg="cream">
     <div class="page-tagline">
-      <span>YEP HIGHLIGHTS</span>
-      <span>YEAR END PARTY &bull; GALA KỶ NIỆM DOANH NGHIỆP</span>
+      <div class="page-tagline-left">Gala Dinner & YEP Highlights</div>
+      <div>Event Gala Dinner Tân Phú &bull; ZENS YEP 2026 &bull; Al Fresco's 30 Years</div>
     </div>
 
-    <div class="page-header">
-      <div class="subtitle">YEP &bull; Page 2/2</div>
-      <h2 class="section-title">Đêm Tiệc Tất Niên & Tri Ân Vinh Danh</h2>
-      <p style="color: var(--text-gray); max-width: 150mm; margin-top: 4px;">
-        Vinh danh nhân sự xuất sắc, khai tiệc trang trọng và tạo nên bầu không khí gắn kết thăng hoa đón chào năm mới.
+    <div style="position: absolute; top: 21mm; left: 20mm; z-index: 20;">
+      <div class="subtitle">Gala Dinner & YEP &bull; Page 2/2</div>
+      <h2 class="section-title" style="font-size: 25pt;">Đêm Tiệc Gala Dinner & <em>Tri Ân Vinh Danh</em></h2>
+      <p class="lead-text" style="max-width: 175mm; margin-top: 3px;">
+        Dẫn dắt trang trọng các đêm tiệc Event Gala Dinner, vinh danh nhân sự xuất sắc và kiến tạo bầu không khí thăng hoa cho doanh nghiệp.
       </p>
     </div>
 
-    <div style="position: absolute; top: 48mm; left: 20mm; right: 20mm; bottom: 18mm; display: grid; grid-template-columns: 1.3fr 1fr; gap: 20px; z-index: 10;">
+    <div style="position: absolute; top: 50mm; left: 20mm; right: 20mm; bottom: 18mm; display: grid; grid-template-columns: 1.15fr 1.05fr 1fr; gap: 18px; z-index: 10;">
       <div class="photo-frame">
-        <img class="img-cover" src="assets/image37.png" alt="YEP Gala Stage">
+        <img class="img-cover" src="assets/portraits/Gala_Dinner_-_Ta_n_Phu___z7014435865182_52c1134791b11ec4cb612053ed8671c2__04f91f.jpg" alt="Event Gala Dinner Tân Phú" style="object-position: center 18%;">
+        <div class="photo-caption-bar">
+          <div>
+            <div class="caption-title">Event Gala Dinner Tân Phú</div>
+            <div class="caption-sub">Phong thái đĩnh đạc & cuốn hút trên sân khấu</div>
+          </div>
+        </div>
       </div>
       <div class="photo-frame">
-        <img class="img-cover" src="assets/image32.jpeg" alt="YEP Celebration Award">
+        <img class="img-cover" src="assets/portraits/YEP_-_ZENS_2026___DSC02723__c3fd63.jpg" alt="ZENS Year End Party 2026" style="object-position: center 18%;">
+        <div class="photo-caption-bar">
+          <div>
+            <div class="caption-title">ZENS Gala & YEP 2026</div>
+            <div class="caption-sub">Đêm tiệc vinh danh & tri ân doanh nghiệp</div>
+          </div>
+        </div>
+      </div>
+      <div class="photo-frame">
+        <img class="img-cover" src="assets/portraits/trang_28-06-2026_DSC02893_upper_body.jpg" alt="Al Fresco's 30 Years Happy Together" style="object-position: 45% 70%;">
+        <div class="photo-caption-bar">
+          <div>
+            <div class="caption-title">Al Fresco's 30 Years</div>
+            <div class="caption-sub">Đêm bốc thăm tri ân 30 năm đồng hành</div>
+          </div>
+        </div>
       </div>
     </div>
 
-    <div class="page-indicator-pill">YEP &bull; Page 2/2</div>
+    <div class="page-indicator-pill">15 / 21 &bull; Gala Moments</div>
   </section>
 
   <!-- ========================================================
-       PAGE 16: VOICE TALENT (PAGE 1 - Slide 11 Exact)
+       PAGE 16: VOICE TALENT (PAGE 1 - Voice Over & Broadcast)
+       Bố cục 2 cột: Thẻ thông tin bên trái, Cutout bên phải (không đè thẻ lên người)
        ======================================================== -->
   <section class="page" id="p16">
     <div class="page-tagline">
-      <span>VOICE TALENT</span>
-      <span>LĨNH VỰC MC &bull; MC THÙY TRANG</span>
+      <div class="page-tagline-left">Voice Talent</div>
+      <div>Lĩnh Vực MC &bull; MC Thùy Trang</div>
     </div>
 
-    <div style="position: absolute; top: 26mm; left: 25mm; z-index: 20;">
-      <div class="script-text" style="font-size: 42pt; color: var(--navy-blue);">Voice</div>
-    </div>
-    <div style="position: absolute; top: 26mm; right: 25mm; z-index: 20;">
-      <div class="script-text" style="font-size: 42pt; color: var(--navy-blue);">Talent</div>
+    <!-- Left Editorial Card (x = 20mm .. 150mm) -->
+    <div class="glass-box" style="position: absolute; top: 28mm; left: 20mm; width: 130mm; z-index: 20;">
+      <div class="subtitle">Voice Over &bull; Audio & Broadcast</div>
+      <div style="display: flex; align-items: baseline; gap: 12px;">
+        <span class="script-text" style="font-size: 38pt;">Voice</span>
+        <h2 class="section-title" style="font-size: 30pt;"><em>Talent</em></h2>
+      </div>
+
+      <div class="soundwave-visualizer" style="margin: 12px 0 14px;">
+        <div class="soundwave-bar" style="animation-delay: 0.1s;"></div>
+        <div class="soundwave-bar" style="animation-delay: 0.3s;"></div>
+        <div class="soundwave-bar" style="animation-delay: 0.5s;"></div>
+        <div class="soundwave-bar" style="animation-delay: 0.2s;"></div>
+        <div class="soundwave-bar" style="animation-delay: 0.6s;"></div>
+        <div class="soundwave-bar" style="animation-delay: 0.4s;"></div>
+        <div class="soundwave-bar" style="animation-delay: 0.15s;"></div>
+        <div class="soundwave-bar" style="animation-delay: 0.45s;"></div>
+      </div>
+
+      <div class="soft-quote" style="margin-bottom: 14px;">
+        “Chất giọng ấm áp, truyền cảm, kiểm soát phát âm chuẩn mực và biến hóa đa dạng theo từng sắc thái thương hiệu.”
+      </div>
+
+      <ul class="bullet-list" style="margin-bottom: 16px;">
+        <li><strong style="color: var(--navy-blue);">TVC & Phim Doanh Nghiệp:</strong> Thuyết minh truyền cảm, sang trọng và giàu sức nặng thương hiệu.</li>
+        <li><strong style="color: var(--navy-blue);">Podcast Chữa Lành:</strong> Giọng đọc sâu lắng, chạm đến cảm xúc người nghe.</li>
+        <li><strong style="color: var(--navy-blue);">Livestream Thương Hiệu:</strong> Giữ nhịp năng lượng cao, tương tác duyên dáng.</li>
+      </ul>
+
+      <div style="display: flex; gap: 8px; flex-wrap: wrap;">
+        <span class="badge-pill dark">🎙️ TVC Quảng Cáo</span>
+        <span class="badge-pill sky">🎧 Podcast Chữa Lành</span>
+        <span class="badge-pill cream">✨ Brand Livestream</span>
+      </div>
     </div>
 
-    <!-- Center Sitting Cutout (image44.png) -->
-    <img class="img-cutout" style="left: 50%; transform: translateX(-50%); height: 86%; z-index: 15;" src="assets/image44.png" alt="Voice Talent Cutout">
+    <!-- Right Sitting Cutout (image44.png) -->
+    <div class="formula-circle-blue" style="width: 162mm; height: 162mm; right: 12mm; bottom: 4mm; opacity: 0.65;"></div>
+    <div class="formula-circle-cream" style="width: 112mm; height: 112mm; right: 26mm; top: 24mm; opacity: 0.45;"></div>
+    <img class="img-cutout" style="right: 16mm; bottom: 0; height: 88%; z-index: 15;" src="assets/image44.png"
+      alt="Voice Talent Cutout">
 
-    <!-- Formula Soundwave Bars -->
-    <div style="position: absolute; top: 76mm; left: 25mm; z-index: 10;" class="soundwave-visualizer">
-      <div class="soundwave-bar" style="animation-delay: 0.1s;"></div>
-      <div class="soundwave-bar" style="animation-delay: 0.3s;"></div>
-      <div class="soundwave-bar" style="animation-delay: 0.5s;"></div>
-      <div class="soundwave-bar" style="animation-delay: 0.2s;"></div>
-      <div class="soundwave-bar" style="animation-delay: 0.6s;"></div>
-      <div class="soundwave-bar" style="animation-delay: 0.4s;"></div>
-      <div class="soundwave-bar" style="animation-delay: 0.7s;"></div>
-    </div>
-
-    <div style="position: absolute; top: 76mm; right: 25mm; z-index: 10;" class="soundwave-visualizer">
-      <div class="soundwave-bar" style="animation-delay: 0.3s;"></div>
-      <div class="soundwave-bar" style="animation-delay: 0.1s;"></div>
-      <div class="soundwave-bar" style="animation-delay: 0.6s;"></div>
-      <div class="soundwave-bar" style="animation-delay: 0.2s;"></div>
-      <div class="soundwave-bar" style="animation-delay: 0.5s;"></div>
-      <div class="soundwave-bar" style="animation-delay: 0.7s;"></div>
-      <div class="soundwave-bar" style="animation-delay: 0.4s;"></div>
-    </div>
-
-    <div style="position: absolute; bottom: 35mm; left: 30mm; z-index: 20;">
-      <div class="script-text" style="font-size: 38pt; color: var(--navy-blue);">Live</div>
-    </div>
-    <div style="position: absolute; bottom: 35mm; right: 30mm; z-index: 20;">
-      <div class="script-text" style="font-size: 38pt; color: var(--navy-blue);">Streamer</div>
-    </div>
-
-    <div style="position: absolute; bottom: 18mm; left: 0; width: 100%; text-align: center; z-index: 20;">
-      <p style="font-size: 13pt; color: var(--navy-blue); font-weight: 700;">
-        TVC Quảng cáo, Podcast chữa lành<br>Livestream bán hàng
-      </p>
-    </div>
-
-    <div class="page-indicator-pill">Voice Talent &bull; Page 1/2</div>
+    <div class="page-indicator-pill">16 / 21 &bull; Voice Talent</div>
   </section>
 
   <!-- ========================================================
@@ -1188,207 +2011,272 @@
        ======================================================== -->
   <section class="page" id="p17" data-bg="cream">
     <div class="page-tagline">
-      <span>VOICE TALENT & LIVESTREAM HIGHLIGHTS</span>
-      <span>DOWNY &bull; NINH DƯƠNG LAN NGỌC &bull; TIKTOK BLACK FRIDAY</span>
+      <div class="page-tagline-left">Voice Talent & Livestream Highlights</div>
+      <div>Downy &bull; Ninh Dương Lan Ngọc &bull; TikTok Black Friday</div>
     </div>
 
-    <div class="page-header">
+    <div style="position: absolute; top: 21mm; left: 20mm; z-index: 20;">
       <div class="subtitle">Voice Talent &bull; Page 2/2</div>
-      <h2 class="section-title">Host Livestream Thương Hiệu</h2>
-      <p style="color: var(--text-gray); max-width: 140mm; margin-top: 4px;">
+      <h2 class="section-title" style="font-size: 25pt;">Host Livestream <em>Thương Hiệu</em></h2>
+      <p class="lead-text" style="max-width: 165mm; margin-top: 3px;">
         Kỹ năng kiểm soát luồng sóng trực tiếp, chốt đơn duyên dáng, truyền cảm hứng mua sắm và tương tác hàng chục ngàn bình luận.
       </p>
     </div>
 
-    <div style="position: absolute; top: 48mm; left: 20mm; right: 20mm; bottom: 18mm; display: grid; grid-template-columns: 1fr 1fr; gap: 20px; z-index: 10;">
+    <div style="position: absolute; top: 50mm; left: 20mm; right: 20mm; bottom: 18mm; display: grid; grid-template-columns: 1fr 1fr; gap: 20px; z-index: 10;">
       <div class="photo-frame">
-        <img class="img-cover" src="assets/image42.jpeg" alt="Livestream Studio Broadcast">
+        <img class="img-cover" src="assets/drive_photos/downy_lanngoc_01.jpg" alt="Downy Brand Event & Livestream">
+        <div class="photo-caption-bar">
+          <div>
+            <div class="caption-title">Downy Mega Event & Live</div>
+            <div class="caption-sub">Đồng hành cùng Ninh Dương Lan Ngọc</div>
+          </div>
+        </div>
       </div>
       <div class="photo-frame">
-        <img class="img-cover" src="assets/image41.png" alt="Brand Livestream Host">
+        <img class="img-cover" src="assets/drive_photos/tiktok_blackfriday_03.jpg" alt="TikTok Black Friday Host" style="object-position: center 25%;">
+        <div class="photo-caption-bar">
+          <div>
+            <div class="caption-title">TikTok Black Friday</div>
+            <div class="caption-sub">Săn deal thần tốc & tương tác bùng nổ</div>
+          </div>
+        </div>
       </div>
     </div>
 
-    <div class="page-indicator-pill">Voice Talent &bull; Page 2/2</div>
+    <div class="page-indicator-pill">17 / 21 &bull; Livestream Host</div>
   </section>
 
   <!-- ========================================================
-       PAGE 18: PODCAST (PAGE 1 - Slide 12 Exact)
+       PAGE 18: PODCAST (PAGE 1 - Trang Naria Official)
        ======================================================== -->
   <section class="page" id="p18">
     <div class="page-tagline">
-      <span>PODCAST</span>
-      <span>LĨNH VỰC MC &bull; MC THÙY TRANG</span>
+      <div class="page-tagline-left">Podcast</div>
+      <div>Lĩnh Vực MC &bull; MC Thùy Trang</div>
     </div>
 
-    <!-- YouTube/Podcast Player Card (image46.png) -->
-    <div style="position: absolute; top: 25mm; left: 18mm; width: 175mm; height: 160mm; z-index: 10; border-radius: 16px; overflow: hidden; box-shadow: 0 8px 30px rgba(0,0,0,0.12);">
+    <!-- YouTube/Podcast Player Frame -->
+    <div class="photo-frame" style="position: absolute; top: 25mm; left: 20mm; width: 168mm; height: 158mm; z-index: 10;">
       <img class="img-cover" src="assets/image46.png" alt="Trang Naria Podcast Player">
+      <div class="photo-caption-bar">
+        <div>
+          <div class="caption-title">Trang Naria Official Podcast</div>
+          <div class="caption-sub">Kênh nội dung âm thanh chia sẻ câu chuyện cuộc sống</div>
+        </div>
+      </div>
     </div>
 
-    <!-- Right Side Big Typography -->
-    <div style="position: absolute; top: 38mm; right: 20mm; width: 75mm; text-align: right; z-index: 20;">
-      <h1 style="font-size: 42pt; font-weight: 800; color: #1e5a8a; line-height: 0.95;">POD-</h1>
-      <div class="soundwave-visualizer" style="justify-content: flex-end; margin: 16px 0;">
+    <!-- Right Column Big Typography & Soundwave -->
+    <div class="glass-box" style="position: absolute; top: 34mm; right: 20mm; width: 82mm; text-align: right; z-index: 20;">
+      <div class="subtitle" style="justify-content: flex-end;">Audio Story</div>
+      <h1 class="section-title" style="font-size: 36pt; line-height: 0.98;">
+        Pod<em>cast</em>
+      </h1>
+
+      <div class="soundwave-visualizer" style="justify-content: flex-end; margin: 14px 0;">
         <div class="soundwave-bar" style="animation-delay: 0.2s;"></div>
         <div class="soundwave-bar" style="animation-delay: 0.4s;"></div>
         <div class="soundwave-bar" style="animation-delay: 0.1s;"></div>
         <div class="soundwave-bar" style="animation-delay: 0.5s;"></div>
         <div class="soundwave-bar" style="animation-delay: 0.3s;"></div>
       </div>
-      <h1 style="font-size: 42pt; font-weight: 800; color: var(--navy-blue); line-height: 0.95;">CAST</h1>
+
+      <p class="lead-text" style="font-size: 9.6pt;">
+        Những góc nhìn sâu lắng, chữa lành tâm hồn và khơi gợi cảm xúc tích cực cho người nghe qua từng câu chuyện nhỏ.
+      </p>
     </div>
 
-    <div class="page-indicator-pill">Podcast &bull; Page 1/2</div>
+    <div class="page-indicator-pill">18 / 21 &bull; Podcast Player</div>
   </section>
 
   <!-- ========================================================
-       PAGE 19: PODCAST (PAGE 2 - Healing Stories)
+       PAGE 19: PODCAST (PAGE 2 - Healing Stories & Community)
        ======================================================== -->
   <section class="page" id="p19" data-bg="cream">
     <div class="page-tagline">
-      <span>PODCAST HIGHLIGHTS</span>
-      <span>HÀNH TRÌNH CHỮA LÀNH &bull; TRANG NARIA OFFICIAL</span>
+      <div class="page-tagline-left">Podcast Highlights</div>
+      <div>Hành Trình Chữa Lành &bull; Trang Naria Official</div>
     </div>
 
-    <div class="page-header">
+    <div style="position: absolute; top: 21mm; left: 20mm; z-index: 20;">
       <div class="subtitle">Podcast &bull; Page 2/2</div>
-      <h2 class="section-title">Lắng Đọng & Truyền Cảm Hứng</h2>
+      <h2 class="section-title" style="font-size: 25pt;">Lắng Đọng & <em>Truyền Cảm Hứng</em></h2>
     </div>
 
-    <!-- Left: Editorial Content & Podcast Stats -->
-    <div class="glass-box" style="position: absolute; top: 44mm; left: 20mm; width: 135mm; z-index: 20;">
-      <p style="font-size: 12pt; line-height: 1.7; color: var(--navy-blue); font-weight: 500; font-style: italic;">
+    <!-- Left Editorial Card (width 132mm -> x = 20..152mm, cách cutout 38mm) -->
+    <div class="glass-box" style="position: absolute; top: 40mm; left: 20mm; width: 132mm; z-index: 20;">
+      <div class="soft-quote" style="margin-bottom: 14px;">
         “Mỗi tập Podcast là một bức thư gửi gắm sự đồng cảm đến những ai đang tìm kiếm sự tĩnh lặng giữa nhịp sống bận rộn. Thùy Trang tin rằng âm thanh chân thật và một trái tim biết lắng nghe chính là cầu nối kỳ diệu nhất.”
-      </p>
+      </div>
 
-      <ul class="bullet-list" style="margin-top: 16px;">
-        <li>Chủ đề: Tư duy tích cực, mở khóa may mắn và bình tâm đón nhận thử thách.</li>
-        <li>Hơn 1.08K người theo dõi trung thành trên nền tảng Trang Naria Official.</li>
-        <li>Chất lượng phòng thu chuẩn quốc tế, hòa âm và giọng đọc truyền cảm xúc sâu sắc.</li>
+      <ul class="bullet-list" style="margin-top: 12px;">
+        <li><strong style="color: var(--navy-blue);">Chủ đề:</strong> Tư duy tích cực, mở khóa may mắn và bình tâm đón nhận thử thách.</li>
+        <li><strong style="color: var(--navy-blue);">Cộng đồng:</strong> Hơn 1.08K người theo dõi trung thành trên nền tảng Trang Naria Official.</li>
+        <li><strong style="color: var(--navy-blue);">Chất lượng:</strong> Thu âm chuẩn phòng thu, hòa âm dịu êm và giọng đọc truyền cảm sâu sắc.</li>
       </ul>
 
-      <div style="margin-top: 18px; display: flex; gap: 12px; align-items: center;">
-        <span class="badge-pill dark" style="font-size: 9.5pt;">🎙️ Trang Naria Official</span>
-        <span class="badge-pill" style="background: var(--canva-sky); color: var(--navy-blue); font-size: 9.5pt; font-weight: 800;">1.08K+ Subscribers</span>
+      <div style="margin-top: 16px; display: flex; gap: 10px; align-items: center;">
+        <span class="badge-pill dark">🎙️ Trang Naria Official</span>
+        <span class="badge-pill sky">1.08K+ Subscribers</span>
       </div>
     </div>
 
-    <!-- Right: Formula circle and LARGE, beautiful MC portrait (Safely sized, zero cropping) -->
-    <div class="formula-circle-blue" style="width: 140mm; height: 140mm; right: 14mm; bottom: 12mm; opacity: 0.6;"></div>
-    <img src="assets/image8.png" alt="Trang Naria Host" style="position: absolute; right: 12mm; bottom: 8mm; height: 80%; max-width: 44%; object-fit: contain; object-position: bottom right; z-index: 15; filter: drop-shadow(-8px 12px 18px rgba(21, 44, 91, 0.22));">
+    <!-- Right Side Portrait (image8.png) with Formula Circle Backplate -->
+    <div class="formula-circle-blue" style="width: 142mm; height: 142mm; right: 12mm; bottom: 12mm; opacity: 0.6;"></div>
+    <img src="assets/image8.png" alt="Trang Naria Host" data-cutout
+      style="position: absolute; right: 10mm; bottom: 0; height: 80%; max-width: 42%; object-fit: contain; object-position: bottom right; z-index: 15;">
 
-    <div class="page-indicator-pill">Podcast &bull; Page 2/2</div>
+    <div class="page-indicator-pill">19 / 21 &bull; Healing Podcast</div>
   </section>
 
   <!-- ========================================================
-       PAGE 20: CLIENTS (Slide 13 Exact)
+       PAGE 20: CLIENTS (Brand Partners)
        ======================================================== -->
   <section class="page" id="p20">
     <div class="page-tagline">
-      <span>MY CLIENTS</span>
-      <span>ĐƠN VỊ ĐÃ HỢP TÁC &bull; MC THÙY TRANG</span>
+      <div class="page-tagline-left">My Clients</div>
+      <div>Đơn Vị Đã Hợp Tác &bull; MC Thùy Trang</div>
     </div>
 
-    <!-- Stage photo on Left (Slide 13 Exact) -->
-    <div style="position: absolute; top: 28mm; left: 20mm; width: 85mm; height: 160mm; border-radius: 12px; overflow: hidden; z-index: 10; box-shadow: 0 8px 25px rgba(0,0,0,0.15);">
-      <img class="img-cover" src="assets/image58.jpeg" alt="MC Thùy Trang On Stage">
+    <!-- Left Stage Photo -->
+    <div class="photo-frame" style="position: absolute; top: 26mm; left: 20mm; width: 85mm; height: 162mm; z-index: 10;">
+      <img class="img-cover" src="assets/portraits/trang_10160724_DSC03711_full_body.jpg" alt="MC Thùy Trang - Khai trương Showroom Gốm Bát Tràng Nha Trang" style="object-position: 48% center;">
+      <div class="photo-caption-bar">
+        <div>
+          <div class="caption-title">Tỏa Sáng Cùng Thương Hiệu</div>
+          <div class="caption-sub">Khai trương Gốm Bát Tràng Nha Trang</div>
+        </div>
+      </div>
     </div>
 
     <!-- Right Side Content -->
     <div style="position: absolute; top: 26mm; left: 115mm; right: 20mm; z-index: 20;">
-      <h1 style="font-size: 32pt; font-weight: 900; color: var(--navy-blue); line-height: 1;">
-        MY CLIENTS
-      </h1>
-      <div style="font-size: 22pt; font-weight: 700; color: var(--navy-blue); margin-top: 4px; margin-bottom: 14px;">
-        Đơn vị đã hợp tác
+      <div class="subtitle">Valued Partnerships</div>
+      <h1 class="section-title" style="font-size: 30pt; margin: 2px 0 4px;">My <em>Clients</em></h1>
+      <div style="font-size: 12pt; font-weight: 500; color: var(--text-gray); margin-bottom: 12px;">
+        Các thương hiệu & đơn vị đồng hành tiêu biểu
       </div>
 
-      <!-- Partner Logos Grid -->
+      <!-- Partner Logos Grid (5x2 clean cards) -->
       <div class="client-grid">
-        <div class="client-card">
+        <div class="client-card" title="CGV Cinemas">
           <img src="assets/image51.jpeg" alt="CGV">
         </div>
-        <div class="client-card">
+        <div class="client-card" title="Grab Vietnam">
           <img src="assets/image50.png" alt="Grab">
         </div>
-        <div class="client-card">
+        <div class="client-card" title="Galaxy Cinema">
           <img src="assets/image52.png" alt="Galaxy Cinema">
         </div>
-        <div class="client-card">
+        <div class="client-card" title="Papa Lee's">
           <img src="assets/image49.png" alt="Papa Lee's">
         </div>
-        <div class="client-card">
+        <div class="client-card" title="Ensure Abbott">
           <img src="assets/image53.png" alt="Ensure">
         </div>
-        <div class="client-card">
+        <div class="client-card" title="Oishi Snack">
           <img src="assets/image54.png" alt="Oishi">
         </div>
-        <div class="client-card">
+        <div class="client-card" title="Anh Mỹ Education">
           <img src="assets/image55.png" alt="Anh Mỹ">
         </div>
-        <div class="client-card">
+        <div class="client-card" title="Dove Unilever">
           <img src="assets/image56.png" alt="Dove">
         </div>
-        <div class="client-card">
+        <div class="client-card" title="Closeup Unilever">
           <img src="assets/image57.png" alt="Closeup">
         </div>
-        <div class="client-card">
+        <div class="client-card" title="Dai-ichi Life">
           <img src="assets/image59.png" alt="Dai-ichi Life">
         </div>
       </div>
-      <div style="text-align: right; margin-top: 8px; font-size: 10pt; color: #555; font-weight: 600;">
-        Gắn bó dài lâu
+
+      <div class="glass-box" style="margin-top: 14px; padding: 14px 20px;">
+        <div style="display: flex; justify-content: space-between; align-items: center;">
+          <span style="font-size: 9.4pt; font-weight: 600; color: var(--navy-blue);">
+            ✨ Hơn 50+ sự kiện doanh nghiệp, hội nghị quốc tế và chiến dịch thương hiệu thành công
+          </span>
+          <span class="badge-pill cream" style="font-size: 8.2pt; padding: 4px 12px;">Gắn bó dài lâu</span>
+        </div>
       </div>
     </div>
+
+    <div class="page-indicator-pill">20 / 21 &bull; Client Showcase</div>
   </section>
 
   <!-- ========================================================
-       PAGE 21: THANK YOU (Slide 14 Exact)
+       PAGE 21: CONTACT & THANK YOU (Canva Editorial Finale)
        ======================================================== -->
-  <section class="page" id="p21">
-    <!-- Left Side Big Typography -->
-    <div style="position: absolute; bottom: 25mm; left: 24mm; z-index: 20;">
-      <h1 style="font-size: 50pt; font-weight: 900; color: var(--navy-blue); line-height: 0.95; letter-spacing: 2px;">
-        THANK<br>YOU
-      </h1>
+  <section class="page" id="p21" data-bg="cream">
+    <div class="page-tagline">
+      <div class="page-tagline-left">Contact & Booking</div>
+      <div>MC Thùy Trang &bull; Trang Naria Official</div>
     </div>
 
-    <!-- Right Side Quote & QR Frame (image62.png) -->
-    <div style="position: absolute; top: 30mm; right: 28mm; width: 110mm; text-align: center; z-index: 20;">
-      <div style="font-size: 40pt; font-weight: 900; color: var(--navy-blue); line-height: 1; text-align: left; margin-bottom: 4px;">
-        66
+    <!-- Soft Formula Circle -->
+    <div class="formula-circle-blue" style="width: 170mm; height: 170mm; bottom: 0; left: 10mm; opacity: 0.5;"></div>
+
+    <!-- Left Side Big Typography -->
+    <div style="position: absolute; bottom: 24mm; left: 24mm; z-index: 20;">
+      <div class="subtitle" style="margin-bottom: 8px;">Closing Remarks</div>
+      <h1 class="title-cover-hero" style="font-size: 52pt; margin-bottom: 12px;">
+        Thank<br><em>You</em>
+      </h1>
+
+      <p class="lead-text" style="max-width: 112mm; font-size: 10.2pt; color: var(--text-dark);">
+        Cảm ơn Quý đối tác và khách hàng đã dành thời gian theo dõi bộ hồ sơ năng lực của Thùy Trang. Rất mong được đồng hành và kiến tạo thành công rực rỡ cho sự kiện sắp tới.
+      </p>
+
+      <div style="margin-top: 16px; display: flex; gap: 10px;">
+        <span class="badge-pill dark">Hotline & Zalo: 24/7 Available</span>
+        <span class="badge-pill sky">TP. Hồ Chí Minh & Toàn quốc</span>
       </div>
-      <div style="font-size: 18pt; font-weight: 700; color: var(--navy-blue); line-height: 1.35; text-align: left; margin-bottom: 12px;">
-        Rất mong được<br>hợp tác<br>cùng Quý đối tác
+    </div>
+
+    <!-- Right Side Contact Card with QR Frame -->
+    <div class="glass-box" style="position: absolute; top: 26mm; right: 24mm; width: 120mm; text-align: center; z-index: 20; padding: 24px 22px;">
+      <div style="font-family: 'Cormorant Garamond', serif; font-size: 42pt; font-weight: 700; color: var(--mid-blue); line-height: 0.7; text-align: left; margin-bottom: 4px; opacity: 0.55;">
+        “
+      </div>
+      <div style="font-family: 'Cormorant Garamond', serif; font-size: 17pt; font-weight: 700; color: var(--navy-blue); line-height: 1.3; text-align: left; margin-bottom: 6px;">
+        Rất mong được hợp tác<br>cùng Quý đối tác
       </div>
       
-      <div class="script-text" style="font-size: 34pt; text-align: left; margin-bottom: 18px; color: var(--navy-blue);">
+      <div class="script-text" style="font-size: 32pt; text-align: left; margin-bottom: 14px; color: var(--navy-blue);">
         Thùy Trang
       </div>
 
-      <div class="badge-pill dark" style="padding: 4px 18px; font-size: 10pt; margin-bottom: 16px;">
+      <div class="badge-pill dark" style="padding: 4px 18px; font-size: 9.5pt; margin-bottom: 14px;">
         My Profile
       </div>
 
-      <!-- QR code with 4 corner brackets -->
-      <div style="position: relative; display: inline-block; padding: 10px;">
+      <!-- QR Frame with Corner Brackets -->
+      <div style="position: relative; display: inline-block; margin-bottom: 12px;">
         <div class="bracket-tl"></div>
         <div class="bracket-br"></div>
         <div class="qr-frame">
           <img src="assets/image62.png" alt="Profile QR Code">
         </div>
       </div>
+
+      <div style="font-size: 8.5pt; font-weight: 700; color: var(--navy-blue); letter-spacing: 0.5px; text-transform: uppercase;">
+        Quét mã QR để xem Profile & Media Clips
+      </div>
+      <div style="font-size: 8pt; color: var(--text-gray); margin-top: 2px;">
+        Zalo / Facebook / TikTok: Trang Naria Official
+      </div>
     </div>
+
+    <div class="page-indicator-pill">21 / 21 &bull; Thank You</div>
   </section>
 
   <!-- ========================================================
-       GENERATIVE & PROGRAMMATIC CODE ART WARP ENGINE
+       PROGRAMMATIC JAVASCRIPT: LIGHTBOX & SCROLLSPY
        ======================================================== -->
   <script>
     /**
-     * Programmatic Generative Code Art Overlay for Magazine
-     * Creates delicate ambient flow fields & interactive fluid shockwave warp on cutouts
+     * Programmatic Generative Ambient Flow Canvas
      */
     class MagazineArtEngine {
       constructor(canvasId) {
@@ -1420,15 +2308,15 @@
 
       initParticles() {
         this.particles = [];
-        const count = 40;
+        const count = 35;
         for (let i = 0; i < count; i++) {
           this.particles.push({
             x: Math.random() * this.width,
             y: Math.random() * this.height,
-            size: Math.random() * 2.5 + 1.0,
+            size: Math.random() * 2.2 + 1.0,
             alpha: Math.random() * 0.35 + 0.15,
             orbitAngle: Math.random() * Math.PI * 2,
-            orbitSpeed: Math.random() * 0.01 + 0.003
+            orbitSpeed: Math.random() * 0.008 + 0.002
           });
         }
       }
@@ -1441,36 +2329,40 @@
           this.mouse.targetY = e.clientY;
         });
 
-        // 3D Perspective interactive warp on cutouts & photo frames
-        const interactives = document.querySelectorAll('.img-cutout, .photo-frame');
-        interactives.forEach(el => {
+        // Interactive 3D tilt on Cutouts (preserving base inline transforms like scaleX(-1) or translateX(-50%))
+        const cutouts = document.querySelectorAll('.img-cutout');
+        cutouts.forEach(el => {
+          const baseTransform = el.style.transform || '';
+          el.dataset.baseTransform = baseTransform;
+
           el.addEventListener('mousemove', (e) => {
             const rect = el.getBoundingClientRect();
             const x = (e.clientX - rect.left) / rect.width - 0.5;
             const y = (e.clientY - rect.top) / rect.height - 0.5;
-            el.style.transform = `perspective(800px) rotateY(${x * 9}deg) rotateX(${-y * 9}deg) scale(1.025)`;
+            const prefix = baseTransform ? `${baseTransform} ` : '';
+            el.style.transform = `${prefix}perspective(900px) rotateY(${x * 8}deg) rotateX(${-y * 6}deg) scale(1.02)`;
           });
 
           el.addEventListener('mouseleave', () => {
-            el.style.transform = '';
+            el.style.transform = baseTransform;
           });
         });
       }
 
       animate() {
-        this.time += 0.02;
-        this.mouse.x += (this.mouse.targetX - this.mouse.x) * 0.1;
-        this.mouse.y += (this.mouse.targetY - this.mouse.y) * 0.1;
+        this.time += 0.015;
+        this.mouse.x += (this.mouse.targetX - this.mouse.x) * 0.08;
+        this.mouse.y += (this.mouse.targetY - this.mouse.y) * 0.08;
 
         const ctx = this.ctx;
         ctx.clearRect(0, 0, this.width, this.height);
 
-        // Subtle glowing flow field particles around cursor
+        // Soft gold & sky blue ambient particles
         for (let i = 0; i < this.particles.length; i++) {
           const p = this.particles[i];
           p.orbitAngle += p.orbitSpeed;
-          p.x += Math.cos(p.orbitAngle + this.time) * 0.5;
-          p.y += Math.sin(p.orbitAngle + this.time * 0.8) * 0.5;
+          p.x += Math.cos(p.orbitAngle + this.time) * 0.4;
+          p.y += Math.sin(p.orbitAngle + this.time * 0.8) * 0.4;
 
           if (p.x < 0) p.x = this.width;
           if (p.x > this.width) p.x = 0;
@@ -1478,13 +2370,11 @@
           if (p.y > this.height) p.y = 0;
 
           const dist = Math.hypot(p.x - this.mouse.x, p.y - this.mouse.y);
-          const isNear = dist < 160;
+          const isNear = dist < 180;
 
           ctx.beginPath();
           ctx.arc(p.x, p.y, isNear ? p.size * 1.5 : p.size, 0, Math.PI * 2);
-          ctx.fillStyle = isNear ? `rgba(245, 212, 122, ${p.alpha * 1.8})` : `rgba(75, 181, 232, ${p.alpha})`;
-          ctx.shadowColor = 'rgba(245, 212, 122, 0.4)';
-          ctx.shadowBlur = isNear ? 8 : 0;
+          ctx.fillStyle = isNear ? `rgba(247, 213, 139, ${p.alpha * 1.6})` : `rgba(75, 181, 232, ${p.alpha})`;
           ctx.fill();
         }
 
@@ -1492,30 +2382,122 @@
       }
     }
 
-    // Highlight active nav pill while scrolling
-    document.addEventListener('DOMContentLoaded', () => {
-      new MagazineArtEngine('mag-canvas');
+    /**
+     * Interactive Photo Lightbox with Dark Figure-Ground Scrim
+     */
+    function initLightbox() {
+      const modal = document.getElementById('lightbox');
+      const modalImg = document.getElementById('lightbox-img');
+      const closeBtn = document.getElementById('lightbox-close');
 
+      document.querySelectorAll('.photo-frame').forEach(frame => {
+        frame.addEventListener('click', () => {
+          const img = frame.querySelector('img');
+          if (img && modal && modalImg) {
+            modalImg.src = img.src;
+            modalImg.alt = img.alt || 'Enlarged Stage Photo';
+            modal.classList.add('active');
+          }
+        });
+      });
+
+      function closeModal() {
+        if (modal) modal.classList.remove('active');
+      }
+
+      if (closeBtn) closeBtn.addEventListener('click', closeModal);
+      if (modal) {
+        modal.addEventListener('click', (e) => {
+          if (e.target === modal) closeModal();
+        });
+      }
+
+      window.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') closeModal();
+      });
+    }
+
+    /**
+     * ScrollSpy for Pill Navigation
+     */
+    function initScrollSpy() {
       const pages = document.querySelectorAll('.page');
       const pills = document.querySelectorAll('.nav-pill');
 
-      window.addEventListener('scroll', () => {
-        let current = '';
-        pages.forEach(page => {
-          const top = page.offsetTop - 120;
-          if (window.scrollY >= top) {
-            current = page.getAttribute('id');
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            const id = entry.target.getAttribute('id');
+            pills.forEach(pill => {
+              pill.classList.remove('active');
+              if (pill.getAttribute('href') === `#${id}`) {
+                pill.classList.add('active');
+                pill.scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' });
+              }
+            });
           }
         });
+      }, {
+        threshold: 0.4
+      });
 
-        pills.forEach(pill => {
-          pill.classList.remove('active');
-          if (pill.getAttribute('href') === `#${current}`) {
-            pill.classList.add('active');
+      pages.forEach(page => observer.observe(page));
+
+      // Keyboard navigation (ArrowRight/ArrowDown/PageDown & ArrowLeft/ArrowUp/PageUp)
+      window.addEventListener('keydown', (e) => {
+        if (document.getElementById('lightbox')?.classList.contains('active')) return;
+        const pageList = Array.from(pages);
+        const activePill = document.querySelector('.nav-pill.active');
+        const currentId = activePill ? activePill.getAttribute('href').replace('#', '') : 'p1';
+        const currentIndex = pageList.findIndex(p => p.id === currentId);
+
+        if (e.key === 'ArrowDown' || e.key === 'PageDown' || e.key === 'ArrowRight') {
+          if (currentIndex >= 0 && currentIndex < pageList.length - 1) {
+            e.preventDefault();
+            pageList[currentIndex + 1].scrollIntoView({ behavior: 'smooth', block: 'center' });
           }
-        });
-      }, { passive: true });
+        } else if (e.key === 'ArrowUp' || e.key === 'PageUp' || e.key === 'ArrowLeft') {
+          if (currentIndex > 0) {
+            e.preventDefault();
+            pageList[currentIndex - 1].scrollIntoView({ behavior: 'smooth', block: 'center' });
+          }
+        }
+      });
+    }
+
+    /**
+     * Responsive Viewport Auto-Fit for screens narrower than 297mm (1123px)
+     */
+    function initResponsiveScale() {
+      const A4_WIDTH_PX = 1122.5;
+      const pages = document.querySelectorAll('.page');
+      function updateScale() {
+        const availableWidth = window.innerWidth - 32;
+        if (availableWidth < A4_WIDTH_PX) {
+          const scale = Math.max(0.32, availableWidth / A4_WIDTH_PX);
+          pages.forEach(p => { p.style.zoom = String(scale); });
+        } else {
+          pages.forEach(p => { p.style.zoom = ''; });
+        }
+      }
+      window.addEventListener('resize', updateScale);
+      window.addEventListener('beforeprint', () => {
+        pages.forEach(p => { p.style.zoom = ''; });
+      });
+      window.addEventListener('afterprint', updateScale);
+      updateScale();
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      new MagazineArtEngine('mag-canvas');
+      initLightbox();
+      initScrollSpy();
+      initResponsiveScale();
     });
   </script>
+  <!-- Layout Guard: tự phát hiện & né chữ đè lên người / ảnh -->
+  <script src="assets/cutout-silhouettes.js"></script>
+  <script src="assets/layout-guard.js"></script>
 </body>
+
 </html>
